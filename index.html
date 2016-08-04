@@ -11,25 +11,40 @@
                 font-family: 'Montserrat', Verdana, sans-serif;
                 margin: 0;
             }
+            a {
+                color: #000;
+                text-decoration: none;
+            }
             .container {
                 max-width: 600px;
                 margin: 0 auto;
             }
-            .intro {
+            .intro,
+            .contact,
+            .outro {
                 text-align: center;
-                padding: 10% 5%;
+                margin: 10% 5%;
             }
-            .intro .hi {
+            .hi {
                 font-size: 64px;
                 text-transform: uppercase;
                 color: #FF1995;
             }
-            .intro p {
-                color: #656565;
+            .bye {
+                font-size: 22px;
+                color: #FF1995;
             }
-            .intro p span {
+            p {
+                color: #656565;
+                line-height: 1.4;
+            }
+            p a {
+                color: #FF1995;
+                border-bottom: 1px dotted #FF1995;
+            }
+            p span {
                 font-size: 20px;
-                color: #000;
+                color: #FF1995;
             }
         </style>
     </head>
@@ -38,10 +53,13 @@
             <div class="intro">
                 <span class="hi">Hi,</span>
                 <p>My name in <span>Nick</span> and I am a <span>Front-end Developer</span>.</p>
-                <p>I am specialized in <span>HTML</span>, <span>CSS</span> and <span>Javascript</span> designs backed by a <span>Wordpress</span> platforms.</p>
+                <p>I am specialized in <span>HTML</span>, <span>CSS</span> and <span>Javascript</span>, backed by <span>Wordpress</span> platforms.</p>
             </div>
             <div class="contact">
-
+                <p>You can reach me on <span><a href="mailto:nickdejaeger@hotmail.com">nickdejaeger@hotmail.com</a></span>.</p>
+            </div>
+            <div class="outro">
+                <span class="bye">Have a nice day</span>
             </div>
         </div>
     </body>
