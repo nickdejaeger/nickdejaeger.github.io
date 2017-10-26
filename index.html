@@ -11,6 +11,10 @@
                 font-family: 'Montserrat', Verdana, sans-serif;
                 margin: 0;
             }
+            .thecolor {
+                color: #FF1995;
+                border-color: #FF1995;
+            }
             a {
                 color: #000;
                 text-decoration: none;
@@ -28,38 +32,34 @@
             .hi {
                 font-size: 64px;
                 text-transform: uppercase;
-                color: #FF1995;
             }
             .bye {
                 font-size: 22px;
-                color: #FF1995;
             }
             p {
                 color: #656565;
                 line-height: 1.4;
             }
             p a {
-                color: #FF1995;
-                border-bottom: 1px dotted #FF1995;
+                border-bottom: 1px dotted;
             }
             p span {
                 font-size: 20px;
-                color: #FF1995;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="intro">
-                <span class="hi">Hi,</span>
-                <p>My name is <span>Nick</span> and I am a <span>Front-end Developer</span>.</p>
-                <p>I am specialized in <span>HTML</span>, <span>CSS</span> and <span>Javascript</span> in combination with an easy to maintain <span>Wordpress</span> back-end.</p>
+                <span class="hi thecolor">Hi,</span>
+                <p>My name is <span class="thecolor">Nick</span> and I am a <span class="thecolor">Front-end Developer</span>.</p>
+                <p>I am specialized in <span class="thecolor">HTML</span>, <span class="thecolor">CSS</span> and <span class="thecolor">Javascript</span> in combination with an easy to maintain <span class="thecolor">Wordpress</span> back-end.</p>
             </div>
             <div class="contact">
-                <p>You can reach me on <span><a href="mailto:nickdejaeger@hotmail.com">nickdejaeger@hotmail.com</a></span>.</p>
+                <p>You can reach me on <span class="thecolor"><a href="mailto:nickdejaeger@hotmail.com" class="thecolor">nickdejaeger@hotmail.com</a></span>.</p>
             </div>
             <div class="outro">
-                <span class="bye">Have a nice day</span>
+                <span class="bye thecolor">Have a nice day</span>
             </div>
         </div>
     </body>
