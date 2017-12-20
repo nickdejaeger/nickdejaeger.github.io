@@ -7,12 +7,30 @@
         <title>Nick - Front-end Developer</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
         <style type="text/css">
+            @keyframes color {
+              0% {
+                color: #2311C2;
+              }
+              25% {
+                color: #cd0000;
+              }
+              50% {
+                color: #15930c
+              }
+              75% {
+                color: #ea1cc4;
+              }
+              100% {
+                color: #2311C2;
+              }
+            }
             body {
                 font-family: 'Montserrat', Verdana, sans-serif;
                 margin: 0;
             }
             .thecolor {
                 color: #2311C2;
+                animation: color 40s ease-in-out infinite;
             }
             a {
                 color: #000;
@@ -33,7 +51,11 @@
                 text-transform: uppercase;
             }
             .bye {
-                font-size: 22px;
+                font-weight: 700;
+                text-transform: uppercase;
+                word-spacing: 4px;
+                letter-spacing: 2px;
+                font-size: 16px;
             }
             p {
                 color: #656565;
@@ -45,6 +67,12 @@
             p span {
                 font-size: 20px;
             }
+            em {
+                font-style: normal;
+                font-size: 14px;
+                position: relative;
+                bottom: -3px;
+            }
         </style>
     </head>
     <body>
@@ -52,7 +80,7 @@
             <div class="intro">
                 <span class="hi thecolor">Hi,</span>
                 <p>My name is <span class="thecolor">Nick</span> and I am a <span class="thecolor">Front-end Developer</span>.</p>
-                <p>I am specialized in <span class="thecolor">HTML</span>, <span class="thecolor">CSS</span> and <span class="thecolor">Javascript</span> in combination with an easy to maintain <span class="thecolor">Wordpress</span> back-end.</p>
+                <p>I am specialized in <span class="thecolor">HTML<em>5</em></span>, <span class="thecolor">CSS<em>3</em></span> and <span class="thecolor">Javascript</span> in combination with an easy to maintain <span class="thecolor">Wordpress</span> back-end.</p>
             </div>
             <div class="contact">
                 <p>You can reach me on <span class="thecolor"><a href="mailto:nickdejaeger@hotmail.com" class="thecolor">nickdejaeger@hotmail.com</a></span>.</p>
