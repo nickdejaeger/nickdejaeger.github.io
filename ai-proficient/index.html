@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Proficient</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="aip[bg]" id="scene1">
+    <div data-depth="0.05"></div>
+  </div>
+
+
+  
+
+  <div class="relative p-12">
+
+    <header class="flex flex-row items-end">
+      <div class="w-1/4">
+        <a href="#" class="w-16 sm:w-auto">
+          <img class="w-24" src="img/logo.png">
+        </a>
+      </div>
+      <div class="w-3/4 aip[page-title]">
+        <h1><a href="#">Newsg</a><sup class="text-bitter-lemon">new</sup></h1>
+      </div>
+    </header>
+
+    <div class="relative flex flex-col" >
+      <div class="flex flex-row">
+
+        <aside class="relative flex flex-col w-1/4 px-4 pr-8">
+          <div class="py-1">
+            <div class="uppercase font-black italic">AI-Proficient</div>
+            <div class="font-black italic text-xs leading-none">Artificial Intelligence for improved production efficiency, quality and maintenance</div>
+          </div>
+          <nav class="py-8">
+            <div class="flex flex-col h4">
+              <div class="mb-4">
+                <a href="#" class="active">About</a>
+              </div>
+              <div class="mb-4">
+                <a href="#" class="">News</a>
+              </div>
+              <div class="mb-4">
+                <a href="#" class="">Events</a>
+              </div>
+              <div class="mb-4">
+                <a href="#" class="">Resources</a>
+              </div>
+              <div class="mb-4 ml-4">
+                <a href="#" class="">Demos</a>
+              </div>
+              <div class="mb-4">
+                <a href="#" class="">Collaborations</a>
+              </div>
+            </div>
+          </nav>
+        </aside>
+
+        <main class="w-3/4">
+
+          <div class="flex flex-wrap -mx-6">
+
+            <article class="relative p-6 pt-0">
+              <div class="aip[shadow-block]" id="scene2">
+                <div data-depth="0.75"></div>
+              </div>
+              <div class="aip[article] relative bg-white p-6 px-12">
+                <h6>12/03/2021 Category</h6>
+                <h2>Doloremque aliquam totam labore magni inventore</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae architecto iusto doloribus aliquid, porro ipsam voluptates eius excepturi! Omnis at earum voluptatem perspiciatis quidem optio deserunt minima ipsam sed! Libero!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam totam labore magni inventore iste commodi, tempora dignissimos sit rem ullam dolor, quidem molestiae libero! Cumque doloremque veritatis molestiae laborum.</p>
+              </div>
+            </article>
+
+            <article class="relative p-6 w-1/2">
+              <div class="aip[shadow-block]" id="scene3">
+                <div data-depth="0.75"></div>
+              </div>
+              <div class="aip[article] relative bg-white p-6 px-12">
+                <h6>12/03/2021 Category</h6>
+                <h3>Doloremque aliquam totam labore magni inventore</h3>
+              </div>
+            </article>
+
+            <article class="relative p-6 w-1/2">
+              <div class="aip[shadow-block]" id="scene3">
+                <div data-depth="0.75"></div>
+              </div>
+              <div class="aip[article] relative bg-white p-6 px-12">
+                <h6>12/03/2021 Category</h6>
+                <h3>Doloremque aliquam totam labore magni inventore</h3>
+              </div>
+            </article>
+
+          </div>
+
+        </main>
+      </div>
+      <footer class="p-12">
+        <div class="m-6"><a href="#">Privacy Policy</a></div>
+      </footer>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+  
+  var scene1 = document.getElementById('scene1');
+  var parallaxInstance1 = new Parallax(scene1);
+  parallaxInstance1.limit(false, false);
+  
+  var scene2 = document.getElementById('scene2');
+  var parallaxInstance2 = new Parallax(scene2);
+  parallaxInstance2.limit(false, false);
+
+  var scene3 = document.getElementById('scene3');
+  var parallaxInstance3 = new Parallax(scene3);
+  parallaxInstance3.limit(false, false);
+  
+</script>
+
+<script>
+// shim layer with setTimeout fallback
+
+window.requestAnimFrame = (function () {
+  return function (callback) {
+    window.setTimeout(callback, 1000);
+  };
+})();
+
+
+$(document).ready(function () {
+  var $shadow = $("#shadow");
+  var shadowLimit = 200;
+  var moveEvent =
+    "ontouchstart" in document.documentElement ? "touchmove" : "mousemove";
+
+  (function animloop() {
+    requestAnimFrame(animloop);
+
+    $(window).bind(moveEvent, function (ev) {
+      var $this = $(this);
+      var w = $this.width();
+      var h = $this.height();
+      var center = { x: w / 2, y: h / 2 };
+
+      var evX =
+        moveEvent == "touchmove"
+          ? ev.originalEvent.touches[0].clientX
+          : ev.clientX;
+      var evY =
+        moveEvent == "touchmove"
+          ? ev.originalEvent.touches[0].clientY
+          : ev.clientY;
+
+      var shadowX = (center.x - evX) / 10;
+      var shadowY = (center.y - evY) / 10;
+
+      shadowX = shadowX > shadowLimit ? shadowLimit : shadowX;
+      shadowX = shadowX < shadowLimit * -1 ? shadowLimit * -1 : shadowX;
+      shadowY = shadowY > shadowLimit ? shadowLimit : shadowY;
+      shadowY = shadowY < shadowLimit * -1 ? shadowLimit * -1 : shadowY;
+
+      $shadow.css({
+        textShadow:
+          Math.ceil(shadowX) +
+          "px " +
+          Math.ceil(shadowY) +
+          "px " +
+          Math.abs(shadowX * shadowY) / 50 +
+          "px rgba(0,0,0,0.4)"
+      });
+    });
+  })();
+});
+
+</script>
+
+</html>

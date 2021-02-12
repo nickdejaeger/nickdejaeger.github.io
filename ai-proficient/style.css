@@ -1,0 +1,20 @@
+/*
+Theme Name: AI Proficient
+Text Domain: ai-proficient
+Version: 1.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Trapeze website
+Author: Tenforce
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import "css/fontawesome/css/all.css";
+
+@import "css/tailwind/tailwind.1.9.6.min.css";
+@import "css/tailwind/tailwind.extend.css";
+
+@import "css/wp-overwrite.css";
+@import "css/ai-proficient.css";
+@import "css/modifiers.css";
