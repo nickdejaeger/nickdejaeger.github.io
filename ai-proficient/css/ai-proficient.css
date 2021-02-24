@@ -194,7 +194,7 @@ h6 + h6 {
   left: 0;
 }
 .aip\[bg\] div {
-  background-image: url('../img/bg-pattern.png');
+  background-image: url('../img/bg_pattern.png');
   background-position: top left;
   background-size: auto;
   background-repeat: repeat;
@@ -210,12 +210,12 @@ h6 + h6 {
 
 .aip\[shadow-block\] {
   position: absolute !important;
-  top: 10%;
+  top: 1.5rem;
   right: 0;
   bottom: 0;
-  left: 10%;
-  width: 80%;
-  height: 80%;
+  left: 1.5rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
   transform: translate(0%, 0%) !important;
 }
 .aip\[shadow-block\] div {
@@ -228,6 +228,17 @@ h6 + h6 {
   height: 100%;
   box-shadow: 0px 0px 100px 50px rgb(0 0 0 / 35%);
   z-index: -1;
+
+  position: absolute !important;
+  top: 50% !important;
+  right: 0;
+  bottom: 0;
+  left: 50% !important;
+  width: 100%;
+  height: 0;
+  box-shadow: 0px 0px 100px 100px rgb(35 35 35 / 35%);
+  z-index: -1;
+  background-color: rgb(255 255 255 / 0%);
 }
 
 .aip\[page-title\] {
