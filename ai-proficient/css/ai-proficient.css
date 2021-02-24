@@ -22,8 +22,8 @@ h6, .h6 {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 h1, .h1 {
-  font-size: 3rem;
-  font-size: 48px;
+  font-size: 4rem;
+  font-size: 64px;
   font-weight: 900;
   font-style: italic;
 }
@@ -70,10 +70,10 @@ a {
 }
 a.active {
   font-style: normal;
-  background: none;
+  background: none !important;
 }
 h1 a, .h1 a {
-  background: repeating-linear-gradient( to bottom, transparent, transparent 38px, #c2e812 38px, #c2e812 48px );
+  background: repeating-linear-gradient( to bottom, transparent, transparent 50px, #c2e812 50px, #c2e812 60px );
 }
 h4 a, .h4 a {
   background: repeating-linear-gradient( to bottom, transparent, transparent 14px, #c2e812 14px, #c2e812 18px );
@@ -90,8 +90,8 @@ p {
 
 h1 sup,
 .h1 sup {
-  font-size: 2rem;
-  font-size: 32px;
+  font-size: 2.25rem;
+  font-size: 36px;
   font-weight: 700;
   font-style: italic;
   line-height: 2.25rem;
@@ -249,6 +249,9 @@ h6 + h6 {
 .aip\[article\] {
   position: relative;
   background-color: rgba(255,255,255,.85);
+}
+.aip\[article\] p {
+  text-align: justify;
 }
 
 /*   Trapeze links */
