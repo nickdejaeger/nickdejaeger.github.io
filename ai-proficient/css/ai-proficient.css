@@ -250,6 +250,9 @@ h6 + h6 {
   position: relative;
   background-color: rgba(255,255,255,.85);
 }
+.aip\[article\] h2 {
+  margin-bottom: 2rem;
+}
 .aip\[article\] p {
   text-align: justify;
 }
