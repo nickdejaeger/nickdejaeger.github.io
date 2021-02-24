@@ -56,6 +56,9 @@
             </div>
           </div>
         </nav>
+        <footer class="">
+          <div class="m-6"><a href="#">Privacy Policy</a></div>
+        </footer>
       </aside>
 
       <main class="w-full">
@@ -84,8 +87,11 @@
           </div>
         </section>
 
-        <section class="flex">
+        <section class="flex flex-wrap justify-center">
           <a href="#" class="aip[partner] foo"></a>
+          <a href="#" class="aip[partner]"></a>
+          <a href="#" class="aip[partner]"></a>
+          <a href="#" class="aip[partner]"></a>
           <a href="#" class="aip[partner]"></a>
           <a href="#" class="aip[partner]"></a>
           <a href="#" class="aip[partner]"></a>
@@ -96,9 +102,7 @@
 
 
 
-    <footer class="">
-      <div class="m-6"><a href="#">Privacy Policy</a></div>
-    </footer>
+    
 
   </div>
 
@@ -139,16 +143,12 @@
 </script>
 
 <script>
+  // Randomize Partner Blocks
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-
-
-
-
-
   $(window).on('load', function() {
     $('.aip\\[partner\\]').each(function() {
       console.log('test');
@@ -158,9 +158,6 @@
       });
     });
   });
-
-  
-  //console.log( getRandomInt(0, 4) );
 </script>
 
 </html>
