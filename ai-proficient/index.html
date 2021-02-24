@@ -64,10 +64,7 @@
           <div class="flex flex-wrap -mx-6 -mt-8">
 
             <article class="relative p-6">
-              <div class="aip[shadow-block]" id="scene2">
-                <div data-depth="0.75"></div>
-              </div>
-              <div class="aip[article] relative bg-white py-12 px-16">
+              <div class="aip[article] relative bg-white py-12 px-16" data-shadow>
                 <h6>12/03/2021 Category</h6>
                 <h2>Doloremque aliquam totam labore magni inventore</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates?</p>
@@ -77,20 +74,14 @@
             </article>
 
             <article class="relative w-1/2 p-6">
-              <div class="aip[shadow-block]" id="scene3">
-                <div data-depth="0.75"></div>
-              </div>
-              <div class="aip[article] relative bg-white py-8 px-12">
+              <div class="aip[article] relative bg-white py-8 px-12" data-shadow>
                 <h6>12/03/2021 Category</h6>
                 <h3>Doloremque aliquam totam labore magni inventore</h3>
               </div>
             </article>
 
             <article class="relative w-1/2 p-6">
-              <div class="aip[shadow-block]" id="scene3">
-                <div data-depth="0.75"></div>
-              </div>
-              <div class="aip[article] relative bg-white py-8 px-12">
+              <div class="aip[article] relative bg-white py-8 px-12" data-shadow>
                 <h6>12/03/2021 Category</h6>
                 <h3>Doloremque aliquam totam labore magni inventore</h3>
               </div>
@@ -118,71 +109,32 @@
   var parallaxInstance1 = new Parallax(scene1);
   parallaxInstance1.limit(false, false);
   
-  var scene2 = document.getElementById('scene2');
-  var parallaxInstance2 = new Parallax(scene2);
-  parallaxInstance2.limit(false, false);
-
-  var scene3 = document.getElementById('scene3');
-  var parallaxInstance3 = new Parallax(scene3);
-  parallaxInstance3.limit(false, false);
-  
 </script>
 
 <script>
-// shim layer with setTimeout fallback
-
-window.requestAnimFrame = (function () {
-  return function (callback) {
-    window.setTimeout(callback, 1000);
-  };
-})();
-
-
-$(document).ready(function () {
-  var $shadow = $("#shadow");
-  var shadowLimit = 200;
-  var moveEvent =
-    "ontouchstart" in document.documentElement ? "touchmove" : "mousemove";
-
-  (function animloop() {
-    requestAnimFrame(animloop);
-
-    $(window).bind(moveEvent, function (ev) {
-      var $this = $(this);
-      var w = $this.width();
-      var h = $this.height();
-      var center = { x: w / 2, y: h / 2 };
-
-      var evX =
-        moveEvent == "touchmove"
-          ? ev.originalEvent.touches[0].clientX
-          : ev.clientX;
-      var evY =
-        moveEvent == "touchmove"
-          ? ev.originalEvent.touches[0].clientY
-          : ev.clientY;
-
-      var shadowX = (center.x - evX) / 10;
-      var shadowY = (center.y - evY) / 10;
-
-      shadowX = shadowX > shadowLimit ? shadowLimit : shadowX;
-      shadowX = shadowX < shadowLimit * -1 ? shadowLimit * -1 : shadowX;
-      shadowY = shadowY > shadowLimit ? shadowLimit : shadowY;
-      shadowY = shadowY < shadowLimit * -1 ? shadowLimit * -1 : shadowY;
-
-      $shadow.css({
-        textShadow:
-          Math.ceil(shadowX) +
-          "px " +
-          Math.ceil(shadowY) +
-          "px " +
-          Math.abs(shadowX * shadowY) / 50 +
-          "px rgba(0,0,0,0.4)"
-      });
-    });
+  ;(function () {
+    let surface     = document.body,
+        stack       = document.querySelectorAll('[data-shadow]'),
+        
+        opacity     = .15,        // From 0 to 1
+        color       = "0, 0, 0", // RGB 0-255
+        blur        = 10,         // From 0
+        sensitivity = 100;        // From 1
+  
+    if(stack.length < 1 || !surface) return;
+  
+    surface.onmousemove = e => {
+        for (var item in stack) {
+            if (stack.hasOwnProperty(item)) {
+                var pos = {
+                    X: Math.round(((stack[item].offsetLeft + (stack[item].clientWidth / 2)) - e.clientX) / sensitivity),
+                    Y: Math.round(((stack[item].offsetTop + (stack[item].clientHeight / 2)) - e.clientY) / sensitivity)
+                }
+                stack[item].style.filter = `drop-shadow(rgba(${color}, ${opacity}) ${pos.X}px ${pos.Y}px ${blur}px)`
+            }
+        }
+    }
   })();
-});
-
 </script>
 
 </html>
