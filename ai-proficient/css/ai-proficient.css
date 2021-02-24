@@ -257,6 +257,15 @@ h6 + h6 {
   text-align: justify;
 }
 
+
+.aip\[partner\] {
+  background: none;
+  width: 20%;
+  height: 50px;
+  background-color: red;
+  margin: 2rem;
+}
+
 /*   Trapeze links */
 
 .trapeze\[nav\] {
