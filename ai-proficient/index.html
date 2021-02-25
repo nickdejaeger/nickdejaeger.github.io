@@ -12,9 +12,6 @@
     <div data-depth="0.05"></div>
   </div>
 
-
-  
-
   <div class="relative p-12">
 
     <section class="flex flex-row items-end">
@@ -73,13 +70,49 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam totam labore magni inventore iste commodi, tempora dignissimos sit rem ullam dolor, quidem molestiae libero! Cumque doloremque veritatis molestiae laborum.</p>
             </article>
           </div>
-          <div class="relative w-1/2 p-6">
+          <div class="relative w-1/2 p-6 | JS_shift">
             <article class="aip[article] py-8 px-12" data-shadow>
               <h6>12/03/2021 Category</h6>
               <h3>Doloremque aliquam totam labore magni inventore</h3>
             </article>
           </div>
-          <div class="relative w-1/2 p-6">
+          <div class="relative w-1/2 p-6 | JS_shift">
+            <article class="aip[article] py-8 px-12" data-shadow>
+              <h6>12/03/2021 Category</h6>
+              <h3>Doloremque aliquam totam labore magni inventore</h3>
+            </article>
+          </div>
+          <div class="relative w-1/2 p-6 | JS_shift">
+            <article class="aip[article] py-8 px-12" data-shadow>
+              <h6>12/03/2021 Category</h6>
+              <h3>Doloremque aliquam totam labore magni inventore</h3>
+            </article>
+          </div>
+          <div class="relative w-1/2 p-6 | JS_shift">
+            <article class="aip[article] py-8 px-12" data-shadow>
+              <h6>12/03/2021 Category</h6>
+              <h3>Doloremque aliquam totam labore magni inventore</h3>
+            </article>
+          </div>
+          <div class="relative w-1/2 p-6 | JS_shift">
+            <article class="aip[article] py-8 px-12" data-shadow>
+              <h6>12/03/2021 Category</h6>
+              <h3>Doloremque aliquam totam labore magni inventore</h3>
+            </article>
+          </div>
+          <div class="relative w-1/2 p-6 | JS_shift">
+            <article class="aip[article] py-8 px-12" data-shadow>
+              <h6>12/03/2021 Category</h6>
+              <h3>Doloremque aliquam totam labore magni inventore</h3>
+            </article>
+          </div>
+          <div class="relative w-1/2 p-6 | JS_shift">
+            <article class="aip[article] py-8 px-12" data-shadow>
+              <h6>12/03/2021 Category</h6>
+              <h3>Doloremque aliquam totam labore magni inventore</h3>
+            </article>
+          </div>
+          <div class="relative w-1/2 p-6 | JS_shift">
             <article class="aip[article] py-8 px-12" data-shadow>
               <h6>12/03/2021 Category</h6>
               <h3>Doloremque aliquam totam labore magni inventore</h3>
@@ -153,8 +186,16 @@
     $('.aip\\[partner\\]').each(function() {
       console.log('test');
       $(this).css({
-        'margin-top': getRandomInt(2, 6) +'rem',
-        'margin-left': getRandomInt(2, 4) +'rem',
+        'margin-top': getRandomInt(4, 6) +'rem',
+        'margin-left': getRandomInt(1, 3) +'rem',
+      });
+    });
+
+    $('.JS_shift').each(function() {
+      console.log('test');
+      $(this).css({
+        'top': getRandomInt(0, 2) +'rem',
+        'left': '-' + getRandomInt(0, 1) + 'rem',
       });
     });
   });
