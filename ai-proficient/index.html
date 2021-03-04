@@ -6,13 +6,13 @@
   <title>AI Proficient</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-theme-a bg-theme-b bg-theme-c bg-theme-d">
 
   <div class="aip[bg]" id="scene1">
     <div data-depth="0.05"></div>
   </div>
 
-  <div class="relative p-12">
+  <div class="relative p-16">
 
     <section class="flex flex-row items-end">
       <aside class="w-64 mr-12">
@@ -22,7 +22,7 @@
       </aside>
 
       <header class="aip[page-title] w-full">
-        <h1><a href="#">Newsg</a><sup class="text-bitter-lemon">new</sup></h1>
+        <h1><span>Newsg</span><sup class="text-bitter-lemon">new</sup></h1>
       </header>
     </section>
 
@@ -59,8 +59,8 @@
 
         <section class="flex flex-wrap -mx-6">
           <div class="relative p-6 pt-0">
-            <article class="aip[article] py-12 px-16" data-shadow>
-              <h6>12/03/2021 Category</h6>
+            <article class="aip[article] py-24 px-32" data-shadow>
+              <h6>12/03/2021 Tags</h6>
               <h2>Doloremque aliquam totam labore magni inventore</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates?</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae architecto iusto doloribus aliquid, porro ipsam voluptates eius excepturi! Omnis at earum voluptatem perspiciatis quidem optio deserunt minima ipsam sed! Libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates?</p>
@@ -157,8 +157,8 @@
         stack       = document.querySelectorAll('[data-shadow]'),    
         opacity     = .15,        // From 0 to 1
         color       = "0, 0, 0", // RGB 0-255
-        blur        = 10,         // From 0
-        sensitivity = 100;        // From 1
+        blur        = 50,         // From 0
+        sensitivity = 50;        // From 1
     if (stack.length < 1 || !surface) return;
     surface.onmousemove = e => {
       for (var item in stack) {
