@@ -72,6 +72,13 @@ a.active {
   font-style: normal;
   background: none !important;
 }
+a h3, a .h3 {
+  font-weight: 900;
+  font-style: italic;
+  background: repeating-linear-gradient( to bottom, transparent, transparent 11px, #c2e812 11px, #c2e812 14px );  
+}
+
+
 h1 a, .h1 a {
   background: repeating-linear-gradient( to bottom, transparent, transparent 50px, #c2e812 50px, #c2e812 60px );
 }
