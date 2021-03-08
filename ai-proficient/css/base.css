@@ -1,0 +1,17 @@
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  background-color: #E4E4E4;
+  min-height: 100vh;
+}
+
+[contenteditable=true]:empty::before {
+  content: attr(placeholder);
+}
+
+sup {
+  font-size: 56%;
+  vertical-align: middle;
+  margin-left: .5rem;
+}

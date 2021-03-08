@@ -1,3 +1,40 @@
 .is-dimmed {
   opacity: .5;
 }
+.is-disabeld {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.is-ellipsed {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.is-ellipsedx3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.is-ghost {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+}
+.is-invisible {
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+}
+.is-highlighted {
+  display: inline;
+  background-color: yellow;
+  box-shadow:
+    -.25em .1em yellow,
+    -.25em 0 yellow,
+    .25em .1em yellow,
+    .25em 0 yellow,
+    0 .1em yellow;
+}

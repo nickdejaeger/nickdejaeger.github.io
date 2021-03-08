@@ -12,7 +12,7 @@
     <div data-depth="0.05"></div>
   </div>
 
-  <div class="relative p-16">
+  <div class="relative p-8 sm:p-16">
 
     <section class="flex flex-row items-end">
       <aside class="w-64 mr-12">
@@ -21,14 +21,14 @@
         </a>
       </aside>
       <header class="aip[page-title] w-full">
-        <input placeholder="(placeholder) What are you looking for? / (no results) Nothing is found. Try to search for something else." value="Search Query" class="h3 italic w-full bg-transparent outline-none is-dimmed">
+        <div contenteditable="true" placeholder="(placeholder) What are you looking for? / (no results) Nothing is found. Try to search for something else." class="h3 italic w-full bg-transparent outline-none is-dimmed">Search Query</div>
         <h1><span>News</span><sup class="text-bitter-lemon">new</sup></h1>
       </header>
     </section>
 
-    <section class="flex flex-row">
-      <aside class="w-64 mr-12">
-        <div class="test">
+    <section class="flex flex-col sm:flex-row">
+      <aside class="sm:w-64 sm:mr-12">
+        <div class="hidden sm:block">
           <img class="test" src="img/logo_text.png">
         </div>
         <nav class="py-12 px-6">
@@ -56,13 +56,12 @@
       </aside>
 
       <main class="w-full">
-
         <section class="flex flex-wrap items-end -mx-6">
           <div class="relative p-6 pt-0">
-            <article class="aip[article] py-24 px-32" data-shadow>
+            <article class="aip[article] py-12 px-16 sm:py-24 sm:px-32" data-shadow>
               <h6>12/03/2021 Tags</h6>
               <h2>Doloremque aliquam totam labore magni inventore</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates?</p>
+              <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates?</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae architecto iusto doloribus aliquid, porro ipsam voluptates eius excepturi! Omnis at earum voluptatem perspiciatis quidem optio deserunt minima ipsam sed! Libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates?</p>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam totam labore magni inventore iste commodi, tempora dignissimos sit rem ullam dolor, quidem molestiae libero! Cumque doloremque veritatis molestiae laborum.</p>
             </article>
