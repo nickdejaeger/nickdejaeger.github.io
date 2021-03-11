@@ -70,7 +70,7 @@
       </aside>
 
       <section class="w-full">
-        <div class="h4 p-6 sm:p-8 pt-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi!</div>
+        <div class="h4 p-6 sm:p-16 sm:pt-0 text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi!</div>
 
         <section class="flex flex-wrap items-end w-full">
           <header class="aip[page-title] w-full mx-6">
@@ -78,7 +78,7 @@
           </header>
           <section class="flex flex-wrap items-start w-full">
             <div class="relative w-full sm:w-1/2 p-6 pt-0">
-              <a href="#" class="outline-none">
+              <a href="#" class="block outline-none bg-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
                   <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
                   <h4 class="h4-link">Doloremque aliquam totam labore magni inventore</h4>
@@ -86,7 +86,7 @@
               </a>
             </div>
             <div class="relative w-full sm:w-1/2 p-6 pt-0">
-              <a href="#" class="outline-none">
+              <a href="#" class="block outline-none bg-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
                   <div><span class="h5">12/03/2021</span> <span class="h5">Libero</span></div>
                   <h4 class="h4-link">Doloremque aliquam</h4>
@@ -102,10 +102,50 @@
           </header>
           <section class="flex flex-wrap items-start w-full">
             <div class="relative w-full sm:w-1/2 p-6 pt-0">
-              <a href="#" class="outline-none">
+              <a href="#" class="block outline-none bg-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
                   <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
                   <h4 class="h4-link">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h4>
+                </article>
+              </a>
+            </div>
+          </section>
+        </section>
+
+        <section class="flex flex-wrap items-end w-full">
+          <header class="aip[page-title] w-full mx-6">
+            <h1><a href="#"><span>Resources</span></a></h1>
+          </header>
+          <section class="flex flex-wrap items-start w-full">
+            <div class="relative w-full sm:w-1/2 p-6 pt-0">
+              <a href="#" class="block outline-none bg-none">
+                <article class="aip[article] py-8 px-12" data-shadow>
+                  <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
+                  <h4 class="h4-link">Doloremque aliquam totam labore magni inventore</h4>
+                </article>
+              </a>
+            </div>
+            <div class="relative w-full sm:w-1/2 p-6 pt-0">
+              <a href="#" class="block outline-none bg-none">
+                <article class="aip[article] py-8 px-12" data-shadow>
+                  <div><span class="h5">12/03/2021</span> <span class="h5">Libero</span></div>
+                  <h4 class="h4-link">Doloremque aliquam</h4>
+                </article>
+              </a>
+            </div>
+          </section>
+        </section>
+
+        <section class="flex flex-wrap items-end w-full">
+          <header class="aip[page-title] w-full mx-6">
+            <h1><a href="#"><span>Demos</span></a></h1>
+          </header>
+          <section class="flex flex-wrap items-start w-full">
+            <div class="relative w-full sm:w-1/2 p-6 pt-0">
+              <a href="#" class="block outline-none bg-none">
+                <article class="aip[article] py-8 px-12" data-shadow>
+                  <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
+                  <h4 class="h4-link">Doloremque aliquam totam labore magni inventore</h4>
                 </article>
               </a>
             </div>
@@ -232,7 +272,7 @@
   $(function () {
 		$('.JS_toggleSearch').on('click', function(e) {
       e.preventDefault();
-      
+
 			$('.JS_searchField').toggle().focus();
 
 			if ( $('.JS_toggleSearch').hasClass('foo') ) {

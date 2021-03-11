@@ -70,6 +70,7 @@
 .aip\[search-box\] {
   display: none;;
   position: relative;
+  margin: 0 0 1rem 1.75rem;
 }
 .aip\[search-box\] i {
   position: absolute;
