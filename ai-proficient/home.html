@@ -15,14 +15,14 @@
 
   <div class="relative p-8 sm:p-16 sm:pr-10">
 
-    <section class="flex flex-row items-end">
+    <section class="flex flex-col sm:flex-row items-end">
       <aside class="sm:w-64 sm:mr-12">
-        <a href="index.html" class="block mr-12">
+        <a href="index.html" class="block sm:mr-12">
           <img class="test" src="img/logo.png">
         </a>
       </aside>
       <header class="aip[page-title] w-full">
-        <div class="aip[search-box] h3 | JS_searchField">
+        <div class="aip[search-box] h3 m-6 sm:m-0 sm:mb-4 sm:ml-8 | JS_searchField">
           <input type="search" placeholder="Placeholder/resulttext" class="h3" value="" autofocus>
           <i class="fas fa-search"></i>
         </div>
@@ -70,14 +70,14 @@
       </aside>
 
       <section class="w-full">
-        <div class="h4 p-8 pt-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi!</div>
+        <div class="h4 p-6 sm:p-8 pt-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi!</div>
 
         <section class="flex flex-wrap items-end w-full">
           <header class="aip[page-title] w-full mx-6">
             <h1><a href="#"><span>News</span></a><sup class="h3 text-bitter-lemon"><i class="fas fa-certificate"></i></sup></h1>
           </header>
           <section class="flex flex-wrap items-start w-full">
-            <div class="relative w-1/2 p-6 pt-0">
+            <div class="relative w-full sm:w-1/2 p-6 pt-0">
               <a href="#" class="outline-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
                   <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
@@ -85,7 +85,7 @@
                 </article>
               </a>
             </div>
-            <div class="relative w-1/2 p-6 pt-0">
+            <div class="relative w-full sm:w-1/2 p-6 pt-0">
               <a href="#" class="outline-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
                   <div><span class="h5">12/03/2021</span> <span class="h5">Libero</span></div>
@@ -101,7 +101,7 @@
             <h1><a href="#"><span>Events</span></a><sup class="h3 text-bitter-lemon"><i class="fas fa-certificate"></i></sup></h1>
           </header>
           <section class="flex flex-wrap items-start w-full">
-            <div class="relative w-1/2 p-6 pt-0">
+            <div class="relative w-full sm:w-1/2 p-6 pt-0">
               <a href="#" class="outline-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
                   <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
@@ -119,14 +119,32 @@
 
         <section class="p-6">
           <div class="h4">Partners:</div>
-          <a href="#" class="aip[partner]"></a>
-          <a href="#" class="aip[partner]"></a>
-          <a href="#" class="aip[partner]"></a>
-          <a href="#" class="aip[partner]"></a>
-          <a href="#" class="aip[partner]"></a>
-          <a href="#" class="aip[partner]"></a>
-          <a href="#" class="aip[partner]"></a>
-          <a href="#" class="aip[partner]"></a>
+          <div class="flex flex-row flex-wrap -mx-1">
+            <div class="w-1/2 sm:w-1/5 p-1">
+              <a href="#" class="aip[partner]"></a>
+            </div>
+            <div class="w-1/2 sm:w-1/5 p-1">
+              <a href="#" class="aip[partner]"></a>
+            </div>
+            <div class="w-1/2 sm:w-1/5 p-1">
+              <a href="#" class="aip[partner]"></a>
+            </div>
+            <div class="w-1/2 sm:w-1/5 p-1">
+              <a href="#" class="aip[partner]"></a>
+            </div>
+            <div class="w-1/2 sm:w-1/5 p-1">
+              <a href="#" class="aip[partner]"></a>
+            </div>
+            <div class="w-1/2 sm:w-1/5 p-1">
+              <a href="#" class="aip[partner]"></a>
+            </div>
+            <div class="w-1/2 sm:w-1/5 p-1">
+              <a href="#" class="aip[partner]"></a>
+            </div>
+            <div class="w-1/2 sm:w-1/5 p-1">
+              <a href="#" class="aip[partner]"></a>
+            </div>
+          </div>
         </section>
       </section>
     </main>
@@ -212,7 +230,9 @@
 <script>
   /* Toggle Search box */
   $(function () {
-		$('.JS_toggleSearch').on('click', function() {
+		$('.JS_toggleSearch').on('click', function(e) {
+      e.preventDefault();
+      
 			$('.JS_searchField').toggle().focus();
 
 			if ( $('.JS_toggleSearch').hasClass('foo') ) {
