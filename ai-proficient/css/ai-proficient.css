@@ -111,8 +111,9 @@
 
 .aip\[partner\] {
   background: none;
-  width: 10%;
+  width: calc(20% - 2rem);
   height: 50px;
   background-color: rgba(0,0,0,.5);
-  margin: 1rem;
+  margin: .5rem 1rem .5rem 0;
+  display: inline-block
 }
