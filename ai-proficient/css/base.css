@@ -9,9 +9,3 @@ body {
 [contenteditable=true]:empty::before {
   content: attr(placeholder);
 }
-
-sup {
-  font-size: 56%;
-  vertical-align: middle;
-  margin-left: .5rem;
-}

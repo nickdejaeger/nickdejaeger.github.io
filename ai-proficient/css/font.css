@@ -17,21 +17,23 @@ h2, .h2 {
 h3, .h3 {
   font-size: 24px;
   font-weight: 900;
+  line-height: 1.2;
 }
 h4, .h4 {
   font-size: 20px;
   font-weight: 900;
+  line-height: 1.2;
 }
 h5, .h5 {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-}
-h6, .h6 {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 900;
+  font-style: normal;
   text-transform: uppercase;
   letter-spacing: .05rem;
   opacity: .35;
+}
+h6, .h6 {
+  font-size: 10px;
 }
 @media (min-width: 640px) {
   .sm\:h1 {
@@ -47,17 +49,15 @@ h6, .h6 {
     font-size: 20px;
   }
   .sm\:h5 {
-    font-size: 16px;
+    font-size: 12px;
   }
   .sm\:h6 {
     font-size: 10px;
   }
 }
 
-p {
-  font-size: 14px;
-  font-size: .875rem;
-  line-height: 1.2rem;
+p, .p {
+  font-size: 16px;
   margin: 1rem 0;
 }
 
@@ -68,12 +68,7 @@ a {
   background: repeating-linear-gradient( to bottom, transparent, transparent 11px, #c2e812 11px, #c2e812 14px );
 }
 a:hover {
-  background: repeating-linear-gradient( to bottom, transparent, transparent 0px, #c2e812 0px, #c2e812 14px );
-}
-a.active {
-  font-style: normal;
-  pointer-events: none;
-  background: none !important;
+  background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 14px );
 }
 
 a h1,
@@ -85,31 +80,74 @@ a h6 {
   display: inline;
 }
 
-a h1, a .h1, a.h1,
-h1 a, .h1 a {
+a.h1, h1 a, .h1 a,
+.h1-link {
   background: repeating-linear-gradient( to bottom, transparent, transparent 50px, #c2e812 50px, #c2e812 60px );
 }
-a:hover h1, a:hover .h1, a:hover.h1,
-h1 a:hover, .h1 a:hover {
-  background: repeating-linear-gradient( to bottom, transparent, transparent 0px, #c2e812 0px, #c2e812 60px );
+a:hover.h1, h1 a:hover, .h1 a:hover,
+.h1-link:hover, a:hover .h1-link,
+a.h1:focus, h1 a:focus, .h1 a:focus,
+.h1-link:focus, a:focus .h1-link,
+a:focus h1, a:focus .h1 {
+  outline: 0;
+  background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 60px );
 }
 
-a h3, a .h3, a.h3,
-h3 a, .h3 a {
+
+
+
+a.h3, h3 a, .h3 a,
+.h3-link {
   font-weight: 900;
   font-style: italic;
   background: repeating-linear-gradient( to bottom, transparent, transparent 16px, #c2e812 16px, #c2e812 22px ); 
 }
-a:hover h3, a:hover .h3, a.h3:hover,
-h3 a:hover, .h3 a:hover {
-  background: repeating-linear-gradient( to bottom, transparent, transparent 0px, #c2e812 0px, #c2e812 14px );
+a.h3:hover, h3 a:hover, .h3 a:hover,
+.h3-link:hover, a:hover .h3-link,
+a.h3:focus, h3 a:focus, .h3 a:focus,
+.h3-link:focus, a:focus .h3-link,
+a:focus h3, a:focus .h3  {
+  outline: 0;
+  background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 22px );
 }
 
-a h4, a .h4, a.h4,
-h4 a, .h4 a {
+a.h4, h4 a, .h4 a,
+.h4-link {
   background: repeating-linear-gradient( to bottom, transparent, transparent 14px, #c2e812 14px, #c2e812 19px );
 }
-a:hover h4, a:hover .h4, a.h4:hover,
-h4 a:hover, .h4 a:hover {
-  background: repeating-linear-gradient( to bottom, transparent, transparent 0px, #c2e812 0px, #c2e812 19px );
+a.h4:hover, h4 a:hover, .h4 a:hover,
+.h4-link:hover, a:hover .h4-link,
+a.h4:focus, h4 a:focus, .h4 a:focus,
+.h4-link:focus, a:focus .h4-link,
+a:focus h4, a:focus .h4 {
+  outline: 0;
+  background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 19px );
 }
+
+a.h5, h5 a, .h5 a,
+.h5-link {
+  background: repeating-linear-gradient( to bottom, transparent, transparent 7px, #c2e812 7px, #c2e812 11px );
+}
+a.h5:hover, h5 a:hover, .h5 a:hover,
+.h5-link:hover, a:hover .h5-link,
+a.h5:focus, h5 a:focus, .h5 a:focus,
+.h5-link:focus, a:focus .h5-link,
+a:focus h5, a:focus .h5 {
+  outline: 0;
+  background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 11px );
+}
+
+
+
+
+
+sup {
+  font-size: 56%;
+  vertical-align: middle;
+  margin-left: .25rem;
+}
+sup.h3 {
+  top: -.75em;
+}
+
+
