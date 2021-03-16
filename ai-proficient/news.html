@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Proficient</title>
+  <title>News - AI Proficient</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,37 +13,71 @@
     <div data-depth="0.05"></div>
   </div>
 
-  <div class="relative p-8 sm:p-16 sm:pr-10">
+  <div class="relative p-8 lg:p-16 lg:pr-10">
 
-    <section class="flex flex-col sm:flex-row items-end">
-      <aside class="sm:w-64 sm:mr-12">
-        <a href="index.html" class="block sm:mr-12">
+    <section class="flex flex-col lg:flex-row lg:items-end">
+      <aside class="flex lg:w-64 lg:mr-12">
+        <a href="index.html" class="block self-start w-1/2 lg:w-auto lg:mr-12">
           <img class="test" src="img/logo.png">
         </a>
+        <nav class="flex flex-col items-end text-right w-1/2 lg:hidden">
+          <div class="flex flex-col h4">
+            <div class="mb-3">
+              <a href="about.html" class="">About</a>
+            </div>
+            <div class="mb-3">
+              <sup class="h6 text-bitter-lemon"><i class="fas fa-certificate"></i></sup><a href="news.html" class="">News</a>
+            </div>
+            <div class="mb-3">
+              <sup class="h6 text-bitter-lemon"><i class="fas fa-certificate"></i></sup><a href="#" class="">Events</a>
+            </div>
+            <div class="mb-3">
+              <a href="#" class="">Resources</a>
+            </div>
+            <div class="mb-3 mr-3">
+              <a href="#" class="">Demos</a>
+            </div>
+            <div class="mb-3">
+              <a href="#" class="">Collaborations</a>
+            </div>
+          </div>
+          <div class="flex flex-row h4 my-6 -mx-3">
+            <div class="m-3">
+              <a href="#" class="JS_toggleSearch"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="m-3">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="m-3">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </nav>
       </aside>
       <header class="aip[page-title] w-full">
-        <div class="aip[search-box] h3 m-6 sm:m-0 sm:mb-4 sm:ml-8 | JS_searchField">
+        <div class="aip[search-box] h3 m-6 lg:m-0 lg:mb-4 lg:ml-8 | JS_searchField">
           <input type="search" placeholder="Placeholder/resulttext" class="h3" value="" autofocus>
           <i class="fas fa-search"></i>
         </div>
+        <h1 class="mx-6"><span>News</span><sup class="h3 text-bitter-lemon"><i class="fas fa-certificate"></i></sup></h1>
       </header>
     </section>
 
-    <main class="flex flex-col sm:flex-row">
-      <aside class="sm:w-64 sm:mr-12">
-        <div class="hidden sm:block">
+    <main class="flex flex-col lg:flex-row">
+      <aside class="lg:w-64 lg:mr-12">
+        <div class="hidden lg:block">
           <img class="test" src="img/logo_text.png">
         </div>
-        <nav class="py-12 px-6">
+        <nav class="hidden lg:block absolute lg-:relative py-12 px-6">
           <div class="flex flex-col h4">
             <div class="my-3">
-              <a href="#" class="">About</a>
+              <a href="about.html" class="">About</a>
             </div>
             <div class="my-3">
-              <a href="#" class="">News</a><sup class="h6 text-bitter-lemon"><i class="fas fa-certificate"></i></sup>
+              <a href="news.html" class="is-active">News</a>
             </div>
             <div class="my-3">
-              <a href="#" class="">Events</a><sup class="h6 text-bitter-lemon"><i class="fas fa-certificate"></i></sup>
+              <a href="#" class="">Events</a>
             </div>
             <div class="my-3">
               <a href="#" class="">Resources</a>
@@ -70,14 +104,25 @@
       </aside>
 
       <section class="w-full">
-        <div class="h4 p-6 sm:p-16 sm:pt-0 text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi!</div>
 
-        <section class="flex flex-wrap items-end w-full">
-          <header class="aip[page-title] w-full mx-6">
-            <h1><a href="#"><span>News</span></a><sup class="h3 text-bitter-lemon"><i class="fas fa-certificate"></i></sup></h1>
+        <section class="flex flex-wrap items-end">
+          <div class="relative lg:p-6 lg:pt-0">
+            <article class="aip[article] py-6 px-8 lg:py-24 lg:px-32" data-shadow>
+              <h5>12/03/2021 <a href="#">Phasellus</a>, <a href="#">Sapien</a></h5>
+              <h2>Doloremque aliquam totam labore magni inventore</h2>
+              <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae architecto iusto doloribus aliquid, porro ipsam voluptates eius excepturi! Omnis at earum voluptatem perspiciatis quidem optio deserunt minima ipsam sed! Libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates?</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ullam cupiditate blanditiis amet, dolorum velit soluta quaerat culpa ratione est repellendus hic magnam nam debitis nostrum dolor ea id voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam totam labore magni inventore iste commodi, tempora dignissimos sit rem ullam dolor, quidem molestiae libero! Cumque doloremque veritatis molestiae laborum.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="flex flex-wrap items-end w-full py-6 lg:p-0">
+          <header class="aip[page-title] w-full lg:mx-6">
+            <h1><span>Archive</span></h1>
           </header>
           <section class="flex flex-wrap items-start w-full">
-            <div class="relative w-full sm:w-1/2 p-6 pt-0">
+            <div class="relative w-full lg:w-1/2 pb-6 lg:px-6 pt-0">
               <a href="#" class="block outline-none bg-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
                   <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
@@ -85,7 +130,7 @@
                 </article>
               </a>
             </div>
-            <div class="relative w-full sm:w-1/2 p-6 pt-0">
+            <div class="relative w-full lg:w-1/2 pb-6 lg:px-6 pt-0">
               <a href="#" class="block outline-none bg-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
                   <div><span class="h5">12/03/2021</span> <span class="h5">Libero</span></div>
@@ -93,31 +138,7 @@
                 </article>
               </a>
             </div>
-          </section>
-        </section>
-
-        <section class="flex flex-wrap items-end w-full">
-          <header class="aip[page-title] w-full mx-6">
-            <h1><a href="#"><span>Events</span></a><sup class="h3 text-bitter-lemon"><i class="fas fa-certificate"></i></sup></h1>
-          </header>
-          <section class="flex flex-wrap items-start w-full">
-            <div class="relative w-full sm:w-1/2 p-6 pt-0">
-              <a href="#" class="block outline-none bg-none">
-                <article class="aip[article] py-8 px-12" data-shadow>
-                  <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
-                  <h4 class="h4-link">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h4>
-                </article>
-              </a>
-            </div>
-          </section>
-        </section>
-
-        <section class="flex flex-wrap items-end w-full">
-          <header class="aip[page-title] w-full mx-6">
-            <h1><a href="#"><span>Resources</span></a></h1>
-          </header>
-          <section class="flex flex-wrap items-start w-full">
-            <div class="relative w-full sm:w-1/2 p-6 pt-0">
+            <div class="relative w-full lg:w-1/2 pb-6 lg:px-6 pt-0">
               <a href="#" class="block outline-none bg-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
                   <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
@@ -125,23 +146,39 @@
                 </article>
               </a>
             </div>
-            <div class="relative w-full sm:w-1/2 p-6 pt-0">
+            <div class="relative w-full lg:w-1/2 pb-6 lg:px-6 pt-0">
               <a href="#" class="block outline-none bg-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
-                  <div><span class="h5">12/03/2021</span> <span class="h5">Libero</span></div>
-                  <h4 class="h4-link">Doloremque aliquam</h4>
+                  <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
+                  <h4 class="h4-link">Doloremque aliquam totam labore magni inventore</h4>
                 </article>
               </a>
             </div>
-          </section>
-        </section>
-
-        <section class="flex flex-wrap items-end w-full">
-          <header class="aip[page-title] w-full mx-6">
-            <h1><a href="#"><span>Demos</span></a></h1>
-          </header>
-          <section class="flex flex-wrap items-start w-full">
-            <div class="relative w-full sm:w-1/2 p-6 pt-0">
+            <div class="relative w-full lg:w-1/2 pb-6 lg:px-6 pt-0">
+              <a href="#" class="block outline-none bg-none">
+                <article class="aip[article] py-8 px-12" data-shadow>
+                  <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
+                  <h4 class="h4-link">Doloremque aliquam totam labore magni inventore</h4>
+                </article>
+              </a>
+            </div>
+            <div class="relative w-full lg:w-1/2 pb-6 lg:px-6 pt-0">
+              <a href="#" class="block outline-none bg-none">
+                <article class="aip[article] py-8 px-12" data-shadow>
+                  <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
+                  <h4 class="h4-link">Doloremque aliquam totam labore magni inventore</h4>
+                </article>
+              </a>
+            </div>
+            <div class="relative w-full lg:w-1/2 pb-6 lg:px-6 pt-0">
+              <a href="#" class="block outline-none bg-none">
+                <article class="aip[article] py-8 px-12" data-shadow>
+                  <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
+                  <h4 class="h4-link">Doloremque aliquam totam labore magni inventore</h4>
+                </article>
+              </a>
+            </div>
+            <div class="relative w-full lg:w-1/2 pb-6 lg:px-6 pt-0">
               <a href="#" class="block outline-none bg-none">
                 <article class="aip[article] py-8 px-12" data-shadow>
                   <div><span class="h5">12/03/2021</span> <span class="h5">Phasellus</span></div>
@@ -152,36 +189,36 @@
           </section>
         </section>
 
-        <section class="p-6">
+        <section class="py-6 lg:p-6">
           <span class="h4">Tags:</span>
           <a href="#" class="h4">phasellus</a>, <a href="#" class="h4">luctus</a>, <a href="#" class="h4">sapien</a>, <a href="#" class="h4">commodo</a>, <a href="#" class="h4">tellus</a>, <a href="#" class="h4">justo magna</a>, <a href="#" class="h4">quis erat</a>
         </section>
 
-        <section class="p-6">
+        <section class="py-6 lg:p-6">
           <div class="h4">Partners:</div>
           <div class="flex flex-row flex-wrap -mx-1">
-            <div class="w-1/2 sm:w-1/5 p-1">
+            <div class="w-1/2 lg:w-1/5 p-1">
               <a href="#" class="aip[partner]"></a>
             </div>
-            <div class="w-1/2 sm:w-1/5 p-1">
+            <div class="w-1/2 lg:w-1/5 p-1">
               <a href="#" class="aip[partner]"></a>
             </div>
-            <div class="w-1/2 sm:w-1/5 p-1">
+            <div class="w-1/2 lg:w-1/5 p-1">
               <a href="#" class="aip[partner]"></a>
             </div>
-            <div class="w-1/2 sm:w-1/5 p-1">
+            <div class="w-1/2 lg:w-1/5 p-1">
               <a href="#" class="aip[partner]"></a>
             </div>
-            <div class="w-1/2 sm:w-1/5 p-1">
+            <div class="w-1/2 lg:w-1/5 p-1">
               <a href="#" class="aip[partner]"></a>
             </div>
-            <div class="w-1/2 sm:w-1/5 p-1">
+            <div class="w-1/2 lg:w-1/5 p-1">
               <a href="#" class="aip[partner]"></a>
             </div>
-            <div class="w-1/2 sm:w-1/5 p-1">
+            <div class="w-1/2 lg:w-1/5 p-1">
               <a href="#" class="aip[partner]"></a>
             </div>
-            <div class="w-1/2 sm:w-1/5 p-1">
+            <div class="w-1/2 lg:w-1/5 p-1">
               <a href="#" class="aip[partner]"></a>
             </div>
           </div>
@@ -189,15 +226,14 @@
       </section>
     </main>
 
-
     <footer class="flex flex-row items-end">
-      <aside class="sm:w-64 sm:mr-12">
-        <div class="py-12 px-6">
+      <aside class="lg:w-64 lg:mr-12">
+        <div class="py-12 lg:px-6">
           <div class="h6">The TRAPEZE project receives funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No. 883464.<br>Copyright &copy; 2021</div>
           <div class="h4 mt-6"><a href="#">Privacy Policy</a></div>
         </div>
       </aside>
-      <div class="w-full"></div>
+      <div class="hidden lg-block w-full"></div>
     </footer>
     
 
@@ -272,7 +308,7 @@
   $(function () {
 		$('.JS_toggleSearch').on('click', function(e) {
       e.preventDefault();
-
+      
 			$('.JS_searchField').toggle().focus();
 
 			if ( $('.JS_toggleSearch').hasClass('foo') ) {

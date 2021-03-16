@@ -106,6 +106,9 @@
 .aip\[article\] p {
   text-align: justify;
 }
+.aip\[article\] figure {
+  width: 40%;
+}
 
 /* Partners */
 
