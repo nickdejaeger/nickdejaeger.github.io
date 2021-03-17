@@ -131,6 +131,7 @@ a.h4:focus, h4 a:focus, .h4 a:focus,
 a:focus h4, a:focus .h4 {
   outline: 0;
   background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 19px );
+  box-shadow: 0 -2px #c2e812, 0 2px #c2e812;
 }
 
 a.h5, h5 a, .h5 a,
