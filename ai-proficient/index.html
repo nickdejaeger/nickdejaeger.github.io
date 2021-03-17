@@ -9,9 +9,11 @@
 
 <body class="bg-theme-a bg-theme-b bg-theme-c bg-theme-d">
 
+  <!--
   <div class="aip[bg]" id="scene1">
     <div data-depth="0.05"></div>
   </div>
+  -->
 
   <div class="relative p-8 lg:p-16 lg:pr-10">
 
@@ -243,9 +245,11 @@
 
 <script>
   // Background moving on cursor
+  /*
   var scene1 = document.getElementById('scene1');
   var parallaxInstance1 = new Parallax(scene1);
   parallaxInstance1.limit(false, false);
+  */
 </script>
 
 <script>
@@ -253,7 +257,7 @@
   ;(function () {
     let surface     = document.body,
         stack       = document.querySelectorAll('[data-shadow]'),    
-        opacity     = .15,        // From 0 to 1
+        opacity     = .2,        // From 0 to 1
         color       = "0, 0, 0", // RGB 0-255
         blur        = 50,         // From 0
         sensitivity = 15;        // From 1

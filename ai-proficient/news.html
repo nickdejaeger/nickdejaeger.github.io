@@ -9,9 +9,11 @@
 
 <body class="bg-theme-a bg-theme-b bg-theme-c bg-theme-d">
 
+  <!--
   <div class="aip[bg]" id="scene1">
     <div data-depth="0.05"></div>
   </div>
+  -->
 
   <div class="relative p-8 lg:p-16 lg:pr-10">
 
@@ -245,13 +247,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
 <script>
-  // Background moving on cursor
-  var scene1 = document.getElementById('scene1');
-  var parallaxInstance1 = new Parallax(scene1);
-  parallaxInstance1.limit(false, false);
-</script>
-
-<script>
   // Block Shadows
   ;(function () {
     let surface     = document.body,
@@ -273,34 +268,6 @@
       }
     }
   })();
-</script>
-
-<script>
-  // Randomize Partner Blocks
-  /*
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-  $(window).on('load', function() {
-    $('.aip\\[partner\\]').each(function() {
-      console.log('test');
-      $(this).css({
-        'margin-top': getRandomInt(4, 5) +'rem',
-        'margin-left': getRandomInt(1, 2) +'rem',
-      });
-    });
-
-    $('.JS_shift').each(function() {
-      console.log('test');
-      $(this).css({
-        'top': getRandomInt(0, 2) +'rem',
-        'left': '-' + getRandomInt(0, 1) + 'rem',
-      });
-    });
-  });
-  */
 </script>
 
 <script>
