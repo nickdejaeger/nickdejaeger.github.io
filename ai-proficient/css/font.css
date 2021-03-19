@@ -66,11 +66,14 @@ p {
   margin: 1rem 0;
 }
 
-a {
+a, .a {
   display: inline;
   font-weight: 900;
   font-style: italic;
   background: repeating-linear-gradient( to bottom, transparent, transparent 11px, #c2e812 11px, #c2e812 14px );
+}
+.a:hover {
+  background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 14px );
 }
 
 /*
@@ -93,63 +96,102 @@ a h6 {
   display: inline;
 }
 
-a.h1, h1 a, .h1 a,
-.h1-link {
+
+
+
+
+
+
+
+a h1,
+a.h1,
+h1 a,
+.h1 a {
   background: repeating-linear-gradient( to bottom, transparent, transparent 50px, #c2e812 50px, #c2e812 60px );
 }
-a:hover.h1, h1 a:hover, .h1 a:hover,
-.h1-link:hover, a:hover .h1-link,
+a:hover h1,
+a:hover.h1,
+h1 a:hover,
+.h1 a:hover,
 a.h1:focus, h1 a:focus, .h1 a:focus,
-.h1-link:focus, a:focus .h1-link,
 a:focus h1, a:focus .h1 {
   outline: 0;
   background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 60px );
 }
 
+a h2,
+a.h2,
+h2 a,
+.h2 a {
+  font-weight: 900;
+  font-style: italic;
+  background: repeating-linear-gradient( to bottom, transparent, transparent 22px, #c2e812 22px, #c2e812 30px ); 
+}
+a:hover h2,
+a.h2:hover,
+h2 a:hover,
+.h2 a:hover,
+a.h2:focus, h2 a:focus, .h2 a:focus,
+a:focus h2, a:focus .h2  {
+  outline: 0;
+  background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 30px );
+}
 
-
-
-a.h3, h3 a, .h3 a,
-.h3-link {
+a h3,
+a.h3,
+h3 a,
+.h3 a {
   font-weight: 900;
   font-style: italic;
   background: repeating-linear-gradient( to bottom, transparent, transparent 16px, #c2e812 16px, #c2e812 22px ); 
 }
-a.h3:hover, h3 a:hover, .h3 a:hover,
-.h3-link:hover, a:hover .h3-link,
+a:hover h3,
+a.h3:hover,
+h3 a:hover,
+.h3 a:hover,
 a.h3:focus, h3 a:focus, .h3 a:focus,
-.h3-link:focus, a:focus .h3-link,
 a:focus h3, a:focus .h3  {
   outline: 0;
   background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 22px );
 }
 
-a.h4, h4 a, .h4 a,
-.h4-link {
+a h4,
+a.h4,
+h4 a,
+.h4 a {
   background: repeating-linear-gradient( to bottom, transparent, transparent 14px, #c2e812 14px, #c2e812 19px );
 }
-a.h4:hover, h4 a:hover, .h4 a:hover,
-.h4-link:hover, a:hover .h4-link,
+a:hover h4,
+a.h4:hover,
+h4 a:hover,
+.h4 a:hover,
 a.h4:focus, h4 a:focus, .h4 a:focus,
-.h4-link:focus, a:focus .h4-link,
 a:focus h4, a:focus .h4 {
   outline: 0;
   background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 19px );
   box-shadow: 0 -2px #c2e812, 0 2px #c2e812;
 }
 
-a.h5, h5 a, .h5 a,
-.h5-link {
+a h5,
+a.h5,
+h5 a,
+.h5 a {
   background: repeating-linear-gradient( to bottom, transparent, transparent 7px, #c2e812 7px, #c2e812 11px );
 }
-a.h5:hover, h5 a:hover, .h5 a:hover,
-.h5-link:hover, a:hover .h5-link,
+a:hover h5,
+a.h5:hover,
+h5 a:hover,
+.h5 a:hover,
 a.h5:focus, h5 a:focus, .h5 a:focus,
-.h5-link:focus, a:focus .h5-link,
 a:focus h5, a:focus .h5 {
   outline: 0;
   background: repeating-linear-gradient( to bottom, transparent, transparent 0, #c2e812 0, #c2e812 11px );
 }
+
+
+
+
+
 
 
 
