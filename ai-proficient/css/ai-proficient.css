@@ -28,6 +28,18 @@
   height: 100%;
 }
 
+
+.aip\[logo\] {
+  display: block;
+  align-self: flex-start;
+  width: 35%;
+}
+@media (min-width: 1024px) {
+  .aip\[logo\] {
+      width: auto;
+  }
+}
+
 /* Blocks */
 
 .aip\[shadow-block\] {
@@ -93,6 +105,25 @@
 
 
 
+
+
+.aip\[block-link\] {
+  outline: 0;
+  background: none;
+  display: block;
+  transition: all .3s ease-in-out;
+  transform-origin: top left;
+}
+.aip\[block-link\]:hover {
+  transform: scale(.95);
+}
+.aip\[block-link\]:hover .aip\[article-shadow\] {
+  filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 0px 5px) !important;
+}
+
+
+
+
 /* Articles */
 
 .aip\[article\] {
@@ -118,6 +149,7 @@
   height: 100%;
   background-color: #FFF;
   z-index: -1;
+  transition: all .3s ease-in-out;
 }
 
 /* Partners */
