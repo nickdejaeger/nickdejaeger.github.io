@@ -4,7 +4,7 @@
   background: none;
 }
 .is-dimmed {
-  opacity: .5;
+  opacity: .35;
 }
 .is-disabeld {
   pointer-events: none;
