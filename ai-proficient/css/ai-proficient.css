@@ -116,7 +116,7 @@
   transform-origin: top left;
 }
 .aip\[block-link\]:hover {
-  transform: scale(.95);
+  transform: scale(.99);
 }
 .aip\[block-link\]:hover .aip\[block-link__shadow\] {
   filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 0px 5px) !important;
