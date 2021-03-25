@@ -168,14 +168,23 @@
 /* Partners */
 
 .aip\[partner\] {
-  display: block;
+  display: flex;
+  align-items: center;
   background: none;
   box-shadow: none;
-  width: 100%;
-  height: 50px;
-  background-color: rgba(0,0,0,.5);
+  margin-bottom: .5rem;
+  margin-right: 2rem;
 }
 .aip\[partner\]:hover {
-  background-color: rgba(0,0,0,.5);
   box-shadow: none;
+}
+.aip\[partner\] img {
+  max-width: 8rem;
+  max-height: 4rem;
+  filter: grayscale(1);
+  will-change: filter;
+  transition: filter .3s ease-in-out;
+}
+.aip\[partner\]:hover img {
+  filter: none;
 }
