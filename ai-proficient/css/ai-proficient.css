@@ -142,17 +142,12 @@
 .aip\[article\] {
   position: relative;
   background-color: rgba(255,255,255,.85);
-  text-align: justify;
 }
-.aip\[article\] h5 {
-  text-align: left;
+.aip\[article\] :not(h1, h2, h3, h4, h5, h6) {
+  text-align: justify;
 }
 .aip\[article\] h2 {
   margin-bottom: 2rem;
-  text-align: left;
-}
-.aip\[article\] p {
-  text-align: justify;
 }
 .aip\[article\] figure {
   width: 40%;
