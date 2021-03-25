@@ -115,7 +115,8 @@
   transition: all .3s ease-in-out;
   transform-origin: top left;
 }
-.aip\[block-link\]:hover {
+.aip\[block-link\]:hover,
+.aip\[block-link\]:focus {
   transform: scale(.99);
 }
 .aip\[block-link\]:focus h5,
