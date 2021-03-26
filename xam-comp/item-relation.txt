@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="fox.MainPage"
+    Title="TenForce App"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+>
+
+<ContentPage.Content>
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="0" StyleClass="bg-light">
+
+    <StackLayout Orientation="Vertical" Spacing="0" StyleClass="m-1, bg-white">
+
+        <StackLayout Spacing="0" StyleClass="px-1, py-05">
+            <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-none">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <FlexLayout Grid.Row="0" Grid.Column="0" AlignItems="Center">
+                    <Label Text="Settings" StyleClass="step-title, p-1" />
+                </FlexLayout>
+            </Grid>
+        </StackLayout>
+
+        <BoxView StyleClass="divider-2"></BoxView>
+
+        <StackLayout Spacing="0" StyleClass="p-1">
+            <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-none">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="40" />
+                </Grid.ColumnDefinitions>
+                <FlexLayout Grid.Row="0" Grid.Column="0" AlignItems="Center" StyleClass="px-1">
+                    <Label Text="ITEM RELATION" StyleClass="tab-title" />
+                    <Label Text="4" StyleClass="sup" />
+                </FlexLayout>
+                <Button Text="" Grid.Row="0" Grid.Column="1" StyleClass="paragraph, is-action"></Button>
+            </Grid>
+        </StackLayout>
+
+        <BoxView StyleClass="divider-2"></BoxView>
+
+        <StackLayout Spacing="0" StyleClass="mx-1, my-2">
+            <Label Text="SORTED BY" StyleClass="label, px-2, is-dimmed"></Label>
+            <FlexLayout Wrap="Wrap" AlignItems="Center">
+                <Button Text=" Title" StyleClass="tb-selector, bg-cloud" />
+                <Button Text="" StyleClass="paragraph, is-action, px-1"></Button>
+            </FlexLayout>
+        </StackLayout>
+
+        
+
+
+    </StackLayout>
+
+
+</StackLayout>
+</ContentPage.Content>
+</ContentPage>

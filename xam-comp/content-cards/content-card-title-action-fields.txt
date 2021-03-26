@@ -1,0 +1,44 @@
+<StackLayout Orientation="Vertical" Spacing="0" StyleClass="toolbox-bubble, p-1">
+        <BoxView StyleClass="toolbox-bubble__top"></BoxView>
+        <StackLayout Orientation="Vertical" Spacing="0">
+
+            <StackLayout Spacing="0" StyleClass="bg-none, px-3, py-1">
+                <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-none">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="40" />
+                    </Grid.ColumnDefinitions>
+                    <FlexLayout Grid.Row="0" Grid.Column="0" AlignItems="Center">
+                        <Label Text="A13N27.4.K" StyleClass="step-title" />
+                    </FlexLayout>
+                    <Button Grid.Row="0" Grid.Column="1" Text="" StyleClass="step-title, is-action" FontFamily="{StaticResource TFRegular}"></Button>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="bg-none, m-1">
+                <Label Text="STATUS" StyleClass="label, px-2, -mb-05, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <FlexLayout Wrap="Wrap">
+                    <Button Text="Incident validation" StyleClass="tb-selector" FontFamily="{StaticResource TFRegular}" />
+                </FlexLayout>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="bg-none, m-1">
+                <Label Text="DATE OF OCCURENCE" StyleClass="label, px-2, -mb-05, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <FlexLayout Wrap="Wrap">
+                    <Button Text="6/07/2020" StyleClass="tb-selector" FontFamily="{StaticResource TFRegular}" />
+                </FlexLayout>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="bg-none, m-1">
+                <Label Text="ASSIGNED TO" StyleClass="label, px-2, -mb-05, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <FlexLayout Wrap="Wrap">
+                    <Button Text="Vernon Nicholson" StyleClass="tb-selector" FontFamily="{StaticResource TFRegular}" />
+                </FlexLayout>
+            </StackLayout>
+
+        </StackLayout>
+        <BoxView StyleClass="toolbox-bubble__bottom"></BoxView>
+    </StackLayout>

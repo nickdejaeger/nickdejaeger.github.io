@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="fox.MainPage"
+    Title="TenForce App"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+>
+
+<ContentPage.Content>
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="0" StyleClass="bg-light">
+
+    <StackLayout Orientation="Vertical" Spacing="0" StyleClass="m-1, bg-white">
+
+        <StackLayout Spacing="0" StyleClass="px-1, py-05">
+            <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-none">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <FlexLayout Grid.Row="0" Grid.Column="0" AlignItems="Center">
+                    <Label Text="Settings" StyleClass="step-title, p-1" />
+                </FlexLayout>
+            </Grid>
+        </StackLayout>
+
+        <BoxView StyleClass="divider-2"></BoxView>
+
+        <StackLayout Spacing="0" StyleClass="p-1">
+            <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-none">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <FlexLayout Grid.Row="0" Grid.Column="0" AlignItems="Center">
+                    <Label Text="SORTING" FlexLayout.Grow="1" StyleClass="tab-title, px-1" />
+                    <Button Text="" StyleClass="paragraph, is-action, px-1"></Button>
+                </FlexLayout>
+            </Grid>
+        </StackLayout>
+
+        <BoxView StyleClass="divider-2"></BoxView>
+
+        <StackLayout Spacing="0" StyleClass="mx-1, my-2">
+            <Label Text="SORTED BY" StyleClass="label, px-2, is-dimmed"></Label>
+            <FlexLayout Wrap="Wrap" AlignItems="Center">
+                <Button Text=" Title" StyleClass="tb-selector, bg-cloud" />
+                <Button Text="" StyleClass="paragraph, is-action, px-1"></Button>
+            </FlexLayout>
+        </StackLayout>
+
+        <BoxView StyleClass="divider-2"></BoxView>
+
+        <StackLayout Spacing="0" StyleClass="p-1">
+            <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-none">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <FlexLayout Grid.Row="0" Grid.Column="0" AlignItems="Center">
+                    <Label Text="FILTERS" FlexLayout.Grow="1" StyleClass="tab-title, px-1" />
+                    <Button Text="" StyleClass="paragraph, is-action, px-1"></Button>
+                    <Button Text="" StyleClass="paragraph, is-action, px-1"></Button>
+                </FlexLayout>
+            </Grid>
+        </StackLayout>
+
+        <BoxView StyleClass="divider-2"></BoxView>
+
+        <StackLayout Spacing="0" StyleClass="m-1">
+
+            <StackLayout Spacing="0" StyleClass="my-1">
+                <Label Text="TITLE" StyleClass="label, px-2, is-dimmed"></Label>
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="14" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="14" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-cloud"></BoxView>
+                    <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-cloud">
+                        <Label Text="Ca" LineBreakMode="TailTruncation" StyleClass="paragraph" VerticalTextAlignment="Center" />
+                    </FlexLayout>
+                    <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-cloud"></BoxView>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="my-1">
+                <Label Text="STATUS" StyleClass="label, px-2, is-dimmed"></Label>
+                <FlexLayout Wrap="Wrap" AlignItems="Center">
+                    <Button Text=" Ongoing" StyleClass="tb-selector, bg-cloud" />
+                </FlexLayout>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="my-1">
+                <Label Text="LCATION" StyleClass="label, px-2, is-dimmed"></Label>
+                <FlexLayout Wrap="Wrap" AlignItems="Center">
+                    <Button Text=" Select" StyleClass="tb-selector, bg-cloud, text-placeholder" />
+                </FlexLayout>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="my-1">
+                <Label Text="DUE DATE" StyleClass="label, px-2, is-dimmed"></Label>
+                <FlexLayout Wrap="Wrap" AlignItems="Center">
+                    <Button Text=" 10.01.2020" StyleClass="tb-selector, bg-cloud" />
+                </FlexLayout>
+            </StackLayout>
+
+        </StackLayout>
+
+    </StackLayout>
+
+
+</StackLayout>
+</ContentPage.Content>
+</ContentPage>

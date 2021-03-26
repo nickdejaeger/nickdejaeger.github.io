@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="fox.MainPage"
+    Title="TenForce App"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+>
+
+<ContentPage.Content>
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="0" StyleClass="bg-dark">
+
+    <StackLayout Orientation="Vertical" Spacing="0" StyleClass="mt-1">
+        <StackLayout Orientation="Vertical" Spacing="0" StyleClass="bg-white">
+            <StackLayout Spacing="0" StyleClass="px-3, py-2">
+                <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-none">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <FlexLayout Grid.Row="0" Grid.Column="0" AlignItems="Center">
+                        <Label Text="Item relation label" StyleClass="step-title" />
+                    </FlexLayout>
+                </Grid>
+            </StackLayout>
+            <BoxView StyleClass="divider-2"></BoxView>
+            <StackLayout Spacing="0" StyleClass="px-1, py-2">
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="34" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="42" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-cloud"></BoxView>
+                    <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-cloud">
+                        <Label Text="filter all fields" LineBreakMode="TailTruncation" StyleClass="paragraph, text-black, is-dimmed" VerticalTextAlignment="Center" />
+                    </FlexLayout>
+                    <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-cloud"></BoxView>
+                    <Button Grid.Row="0" Grid.Column="3" Text="&#x2022;" StyleClass="paragraph, is-action"></Button>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+
+    <StackLayout Orientation="Vertical" Spacing="0" StyleClass="bg-white">
+        <StackLayout Orientation="Vertical" Spacing="0" StyleClass="toolbox-bubble, p-1, pt-0">
+            <BoxView StyleClass="toolbox-bubble__top"></BoxView>
+            <StackLayout Orientation="Vertical" Spacing="0">
+                <StackLayout Spacing="0" StyleClass="bg-none, px-2, py-1">
+                    <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-none">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <FlexLayout Grid.Row="0" Grid.Column="0" AlignItems="Center">
+                            <Label Text="Quisque tempor vitae ipsum a vestibulum" StyleClass="step-title, is-action" />
+                        </FlexLayout>
+                    </Grid>
+                </StackLayout>
+                <StackLayout Spacing="0" StyleClass="bg-none, m-1">
+                    <Label Text="STATUS" StyleClass="label, px-2, -mb-05, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="Incident validation" StyleClass="tb-selector" />
+                    </FlexLayout>
+                </StackLayout>
+                <StackLayout Spacing="0" StyleClass="bg-none, m-1">
+                    <Label Text="DATE OF OCCURENCE" StyleClass="label, px-2, -mb-05, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="6/07/2020" StyleClass="tb-selector" />
+                    </FlexLayout>
+                </StackLayout>
+                <StackLayout Spacing="0" StyleClass="bg-none, m-1">
+                    <Label Text="ASSIGNED TO" StyleClass="label, px-2, -mb-05, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="Vernon Nicholson" StyleClass="tb-selector" />
+                    </FlexLayout>
+                </StackLayout>
+                <StackLayout Spacing="0" StyleClass="bg-none, m-1">
+                    <Label Text="DESCRIPTION" StyleClass="label, px-2, is-dimmed"></Label>
+                    <Label Text="Tank 2B has leaked. Area 51 is under lockdown." StyleClass="tb-selector-miltiline" />
+                </StackLayout>
+            </StackLayout>
+            <BoxView StyleClass="toolbox-bubble__bottom"></BoxView>
+        </StackLayout>
+    </StackLayout>
+
+</StackLayout>
+</ContentPage.Content>
+</ContentPage>

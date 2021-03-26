@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="puma.MainPage"
+    Title="TenForce App"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+>
+
+<ContentPage.Content>
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="0" StyleClass="bg-light">
+
+
+    <StackLayout Orientation="Vertical" Spacing="0" StyleClass="bg-light">
+        <StackLayout Orientation="Vertical" Spacing="0" StyleClass="py-2">
+            <Grid ColumnSpacing="0" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="50" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Spacing="0" Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+                    <FlexLayout Direction="Row">
+                        <Label HeightRequest="22" Text="AUDIT • 325436 • ONGOING" StyleClass="label, pl-1, bg-black, text-white" VerticalTextAlignment="Center" />
+                        <BoxView HeightRequest="22" WidthRequest="10" CornerRadius="0 5 0 5" StyleClass="bg-black"></BoxView>
+                    </FlexLayout>
+                    <Label Text="ROP KVD" LineBreakMode="TailTruncation" StyleClass="page-title, px-1, text-black" />
+                </StackLayout>
+                <Button Grid.Row="0" Grid.Column="1" Text="" StyleClass="is-action, paragraph" />
+            </Grid>
+        </StackLayout>
+    </StackLayout>
+
+
+    <ScrollView Orientation="Vertical">
+
+        <StackLayout Orientation="Vertical" Spacing="0" StyleClass="mx-1, bg-white">
+
+            
+
+            <StackLayout Orientation="Vertical" Spacing="0" StyleClass="bg-white">
+                <StackLayout Orientation="Vertical" Spacing="0" StyleClass="bg-white" Margin="1,1,1,0">
+                    <StackLayout Spacing="0" StyleClass="px-3, py-2">
+                        <Label Text="Step header" StyleClass="step-title" />
+                    </StackLayout>
+                    <BoxView StyleClass="divider-3"></BoxView>
+                    <StackLayout Spacing="0" StyleClass="px-3, py-05">
+                        <FlexLayout Wrap="Wrap">
+                            <Button Text="ALL" StyleClass="tab-title, mr-1" />
+                            <Button Text="GALLERY&#x00B3;" StyleClass="tab-title, mr-1, is-action" />
+                        </FlexLayout>
+                    </StackLayout>
+                    <BoxView StyleClass="divider-3"></BoxView>
+                    <StackLayout Spacing="0" StyleClass="px-3, py-2">
+                        <Label Text="SECTION" StyleClass="tab-title" />
+                    </StackLayout>
+                    <BoxView StyleClass="divider-3"></BoxView>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" Spacing="0" StyleClass="py-2">
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="TEXT/NUMBER INPUT READ-ONLY •" StyleClass="label, px-2, is-dimmed"></Label>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="34" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-white"></BoxView>
+                        <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-white">
+                            <Label Text="Nulla at ante sem" LineBreakMode="TailTruncation" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" />
+                        </FlexLayout>
+                        <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-white"></BoxView>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="PLACEHOLDER" StyleClass="label, px-2, is-dimmed"></Label>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="34" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-cloud"></BoxView>
+                        <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-cloud, text-gray">
+                            <Label Text="Curabitur tempus dolor"
+                                   LineBreakMode="TailTruncation"
+                                   StyleClass="paragraph"
+                              
+                                   VerticalTextAlignment="Center"
+                                   />
+                        </FlexLayout>
+                        <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-cloud"></BoxView>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="TEXT/NUMBER INPUT" StyleClass="label, px-2, is-dimmed"></Label>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="34" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-cloud"></BoxView>
+                        <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-cloud">
+                            <Label Text="Nulla at ante sem"
+                                   LineBreakMode="TailTruncation"
+                                   StyleClass="paragraph, text-black"
+
+                                   VerticalTextAlignment="Center"
+                                   />
+                        </FlexLayout>
+                        <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-cloud"></BoxView>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="TEXT INPUT IN EDIT MODE" StyleClass="label, px-2, is-dimmed"></Label>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="34" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="40" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left"></BoxView>
+                        <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row">
+                            <Label Text="Nulla at ante sem" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" />
+                        </FlexLayout>
+                        <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right"></BoxView>
+                        <Button Grid.Row="0" Grid.Column="3" Text="" StyleClass="paragraph, is-action"></Button>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="ACTION" StyleClass="label, px-2, is-dimmed"></Label>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="34" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="40" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left"></BoxView>
+                        <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row">
+                            <Label Text="Nulam semper in urna lacinia sit" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" VerticalOptions="Start" />
+                        </FlexLayout>
+                        <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right"></BoxView>
+                        <Button Grid.Row="0" Grid.Column="3" Text="" StyleClass="paragraph, is-action"></Button>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="MULTIPLE ACTIONS" StyleClass="label, px-2, is-dimmed"></Label>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="34" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="40" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left"></BoxView>
+                        <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row">
+                            <Label Text="Nullam semper in urna duis l" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" VerticalOptions="Start" />
+                        </FlexLayout>
+                        <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right"></BoxView>
+                        <Button Grid.Row="0" Grid.Column="3" Text="" StyleClass="paragraph, is-action"></Button>
+                        <Button Grid.Row="0" Grid.Column="4" Text="" StyleClass="paragraph, is-action"></Button>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="TEXT INPUT MULTILINE" StyleClass="label, px-2, is-dimmed"></Label>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-cloud"></BoxView>
+                        <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-cloud, py-05">
+                            <Label Text="Duis lacus ipsum, lacinia sit amet ultricies quis sollicitudin quis massa" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" />
+                        </FlexLayout>
+                        <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-cloud"></BoxView>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="TEXT INPUT MULTILINE W ACTIONS" StyleClass="label, px-2, is-dimmed"></Label>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="40" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left"></BoxView>
+                        <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row">
+                            <Label Text="Aenean eleifend tellus at enim rhoncus hendrerit" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" />
+                        </FlexLayout>
+                        <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right"></BoxView>
+                        <Button Grid.Row="0" Grid.Column="3" Text="" StyleClass="paragraph, is-action"></Button>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="INLINE ACTION BUTTONS" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="CREATE" StyleClass="tb-selector, tab-title, bg-deepskyblue, text-white" />
+                        <Button Text="CANCEL" StyleClass="tb-selector, tab-title, bg-none, text-cadmium-red" />
+                        <Button Text="CANCEL" StyleClass="tb-selector, tab-title, bg-none, text-deepskyblue" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="DATE/TIME READ-ONLY" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="14/02/2018" StyleClass="tb-selector" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="DATE PLACEHOLDER" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" Ut vel consequat" StyleClass="tb-selector, bg-cloud, text-gray" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="DATE" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" 14/02/2018" StyleClass="tb-selector, bg-cloud" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="TIME PLACEHOLDER" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" Ut molis malesuada" StyleClass="tb-selector, bg-cloud, text-gray" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="TIME PLACEHOLDER" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" 13:25" StyleClass="tb-selector, bg-cloud" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="SORTED BY" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap" AlignItems="Center">
+                        <Button Text=" Title" StyleClass="tb-selector, bg-cloud" />
+                        <Button Text="" StyleClass="paragraph, is-action, px-1"></Button>
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="CHECKBOX READ-ONLY" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="" StyleClass="tb-selector, bg-jade" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="CHECKBOX" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="" StyleClass="tb-selector, paragraph, bg-jade" />
+                        <Button Text="" StyleClass="tb-selector, paragraph, bg-cloud, text-gray" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="SINGLE SELECT W INTERNAL READ-ONLY" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="Mauris pellentesque" StyleClass="tb-selector" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="SINGLE SELECT W INTERNAL" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" Mauris pellentesque" StyleClass="tb-selector, bg-cloud" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="SINGLE SELECT W INTERNAL PLACEHOLDER" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" Donec quis euismod" StyleClass="tb-selector, bg-cloud, text-gray" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="SINGLE SELECT WO INTERNAL READ-ONLY" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="Aenean" StyleClass="tb-selector" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="SINGLE SELECT WO INTERNAL" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="Aenean" StyleClass="tb-selector" />
+                        <Button Text="Eleifend" StyleClass="tb-selector, not-selected" />
+                        <Button Text="Tellus" StyleClass="tb-selector, not-selected" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="MULTISELECT W INTERNAL READ-ONLY" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="Curabitur, Tempus, Dolor" StyleClass="tb-selector, bg-none" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="MULTISELECT W INTERNAL" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" Curabitur, Tempus, Dolor" StyleClass="tb-selector, bg-cloud" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="MULTISELECT WO INTERNAL READ-ONLY" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="Vestibul, Malesua" StyleClass="tb-selector, bg-none" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="MULTISELECT WO INTERNAL" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap" StyleClass="multiple-selectors">
+                        <Button Text="Vestibul" StyleClass="tb-selector" />
+                        <Button Text="Malesua" StyleClass="tb-selector" />
+                        <Button Text="Hendrerit" StyleClass="tb-selector, bg-cloud, text-gray" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="LOCATION READ-ONLY" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="51,2253371, 4.4072608" StyleClass="tb-selector" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="LOCATION" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" 51,2253371, 4.4072608" StyleClass="tb-selector, bg-cloud" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="MAP" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" Show on the map" StyleClass="tb-selector, is-action" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="ATTACHMENTS" StyleClass="label, px-2, is-dimmed"></Label>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*" />
+                            <ColumnDefinition Width="50*" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0" Spacing="0" StyleClass="m-05">
+                            <BoxView StyleClass="border-rounded-top, bg-light" />
+                            <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" StyleClass="py-2, text-center, bg-light" HeightRequest="100">
+                                <Frame CornerRadius="20" Padding="0" Margin="0" IsClippedToBounds="True">
+                                    <Image Source="industry.jpg" Aspect="AspectFill" />
+                                </Frame>
+                            </FlexLayout>
+                            <BoxView StyleClass="border-rounded-bottom, bg-light" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1" Spacing="0" StyleClass="m-05">
+                            <BoxView StyleClass="border-rounded-top, bg-light" />
+                            <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" StyleClass="p-2, text-center, bg-light" HeightRequest="100">
+                                <Label Text="" StyleClass="page-title, is-action" />
+                                <Label Text="UNTITLED" StyleClass="label, is-action" />
+                                <Label Text=".DOCX" StyleClass="label, text-gray" />
+                            </FlexLayout>
+                            <BoxView StyleClass="border-rounded-bottom, bg-light" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="0" Spacing="0" StyleClass="m-05">
+                            <BoxView StyleClass="border-rounded-top, bg-light" />
+                            <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" StyleClass="p-2, text-center, bg-light" HeightRequest="100">
+                                <Label Text="" StyleClass="page-title, is-action" />
+                                <Label Text="RECORDINGS2463" StyleClass="label, is-action" />
+                                <Label Text=".MOV" StyleClass="label, text-gray" />
+                            </FlexLayout>
+                            <BoxView StyleClass="border-rounded-bottom, bg-light" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="ATTACHMENTS" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" Take a photo or browse" StyleClass="tb-selector, is-action" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="SIGNATURE" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" Sign" StyleClass="tb-selector, is-action" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="RTF" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="" StyleClass="tb-selector, is-action" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="ITEM RELATIONS LABEL" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="&#x00B3;" StyleClass="tb-selector, is-action" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="ITEM RELATIONS LABEL NO ENTRIES" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text="" StyleClass="tb-selector, is-action" />
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Spacing="0" StyleClass="m-1">
+                    <Label Text="LOCATION" StyleClass="label, px-2, is-dimmed"></Label>
+                    <FlexLayout Wrap="Wrap">
+                        <Button Text=" 51,2253371, 4.4072608" StyleClass="tb-selector, is-action" />
+                    </FlexLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Spacing="0" Orientation="Vertical" StyleClass="toolbox-bubble, p-1">
+                <BoxView StyleClass="toolbox-bubble__top"></BoxView>
+                <StackLayout Orientation="Vertical" Spacing="0" StyleClass="py-1">
+                    <StackLayout Spacing="0" StyleClass="bg-none, mx-2">
+                        <Label Text=" • ACTIONS: 2 • MANDATORY • : 0/4 • MONTH" LineBreakMode="TailTruncation" StyleClass="label, is-action"></Label>
+                    </StackLayout>
+                    <StackLayout Spacing="0" StyleClass="bg-none, mx-2, my-1">
+                        <Label Text="Are all flamable materials safely stored?" StyleClass="paragraph"></Label>
+                    </StackLayout>
+                    <StackLayout Spacing="0" StyleClass="mx-1, bg-none">
+                        <FlexLayout Wrap="Wrap">
+                            <Button Text="" StyleClass="tb-selector, bg-cloud, text-gray" />
+                            <Button Text="" StyleClass="tb-selector, bg-cadmium-red" />
+                            <Button Text="SOS" StyleClass="tb-selector, bg-cloud, text-gray" />
+                            <Button Text="n.v.t." StyleClass="tb-selector, bg-cloud, text-gray" />
+                        </FlexLayout>
+                    </StackLayout>
+                </StackLayout>
+                <BoxView StyleClass="toolbox-bubble__bottom"></BoxView>
+            </StackLayout>
+
+            <BoxView StyleClass="divider-3"></BoxView>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <FlexLayout Wrap="Wrap" >
+                    <Button Text="SUBMIT" StyleClass="tb-selector, tab-title, bg-deepskyblue, text-white" />
+                    <Button Text="REJECT" StyleClass="tb-selector, tab-title, bg-none, text-cadmium-red" />
+                </FlexLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</StackLayout>
+</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,14 @@
+<ScrollView Orientation="Vertical">
+        <StackLayout Orientation="Vertical" Spacing="0">
+            <StackLayout Orientation="Vertical" Spacing="0" StyleClass="toolbox-bubble, px-1, pb-1">
+                <BoxView StyleClass="toolbox-bubble__top"></BoxView>
+                <StackLayout Orientation="Vertical" Spacing="0" StyleClass="p-1">
+                    <Label Text="B_MASTER_ZAVENTEM_19384734542545 432546653654356434333333" LineBreakMode="TailTruncation" StyleClass="label, is-action" />
+                    <BoxView StyleClass="theme-progress, my-1, bg-goldenrod"></BoxView>
+                    <Label Text="In sagittis, turpis et tristique fringilla, dolor urna commodo magna. In sagittis, turpis et tristique fringilla, dolor urna commodo magna." StyleClass="paragraph"></Label>
+                    <Label Text="2 HOURS AGO" StyleClass="label, is-dimmed, text-right, mt-1"></Label>
+                </StackLayout>
+                <BoxView StyleClass="toolbox-bubble__bottom"></BoxView>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView> 

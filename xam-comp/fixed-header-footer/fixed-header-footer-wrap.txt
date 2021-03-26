@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="fox.MainPage"
+    Title="TenForce App"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+>
+
+<ContentPage.Content>
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="0" StyleClass="bg-light">
+
+    <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-black, text-white">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42.5" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+        </Grid.ColumnDefinitions>
+        <Button Text="" Grid.Row="0" Grid.Column="0" StyleClass="paragraph, text-white" FontFamily="{StaticResource TFRegular}" />
+        <Button Text="" Grid.Row="0" Grid.Column="1" StyleClass="paragraph, text-white" FontFamily="{StaticResource TFRegular}" />
+        <StackLayout Grid.Row="0" Grid.Column="2" Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="" StyleClass="paragraph, text-deepskyblue" FontFamily="{StaticResource TFRegular}" />
+            <Button Text="" StyleClass="paragraph, text-white" FontFamily="{StaticResource TFRegular}" WidthRequest="30" />
+        </StackLayout>
+        <Button Text="" Grid.Row="0" Grid.Column="3" StyleClass="paragraph, text-white" FontFamily="{StaticResource TFRegular}" />
+        <Button Text="" Grid.Row="0" Grid.Column="4" StyleClass="paragraph, text-white" FontFamily="{StaticResource TFRegular}" />
+    </Grid>
+
+    <StackLayout Orientation="Vertical" Spacing="0" StyleClass="toolbox-header, bg-black">
+        <BoxView StyleClass="border-1"></BoxView>
+        <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-light">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="50" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Spacing="0" Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+                <FlexLayout Direction="Row">
+                    <Label HeightRequest="22" Text="AUDIT 234234" StyleClass="label, pl-1, bg-black, text-white" VerticalTextAlignment="Center" FontFamily="{StaticResource TFSemiBold}" />
+                    <BoxView HeightRequest="22" WidthRequest="10" CornerRadius="0 5 0 5" StyleClass="bg-black"></BoxView>
+                </FlexLayout>
+                <Label Text="M_Master_Zaventem_193847333333" LineBreakMode="TailTruncation" StyleClass="page-title, px-1, text-black" FontFamily="{StaticResource TFBold}" />
+            </StackLayout>
+            <Button Grid.Row="0" Grid.Column="1" Text="" StyleClass="is-action, paragraph" FontFamily="{StaticResource TFRegular}" />
+        </Grid>
+    </StackLayout>
+    <BoxView StyleClass="divider-1"></BoxView>
+
+    <ScrollView StyleClass="mx-1" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout Orientation="Vertical" Spacing="0" StyleClass="py-1, mt-1, bg-white">
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="TEXT/NUMBER INPUT READ-ONLY" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="34" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="16" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-white"></BoxView>
+                    <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-white">
+                        <Label Text="4103055" LineBreakMode="TailTruncation" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" FontFamily="{StaticResource TFRegular}" />
+                    </FlexLayout>
+                    <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-white"></BoxView>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="PLACEHOLDER" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="34" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="16" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-cloud"></BoxView>
+                    <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-cloud, text-gray">
+                        <Label Text="Curabitur tempus dolor tempus dolor tempus dolor tempus dolor tempus dolor"
+                                LineBreakMode="TailTruncation"
+                                StyleClass="paragraph"
+                                FontFamily="{StaticResource TFRegular}"
+                                VerticalTextAlignment="Center"
+                                />
+                    </FlexLayout>
+                    <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-cloud"></BoxView>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="TEXT/NUMBER INPUT" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="34" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="16" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-cloud"></BoxView>
+                    <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-cloud">
+                        <Label Text="Nulla at ante sem"
+                                LineBreakMode="TailTruncation"
+                                StyleClass="paragraph, text-black"
+                                FontFamily="{StaticResource TFRegular}"
+                                VerticalTextAlignment="Center"
+                                />
+                    </FlexLayout>
+                    <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-cloud"></BoxView>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="TEXT INPUT IN EDIT MODE" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="34" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="16" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left"></BoxView>
+                    <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row">
+                        <Label Text="Nulla at ante sem" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" FontFamily="{StaticResource TFRegular}" />
+                    </FlexLayout>
+                    <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right"></BoxView>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="ACTION" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="34" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="40" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left"></BoxView>
+                    <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row">
+                        <Label Text="Nulam semper in urna" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" VerticalOptions="Start" FontFamily="{StaticResource TFRegular}" />
+                    </FlexLayout>
+                    <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right"></BoxView>
+                    <Button Grid.Row="0" Grid.Column="3" Text="" StyleClass="paragraph, is-action" FontFamily="{StaticResource TFRegular}"></Button>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="MULTIPLE ACTIONS" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="34" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="40" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left"></BoxView>
+                    <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row">
+                        <Label Text="Nullam semper in urna" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" VerticalOptions="Start" FontFamily="{StaticResource TFRegular}" />
+                    </FlexLayout>
+                    <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right"></BoxView>
+                    <Button Grid.Row="0" Grid.Column="3" Text="" StyleClass="paragraph, is-action" FontFamily="{StaticResource TFRegular}"></Button>
+                    <Button Grid.Row="0" Grid.Column="4" Text="" StyleClass="paragraph, is-action" FontFamily="{StaticResource TFRegular}"></Button>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="TEXT INPUT MULTILINE" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="16" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-cloud"></BoxView>
+                    <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-cloud, py-05">
+                        <Label Text="Duis lacus ipsum, lacinia sit amet ultricies quis sollicitudin quis massa" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" FontFamily="{StaticResource TFRegular}" />
+                    </FlexLayout>
+                    <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-cloud"></BoxView>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="TEXT INPUT MULTILINE W ACTIONS" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="16" />
+                        <ColumnDefinition Width="40" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left"></BoxView>
+                    <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row">
+                        <Label Text="Aenean eleifend tellus at enim rhoncus hendrerit" StyleClass="paragraph, text-black" VerticalTextAlignment="Center" FontFamily="{StaticResource TFRegular}" />
+                    </FlexLayout>
+                    <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right"></BoxView>
+                    <Button Grid.Row="0" Grid.Column="3" Text="" StyleClass="paragraph, is-action" FontFamily="{StaticResource TFRegular}"></Button>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="TIME PLACEHOLDER" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <FlexLayout Wrap="Wrap">
+                    <Button Text=" Ut mollis malesuada" StyleClass="tb-selector, bg-cloud, text-gray" FontFamily="{StaticResource TFRegular}" />
+                </FlexLayout>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="TIME" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <FlexLayout Wrap="Wrap">
+                    <Button Text=" 13:25" StyleClass="tb-selector, bg-cloud" FontFamily="{StaticResource TFRegular}" />
+                </FlexLayout>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="CHECKBOX READ-ONLY" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <FlexLayout Wrap="Wrap">
+                    <Button Text="" StyleClass="tb-selector, bg-jade" FontFamily="{StaticResource TFRegular}" />
+                </FlexLayout>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="CHECKBOX" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <FlexLayout Wrap="Wrap">
+                    <Button Text="" StyleClass="tb-selector, paragraph, bg-jade" FontFamily="{StaticResource TFRegular}" />
+                    <Button Text="" StyleClass="tb-selector, paragraph, bg-cloud, text-gray" FontFamily="{StaticResource TFRegular}" />
+                </FlexLayout>
+            </StackLayout>
+
+            <StackLayout Spacing="0" StyleClass="m-1">
+                <Label Text="SINGLE SELECT W INTERNAL READ-ONLY" StyleClass="label, px-2, is-dimmed" FontFamily="{StaticResource TFSemiBold}"></Label>
+                <FlexLayout Wrap="Wrap">
+                    <Button Text="Mauris pellentesque" StyleClass="tb-selector" FontFamily="{StaticResource TFRegular}" />
+                </FlexLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+    <StackLayout Spacing="0" StyleClass="bg-white, mx-1">
+        <BoxView StyleClass="divider-3"></BoxView>
+        <FlexLayout Wrap="Wrap" StyleClass="m-1">
+            <Button Text="SUBMIT" StyleClass="tb-selector, tab-title, m-05, bg-deepskyblue" />
+            <Button Text="CANCEL" StyleClass="tb-selector, tab-title, m-05, text-deepskyblue" />
+            <Button Text="REJECT" StyleClass="tb-selector, tab-title, m-05, bg-none, text-cadmium-red" />
+        </FlexLayout>
+    </StackLayout>
+
+
+
+</StackLayout>
+</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="fox.MainPage"
+    Title="TenForce App"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+>
+
+<ContentPage.Content>
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="0" StyleClass="bg-light">
+
+    <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-black, text-white">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42.5" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="" StyleClass="paragraph, text-deepskyblue, is-dimmed" />
+        </StackLayout>
+    </Grid>
+
+
+    <RelativeLayout StyleClass="p-1, bg-black">
+
+        <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center">
+
+            <StackLayout Spacing="0" Orientation="Vertical">
+
+                <BoxView HeightRequest="16" StyleClass="border-rounded-top, mx-1, bg-gray"></BoxView>
+                <FlexLayout Direction="Column" StyleClass="mx-1, bg-gray">
+                    <StackLayout Spacing="0" Orientation="Vertical" StyleClass="mx-3, mb-2">
+                        <Label Text="Create new profile" StyleClass="step-title, text-white"></Label>
+                    </StackLayout>
+                    <BoxView StyleClass="divider-6"></BoxView>
+                    <StackLayout Spacing="0" StyleClass="mx-1, my-1">
+                        <BoxView StyleClass="border-rounded-top, bg-black" />
+                        <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" StyleClass="p-2, bg-black" HeightRequest="300">
+                            <Label Text="" StyleClass="paragraph, text-action" />
+                            <Label Text="Allow to use my camera" StyleClass="paragraph, text-action" />
+                        </FlexLayout>
+                        <BoxView StyleClass="border-rounded-bottom, bg-black" />
+                        <StackLayout Spacing="0" StyleClass="mx-2, mt-1">
+                            <Label Text="Point camera directly to the QR code that you have received." StyleClass="paragraph, text-white"></Label>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Spacing="0" StyleClass="mx-3, my-2">  
+                        <Label Text="OR CREATE PROFILE MANUALY" StyleClass="label, text-goldenrod"></Label>
+                    </StackLayout>
+                </FlexLayout>
+                <BoxView HeightRequest="20" StyleClass="border-rounded-bottom, mx-1, bg-gray"></BoxView>
+                
+            </StackLayout>
+
+        </FlexLayout>
+
+    </RelativeLayout>
+
+
+</StackLayout>
+</ContentPage.Content>
+</ContentPage>

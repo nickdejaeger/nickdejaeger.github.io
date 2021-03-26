@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="puma.MainPage"
+    Title="TenForce App"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+>
+
+<ContentPage.Content>
+<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="0" StyleClass="bg-dark">
+
+    <ScrollView Orientation="Vertical">
+
+
+
+        <StackLayout Orientation="Vertical" Spacing="0" StyleClass="bg-white, p-8">
+
+            <StackLayout Orientation="Vertical" Spacing="0">
+                <StackLayout Orientation="Vertical" Spacing="0">
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Spacing="0" Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+                            <Label Text="Product Development" LineBreakMode="TailTruncation" StyleClass="page-title, px-4, py-8" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+ 
+            <StackLayout Spacing="0">
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                        <ColumnDefinition Width="50*" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Row="0" Grid.Column="0" Spacing="0" StyleClass="m-4">
+                        <BoxView StyleClass="border-rounded-top, bg-light" />
+                        <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" StyleClass="p-2, text-center, bg-light" HeightRequest="100">
+                            <Label Text="" StyleClass="page-title, is-action" />
+                            <Label Text="UNTITLED" StyleClass="label, is-action" />
+                        </FlexLayout>
+                        <BoxView StyleClass="border-rounded-bottom, bg-light" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1" Spacing="0" StyleClass="m-4">
+                        <BoxView StyleClass="border-rounded-top, bg-light" />
+                        <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" StyleClass="p-2, text-center, bg-light" HeightRequest="100">
+                            <Label Text="" StyleClass="page-title, is-action" />
+                            <Label Text="UNTITLED" StyleClass="label, is-action" />
+                        </FlexLayout>
+                        <BoxView StyleClass="border-rounded-bottom, bg-light" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" Grid.Column="0" Spacing="0" StyleClass="m-4">
+                        <BoxView StyleClass="border-rounded-top, bg-light" />
+                        <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" StyleClass="p-2, text-center, bg-light" HeightRequest="100">
+                            <Label Text="" StyleClass="page-title, is-action" />
+                            <Label Text="RECORDINGS2463" StyleClass="label, is-action" />
+                        </FlexLayout>
+                        <BoxView StyleClass="border-rounded-bottom, bg-light" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" Grid.Column="1" Spacing="0" StyleClass="m-4">
+                        <BoxView StyleClass="border-rounded-top, bg-light" />
+                        <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" StyleClass="p-2, text-center, bg-light" HeightRequest="100">
+                            <Label Text="" StyleClass="page-title, is-action" />
+                            <Label Text="RECORDINGS2463" StyleClass="label, is-action" />
+                        </FlexLayout>
+                        <BoxView StyleClass="border-rounded-bottom, bg-light" />
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" Spacing="0" StyleClass="m-4">
+
+                <BoxView StyleClass="border-rounded-top, bg-light" HeightRequest="8"></BoxView>
+
+                <StackLayout Orientation="Vertical" Spacing="0" StyleClass="px-32, py-8, bg-light">
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Spacing="0" Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+                            <Label Text="Content" LineBreakMode="TailTruncation" StyleClass="step-title, text-black" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Spacing="0" StyleClass="bg-light">
+
+                    <Grid ColumnSpacing="0" RowSpacing="0" StyleClass="px-16, py-8">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="34" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="42" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-cloud"></BoxView>
+                        <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-cloud">
+                            <Label Text="search" LineBreakMode="TailTruncation" StyleClass="paragraph, text-black, is-dimmed" VerticalTextAlignment="Center" />
+                        </FlexLayout>
+                        <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-cloud"></BoxView>
+                        <Button Grid.Row="0" Grid.Column="3" Text="" StyleClass="paragraph, is-action"></Button>
+                    </Grid>
+
+                    <StackLayout Orientation="Vertical" Spacing="0" StyleClass="px-24, py-4">
+                        <StackLayout Orientation="Vertical" Spacing="0">
+
+                            <StackLayout Spacing="0" StyleClass="bg-none, px-8, py-12">
+                                <Label Text="FEATURE" StyleClass="tab-title, is-action"></Label>
+                            </StackLayout>
+
+                            <StackLayout Spacing="0" StyleClass="bg-none, px-8, py-12">
+                                <Label Text="BUGS" StyleClass="tab-title, is-action"></Label>
+                            </StackLayout>
+
+                            <StackLayout Spacing="0" StyleClass="bg-none, px-8, py-12">
+                                <Label Text="WORK IN PROGRESS" StyleClass="tab-title, is-action"></Label>
+                            </StackLayout>
+
+                            <StackLayout Spacing="0" StyleClass="bg-none, px-8, py-12">
+                                <Label Text="BUGS CREATED LAST MONTH" StyleClass="tab-title, is-action"></Label>
+                            </StackLayout>
+
+                            <StackLayout Spacing="0" StyleClass="bg-none, px-8, py-12">
+                                <Label Text=" LOAD MORE" StyleClass="label, is-action"></Label>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <BoxView StyleClass="border-rounded-bottom, bg-light" HeightRequest="8"></BoxView>
+
+            </StackLayout>
+
+        </StackLayout>
+
+
+
+    </ScrollView>
+
+</StackLayout>
+</ContentPage.Content>
+</ContentPage>

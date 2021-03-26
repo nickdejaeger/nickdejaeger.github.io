@@ -1,0 +1,67 @@
+<Grid ColumnSpacing="0" RowSpacing="0" StyleClass="bg-black, text-white">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42.5" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="" StyleClass="paragraph, text-deepskyblue, is-dimmed" FontFamily="{StaticResource TFRegular}" />
+        </StackLayout>
+    </Grid>
+
+
+    <RelativeLayout StyleClass="p-1, bg-black">
+
+        <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center">
+
+            <StackLayout Spacing="0" Orientation="Vertical">
+
+                <FlexLayout Direction="Column" StyleClass="mx-1, bg-dark">
+
+                    <StackLayout Spacing="0" Orientation="Vertical" StyleClass="mx-3, mt-2, mb-1">
+                        <Grid ColumnSpacing="0" RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="40" />
+                            </Grid.ColumnDefinitions>
+                            <FlexLayout Grid.Row="0" Grid.Column="0" Direction="Column">
+                                <Label Text="Authenticate" StyleClass="step-title, text-white"></Label>
+                                <Label Text="SERVER.COM" StyleClass="label, text-white, is-dimmed"></Label>
+                            </FlexLayout>
+                            <Button Grid.Row="0" Grid.Column="1" Text="" StyleClass="paragraph, is-action"></Button>
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView StyleClass="divider-6"></BoxView>
+
+                    <StackLayout Spacing="0" StyleClass="mx-1, my-1">
+                        <StackLayout Spacing="0" StyleClass="my-1">
+                            <Grid ColumnSpacing="0" RowSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="34" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="16" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="16" />
+                                </Grid.ColumnDefinitions>
+                                <BoxView Grid.Row="0" Grid.Column="0" StyleClass="border-input-left, bg-cloud"></BoxView>
+                                <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Row" StyleClass="bg-cloud">
+                                    <Label Text=" Enter your 4-digit pin" StyleClass="paragraph, text-white, is-dimmed" VerticalTextAlignment="Center" />
+                                </FlexLayout>
+                                <BoxView Grid.Row="0" Grid.Column="2" StyleClass="border-input-right, bg-cloud"></BoxView>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+
+                </FlexLayout>
+                
+            </StackLayout>
+
+        </FlexLayout>
+
+    </RelativeLayout>
