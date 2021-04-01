@@ -143,9 +143,6 @@
   position: relative;
   background-color: rgba(255,255,255,.85);
 }
-.aip\[article\] :not(h1, h2, h3, h4, h5, h6) {
-  text-align: justify;
-}
 .aip\[article\] h2 {
   margin-bottom: 2rem;
 }
@@ -236,7 +233,8 @@
   width: 100%;
 }
 .aip\[wp-editor\] .wp-block-gallery {
-  margin: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 .aip\[wp-editor\] .wp-block-gallery ul {
   list-style: none;
