@@ -241,3 +241,21 @@
 .aip\[wp-editor\] .wp-block-gallery ul {
   list-style: none;
 }
+.aip\[wp-editor\] .wp-block-pullquote {
+  margin: 4rem 0;
+  text-align: center;
+}
+.aip\[wp-editor\] .wp-block-pullquote cite {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.aip\[wp-editor\] .wp-block-pullquote p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.aip\[wp-editor\] .wp-block-file .wp-block-file__button {
+  box-shadow: none;
+  font-weight: bold;
+  color: #C2E813 !important
+}
