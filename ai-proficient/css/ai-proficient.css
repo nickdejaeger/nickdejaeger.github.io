@@ -188,3 +188,56 @@
 .aip\[partner\]:hover img {
   filter: none;
 }
+
+/* Wordpress Editor */
+
+.aip\[wp-editor\] h1,
+.aip\[wp-editor\] h2,
+.aip\[wp-editor\] h3,
+.aip\[wp-editor\] h4,
+.aip\[wp-editor\] h5,
+.aip\[wp-editor\] h6 {
+  margin: 0;
+  font-weight: 900;
+  line-height: normal;
+}
+.aip\[wp-editor\] h1 + h1,
+.aip\[wp-editor\] h2 + h2,
+.aip\[wp-editor\] h3 + h3,
+.aip\[wp-editor\] h4 + h4,
+.aip\[wp-editor\] h5 + h5,
+.aip\[wp-editor\] h6 + h6 {
+  margin-top: 1rem;
+}
+.aip\[wp-editor\] h1 {
+  font-size: 32px;
+}
+.aip\[wp-editor\] h2 {
+  font-size: 24px;
+}
+.aip\[wp-editor\] h3 {
+  font-size: 20px;
+}
+.aip\[wp-editor\] h4 {
+  font-size: 18px;
+}
+.aip\[wp-editor\] h5 {
+  font-size: 14px;
+}
+.aip\[wp-editor\] h6 {
+  font-size: 10px;
+}
+.aip\[wp-editor\] ul {
+  list-style: disc;
+  margin: 1rem;
+  padding: 0;
+}
+.aip\[wp-editor\] figure {
+  width: 100%;
+}
+.aip\[wp-editor\] .wp-block-gallery {
+  margin: -1rem;
+}
+.aip\[wp-editor\] .wp-block-gallery ul {
+  list-style: none;
+}

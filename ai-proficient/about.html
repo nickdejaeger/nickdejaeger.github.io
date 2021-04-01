@@ -11,7 +11,7 @@
   <link rel="manifest" href="assets/favicon/site.webmanifest">
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="theme-color" content="#ffffff">
-  
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -65,7 +65,7 @@
         </nav>
       </aside>
       <header class="aip[page-title] w-full">
-        <div class="aip[search-box] h3 lg:mb-4 lg:ml-6 | JS_searchField">
+        <div class="aip[search-box] h3 lg:mb-4 lg:ml-8 | JS_searchField">
           <input type="search" placeholder="Placeholder/resulttext" class="h3" value="" autofocus>
           <i class="fas fa-search"></i>
         </div>
@@ -117,7 +117,7 @@
 
         <section class="flex flex-wrap items-end">
           <div class="relative lg:p-6 lg:pt-0">
-            
+
             <article class="aip[article]" data-shadow>
               <figure class="relative float-right -mt-4 -mr-4 lg:-mt-8 lg:-mr-8">
                 <img src="img/about.jpg" alt="">
@@ -144,7 +144,7 @@
       </aside>
       <div class="hidden lg-block w-full"></div>
     </footer>
-    
+
 
   </div>
 
@@ -159,7 +159,7 @@
   // Block Shadows
   ;(function () {
     let surface     = document.body,
-        stack       = document.querySelectorAll('[data-shadow]'),    
+        stack       = document.querySelectorAll('[data-shadow]'),
         opacity     = .15,        // From 0 to 1
         color       = "0, 0, 0", // RGB 0-255
         blur        = 50,         // From 0
@@ -184,7 +184,7 @@
   $(function () {
 		$('.JS_toggleSearch').on('click', function(e) {
       e.preventDefault();
-      
+
 			$('.JS_searchField').toggle().focus();
 
 			if ( $('.JS_toggleSearch').hasClass('foo') ) {

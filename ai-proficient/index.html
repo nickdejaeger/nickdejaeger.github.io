@@ -65,7 +65,7 @@
         </nav>
       </aside>
       <header class="aip[page-title] w-full">
-        <div class="aip[search-box] h3 lg:mb-4 lg:ml-6 | JS_searchField">
+        <div class="aip[search-box] h3 lg:mb-4 lg:ml-8 | JS_searchField">
           <input type="search" placeholder="Placeholder/resulttext" class="h3" value="" autofocus>
           <i class="fas fa-search"></i>
         </div>
@@ -113,7 +113,13 @@
       </aside>
 
       <section class="w-full">
-        <div class="h4 py-6 lg:p-16 lg:pt-0 text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi! Lorem ipsum dolor, sit amet consectetur <a href="#">adipisicing elit laboriosam, dolor dolore!</a> Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi!</div>
+
+        <div class="py-6 lg:p-16 lg:pt-0 lg:mx-2">
+          <figure class="float-right lg:float-none lg:absolute lg:w-1/4 lg:top-0 lg:right-0 mb-4 lg:mb-0 lg:mt-16 lg:mr-16">
+            <img src="img/about.jpg" alt="">
+          </figure>
+          <p class="relative h4 m-0 text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, dolor dolore! Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi! Lorem ipsum dolor, sit amet consectetur <a href="#">adipisicing elit laboriosam, dolor dolore!</a> Ipsa eaque, possimus tenetur eveniet delectus minima in expedita molestiae numquam sed molestias fugit! Consequatur illum iusto deserunt commodi!</p>
+        </div>
 
         <section class="flex flex-wrap items-end w-full">
           <header class="aip[page-title] w-full lg:mx-6">
@@ -255,7 +261,7 @@
       </aside>
       <div class="hidden lg-block w-full"></div>
     </footer>
-    
+
 
   </div>
 
@@ -277,7 +283,7 @@
   // Block Shadows
   ;(function () {
     let surface     = document.body,
-        stack       = document.querySelectorAll('[data-shadow]'),    
+        stack       = document.querySelectorAll('[data-shadow]'),
         opacity     = .2,        // From 0 to 1
         color       = "0, 0, 0", // RGB 0-255
         blur        = 50,         // From 0
