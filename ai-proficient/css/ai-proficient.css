@@ -169,21 +169,35 @@
   align-items: center;
   background: none;
   box-shadow: none;
-  margin-bottom: .5rem;
-  margin-right: 2rem;
+  width: 33.33333332%;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 .aip\[partner\]:hover {
   box-shadow: none;
 }
 .aip\[partner\] img {
-  max-width: 8rem;
-  max-height: 4rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
   filter: grayscale(1);
   will-change: filter;
   transition: filter .3s ease-in-out;
 }
 .aip\[partner\]:hover img {
   filter: none;
+}
+@media (min-width: 1024px) {
+  .aip\[partner\] {
+    width: auto;
+    margin: 0 1rem;
+
+  }
+  .aip\[partner\] img {
+    max-width: 8rem;
+    max-height: 4rem;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
 }
 
 /* Wordpress Editor */
