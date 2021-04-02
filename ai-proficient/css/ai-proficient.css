@@ -204,7 +204,7 @@
 .aip\[wp-editor\] h4 + h4,
 .aip\[wp-editor\] h5 + h5,
 .aip\[wp-editor\] h6 + h6 {
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 .aip\[wp-editor\] h1 {
   font-size: 32px;
