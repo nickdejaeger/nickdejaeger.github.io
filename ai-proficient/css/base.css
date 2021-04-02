@@ -9,3 +9,7 @@ body {
 [contenteditable=true]:empty::before {
   content: attr(placeholder);
 }
+
+.-z-1 {
+  z-index: -1;
+}
