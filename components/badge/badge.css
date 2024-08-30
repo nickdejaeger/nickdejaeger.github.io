@@ -1,0 +1,78 @@
+.badge {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .5rem;
+    padding: 1rem;
+    border: 1px solid #EEE;
+    border-radius: .5rem;
+}
+.badge__picture {
+    position: relative;
+    border-radius: 999999px;
+    overflow: hidden;
+    width: 88px;
+    height: 88px;
+    min-width: 88px;
+    max-width: 88px;
+    min-height: 88px;
+    max-height: 88px;
+    background-color: #E0E0E0;
+}
+.badge__picture img {
+    width: 100%;
+    min-width: auto;
+    max-width: 88px;
+    height: auto;
+    min-height: auto;
+    max-height: none;
+}
+.badge__bio {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.badge__head {
+    display: flex;
+    flex-direction: column;
+}
+.badge__title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.badge__label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: .75;
+}
+.badge__socials {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.badge__socials a {
+    color: #945E00;
+}
+.badge__socials a:hover {
+    transform: translateY(2px);
+}
+.badge__socials a svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+@media (max-width: 320px) {
+    .badge {
+        flex-direction: column;
+    }
+    .badge__bio {
+        flex-direction: column-reverse;
+    }
+    .badge__bio,
+    .badge__head {
+        align-items: center;
+        text-align: center;
+    }
+}
