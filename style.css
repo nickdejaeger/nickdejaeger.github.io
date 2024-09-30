@@ -1,0 +1,157 @@
+body {
+  font-family: 'Source Sans Pro', 'TF-Regular', Arial, sans-serif;
+  font-kerning: normal;
+  font-size: 1rem;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-feature-settings: "kern" 1,"liga" 0;
+  font-feature-settings: "kern" 1,"liga" 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+  margin: 0;
+}
+body h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+body h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+.box {
+  max-width: 1024px;
+  margin: auto;
+  padding: 0 2%;
+}
+
+.btn {
+  background-color: #ebebeb;
+  border-radius: 1.75rem;
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  cursor: pointer;
+  border: 1px solid #d6d6d6;
+  transition: all .25s ease-in-out;
+}
+.btn--active {
+  background-color: #2e2ee2;
+  color: #ffffff;
+  cursor: default;
+}
+.btn:not(.btn--active):hover {
+  background-color: #dddddd;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 4rem 0 0 0;
+}
+.header figure img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 99999px;
+}
+.header aside {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: .5rem;
+}
+.header aside a {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  line-height: 1.2;
+  
+}
+.header aside a span {
+  font-size: .75rem;
+  color: #2e2ee2;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+article {
+  background-color: #f7f7f7;
+  border: 1px solid #ebebeb;
+  border-radius: .5rem;
+  min-height: 7rem;
+  padding: 1rem 1.5rem;
+}
+article header {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  margin: 0 0 1rem 0;
+}
+article header a {
+  text-decoration: underline;
+}
+
+.tabs .tab:not(.tab--active) {
+  display: none;
+}
+
+
+
+
+.portfolios {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.tags span {
+  font-size: .85rem;
+  line-height: 1.2;
+}
+
+.exp {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: #CCC;
+}
+.exp__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #2e2ee2;
+}
+
+
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 0 1rem 0;
+}
+
