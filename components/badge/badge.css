@@ -19,7 +19,20 @@
     max-height: 88px;
     background-color: #E0E0E0;
 }
+.badge__picture::before {
+    content: 'JN';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    font-weight: 700;
+}
 .badge__picture img {
+    position: relative;
     width: 100%;
     min-width: auto;
     max-width: 88px;
