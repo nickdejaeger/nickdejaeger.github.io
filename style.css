@@ -15,10 +15,10 @@ body {
 body h1 {
   font-size: 2rem;
   font-weight: 900;
-  line-height: 1;
+  line-height: 1.2;
 }
 body h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -54,7 +54,6 @@ body h2 {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
   margin: 4rem 0 0 0;
 }
 .header figure img {
@@ -67,6 +66,9 @@ body h2 {
   flex-direction: row;
   align-items: baseline;
   gap: .5rem;
+}
+.header h2 {
+  font-size: 1.2rem;
 }
 .header aside a {
   display: flex;
@@ -95,19 +97,27 @@ article {
   background-color: #f7f7f7;
   border: 1px solid #ebebeb;
   border-radius: .5rem;
-  min-height: 7rem;
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
 }
 article header {
   display: flex;
   flex-direction: column;
   gap: .25rem;
-  margin: 0 0 1rem 0;
+  margin: 0 0 .5rem 0;
+}
+article header h2 {
+  line-height: 1;
 }
 article header a {
   text-decoration: underline;
 }
+article p {
+  color: rgb(49 49 49);
+}
 
+.tabs {
+  margin: 0 0 2rem;
+}
 .tabs .tab:not(.tab--active) {
   display: none;
 }
@@ -116,8 +126,8 @@ article header a {
 
 
 .portfolios {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
 
@@ -130,6 +140,7 @@ article header a {
 .tags span {
   font-size: .85rem;
   line-height: 1.2;
+  opacity: .75;
 }
 
 .exp {
@@ -155,3 +166,41 @@ article header a {
   margin: 0 0 1rem 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@property --bg-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+@keyframes spin {
+  to {
+    --bg-angle: 360deg;
+  }
+}
+
+
+.animated-border {
+  animation: spin 7.5s infinite ease running;
+  background: linear-gradient( to bottom, oklch(0.1 0.2 240 / 0.95), oklch(0.1 0.2 240 / 0.95) ) padding-box, conic-gradient(
+    from var(--bg-angle) in oklch longer hue,
+    oklch(0.65 0.3 28.96) 0 0
+  ) border-box;
+  border: 1px solid transparent;
+}
