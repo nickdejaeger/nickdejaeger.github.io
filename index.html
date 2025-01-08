@@ -2,362 +2,338 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="title" content="Portfolio Nick De Jaeger">
-        <meta name="description" content="Portfolio van Nick De Jaeger, Web Developer met expertise in HTML, CSS en JavaScript. Ik maak functionele webpagina's die toegankelijk zijn.">
-        <meta name="keywords" content="portfolio, nick, html, css, javascript, webpagina, functioneel, toegankelijk">
-        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Nick, UI Developer</title>
+        <meta name="description" content="Portfolio van Nick De Jaeger, Web Developer met expertise in HTML, CSS en JavaScript. Ik maak functionele webpagina's die toegankelijk zijn.">
+        <meta name="robots" content="index, follow">
         <meta name="language" content="English">
         <meta name="author" content="Nick De Jaeger">
 
-        
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nick De Jaeger</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        
+        <meta property="og:title" content="Porfolio Nick De Jaeger">
+        <meta property="og:description" content="Portfolio van Nick De Jaeger, Web Developer met expertise in HTML, CSS en JavaScript. Ik maak functionele webpagina's die toegankelijk zijn.">
+        <!--<meta property="og:image" content="image.jpg">-->
+
+        <link rel="stylesheet" href="assets/css/tailwind/2.2.19.min.css">
         <link rel="stylesheet" href="style.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-            @font-face {
-                font-family: "Source Sans Pro";
-                font-style: normal;
-                font-weight: 400;
-                src: url("../assets/fonts/TF-Regular.woff") format("woff");
-            }
-            @font-face {
-                font-family: "Source Sans Pro";
-                font-style: normal;
-                font-weight: 600;
-                src: url("../assets/fonts/TF-Semibold.woff") format("woff");
-            }
-            @font-face {
-                font-family: "Source Sans Pro";
-                font-style: normal;
-                font-weight: 700;
-                src: url("../assets/fonts/TF-Bold.woff") format("woff");
-            }
-            @font-face {
-                font-family: "TF-Regular";
-                font-style: normal;
-                font-weight: normal;
-                src: url("../assets/fonts/TF-Font.woff") format("woff");
-            }
-            body {
-                font-family: 'Source Sans Pro', 'TF-Regular', Arial, sans-serif;
-                font-size: 100%;
-                line-height: normal;
-                transition: font-size .25s ease-in-out;
-            }
-            
-            @media (max-width: 720px) {
 
-            }
-            @media (max-width: 320px) {
-
-            }
-
-            .button {
-                background: #3F2EE3;
-                background: conic-gradient(from -90deg, #3F2EE3, #CD2291);
-                text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 2px 3px 0px #000, 3px 4px 0px #000, 5px 5px 0px #000;
-            }
-
-            .bg-mov {
-                position: fixed;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                z-index: -1;
-            }
-            .bg-mov video {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: -1;
-                opacity: .5;
-                filter: invert(1);
-                pointer-events: none;
-            }
-        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
-
-    
 
     <body>
 
         <div class="bg-mov">
-        <video id="bgMov" loop autoplay muted>
-            <source src="assets/mov/bg.mp4" type="video/mp4">
-        </video>
+            <video id="bgMov" loop autoplay muted>
+                <source src="assets/mov/bg.mp4" type="video/mp4">
+            </video>
         </div>
 
-        <div class="box">
-        <header class="header">
-            <figure>
-            <img src="profile.png" alt="" class="animated-border">
-            </figure>
-            <div>
-            <h1>Nick De Jaeger</h1>
-            <h2>Front-end Web Developer</h2>
-            <aside>
-                <a href="mailto:nickdejaeger@hotmail.com?subject=I%20found%20your%20portfolio%20and%20want%20to%20reach%20out" title="Open your email program"><span></span>Email me</a>|
-                <a href="https://www.google.be/maps/place/Mechelen/@51.0347639,4.4183632,13z/data=!3m1!4b1!4m6!3m5!1s0x47c3e59450852049:0x40099ab2f4d5800!8m2!3d51.0259143!4d4.4775553!16zL20vMDE0aDly?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Open Mechelen, België in Google Maps"><span></span>Mechelen, België</a>|
-                <a href="https://github.com/nickdejaeger" target="_blank" title="Open my profile on GitHub">My GitHub</a>|
-                <a href="https://codepen.io/Nickdejaeger/" target="_blank" title="Open my profile on Codepen">My Codepen</a>
-            </aside>
-            </div>
-        </header>
-        </div>
-
-        <div class="box">
-        <nav>
-            <button class="btn btn--active" data-tabid="1">Portfolio</button>
-            <button class="btn" data-tabid="2">Skills & Tools</button>
-            <button class="btn" data-tabid="3">Gallery</button>
-        </nav>
-        </div>
-
-        <div class="box">
-        <main>
-            <div class="tabs">
-            <section class="tab tab--active" data-tab="1">
-
-                <div class="portfolios">
-                <article>
-                    <header>
-                    <h2>TenForce Toolbox</h2>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Figma</span>
-                        <span>Git</span>
-                    </div>
-                    </header>
-                    <p>Toolbox for the TenForce application. Contains components, mockup’s, color codes, icon sets, ...</p>
-                </article>
-                <article>
-                    <header>
-                    <h2><a href="https://academy.tenforce.net/" target="_blank">Academy</a></h2>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Figma</span>
-                        <span>WordPress</span>
-                    </div>
-                    </header>
-                    <p>Platform used by clients to teach them the usage of the TenForce application.</p>
-                </article>
-                <article>
-                    <header>
-                    <h2><a href="https://ai-proficient.eu/" target="_blank">AI Proficient</a></h2>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>WordPress</span>
-                    </div>
-                    </header>
-                    <p>Website for a EU-funded organization.</p>
-                </article>
-
-
-                
-                <article>
-                    <header>
-                    <h2><a href="https://devcenter.tenforce.com/" target="_blank">DevCenter</a></h2>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>PHP</span>
-                        <span>WordPress</span>
-                    </div>
-                    </header>
-                    <p>Platform designed for internal company usage.</p>
-                </article>
-                <article>
-                    <header>
-                    <h2><a href="https://www.tenforce.com/brandbook/">Brandbook</a></h2>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>WordPress</span>
-                    </div>
-                    </header>
-                    <p>User Interface for employees as a guide for company brand elements.</p>
-                </article>
-                <article>
-                    <header>
-                    <h2><a href="https://nickdejaeger.github.io/scoreboard" target="_blank">Scoreboard</a></h2>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Vue.js</span>
-                        <span>Tailwind</span>
-                    </div>
-                    </header>
-                    <p>A tool to easily track scores for a card game.</p>
-                </article>
-                <article>
-                    <header>
-                    <h2><a href="https://www.tenforce.com/hi/" target="_blank">Chatbot (Hi)</a></h2>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                    </div>
-                    </header>
-                    <p>Animated chatbot designed to guide clients to the next company event</p>
-                </article>
-                <article>
-                    <header>
-                    <h2><a href="https://www.tenforce.com/image-generator/" target="#">Banner Generator</a></h2>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>PHP</span>
-                    </div>
-                    </header>
-                    <p>Tool that generates social media banners based on user input parameters.</p>
-                </article>
+        <div class="container">
+            <header class="header">
+                <figure>
+                    <img src="profile.png" alt="" class="animated-border">
+                </figure>
+                <div>
+                <h1>Hi, I'm Nick</h1>
+                <h2>a UI Developer from Belgium</h2>
+                <aside>
+                    <a href="mailto:nickdejaeger@hotmail.com?subject=I%20found%20your%20portfolio%20and%20want%20to%20reach%20out" title="Open your email program"><span></span>Email me</a>|
+                    <a href="https://github.com/nickdejaeger" target="_blank" title="Open my profile on GitHub">My GitHub</a>|
+                    <a href="https://codepen.io/Nickdejaeger/" target="_blank" title="Open my profile on Codepen">My Codepen</a>
+                </aside>
                 </div>
-
-            </section>
-            <section class="tab" data-tab="2">
-
-                <div class="skills">
-                <article>
-                    <header>
-                    <h2>HTML5</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 99%;"></div>
-                    </div>
-                    </header>
-                    <p>SEO optimized, Semantic HTML, W3C Accessibility</p>
-                </article>
-                <article>
-                    <header>
-                    <h2>CSS3</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 99%;"></div>
-                    </div>
-                    </header>
-                    <p>SASS, SCSS, Tailwind, Bootstrap, Responsive Design</p>
-                </article>
-                <article>
-                    <header>
-                    <h2>JavaScript</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 85%;"></div>
-                    </div>
-                    </header>
-                    <p>Jquery</p>
-                </article>
-                <article>
-                    <header>
-                    <h2>PHP</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 80%;"></div>
-                    </div>
-                    </header>
-                </article>
-                <article>
-                    <header>
-                    <h2>Vue.js</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 75%;"></div>
-                    </div>
-                    </header>
-                </article>
-                <article>
-                    <header>
-                    <h2>Git</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 75%;"></div>
-                    </div>
-                    </header>
-                </article>
-                <article>
-                    <header>
-                    <h2>WordPress</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 90%;"></div>
-                    </div>
-                    </header>
-                    <p>Setup, plugins, custom themes, templates</p>
-                </article>
-                <article>
-                    <header>
-                    <h2>Figma</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 85%;"></div>
-                    </div>
-                    </header>
-                </article>
-                <article>
-                    <header>
-                    <h2>Responsive Design</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 95%;"></div>
-                    </div>
-                    </header>
-                </article>
-                <article>
-                    <header>
-                    <h2>Cross-browser Compatibility</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 90%;"></div>
-                    </div>
-                    </header>
-                </article>
-                <article>
-                    <header>
-                    <h2>Photoshop</h2>
-                    <div class="exp">
-                        <div class="exp__bar" style="width: 60%;"></div>
-                    </div>
-                    </header>
-                </article>
-                </div>
-
-            </section>
-            <section class="tab" data-tab="3">three</section>
-            </div>
-        </main>
+            </header>
         </div>
 
+        <div class="container">
+            <div class="tagline"><i>I craft</i> <span>accessable</span> <i>web interfaces.</i></div>
+        </div>
+
+        <div class="container container--tabs">
+            <nav>
+                <button data-tabid="1" class="active">Portfolio</button>
+                <button data-tabid="2">Skills & Tools</button>
+                <button data-tabid="3">Gallery</button>
+            </nav>
+            <main>
+                <div class="tabs">
+                    <section class="tab tab--active" data-tab="1">
+
+                        <div class="portfolios">
+                        <article>
+                            <header>
+                            <h2>TenForce Toolbox</h2>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>Figma</span>
+                                <span>Git</span>
+                            </div>
+                            </header>
+                            <p>Toolbox for the TenForce application. Contains components, mockup’s, color codes, icon sets, ...</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>Listly</h2>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>EmberJS</span>
+                                <span>UI</span>
+                            </div>
+                            </header>
+                            <p>User Interface for the mobile pmX application.</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2><abbr title="European Skills, Competences and Occupations">ESCO</abbr></h2>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>UI</span>
+                            </div>
+                            </header>
+                            <p>Building the UI for a Multilingual classification tool for European Skills, Competences, Qualifications and Occupations.</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2><a href="https://academy.tenforce.net/" target="_blank">Academy</a></h2>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>Figma</span>
+                                <span>WordPress</span>
+                            </div>
+                            </header>
+                            <p>Platform used by clients to teach them the usage of the TenForce application.</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2><a href="https://ai-proficient.eu/" target="_blank">AI Proficient</a></h2>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>WordPress</span>
+                            </div>
+                            </header>
+                            <p>Website for a EU-funded organization.</p>
+                        </article>
 
 
+                        
+                        <article>
+                            <header>
+                            <h2><a href="https://devcenter.tenforce.com/" target="_blank">DevCenter</a></h2>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>PHP</span>
+                                <span>WordPress</span>
+                            </div>
+                            </header>
+                            <p>Platform designed for internal company usage.</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2><a href="https://www.tenforce.com/brandbook/">Brandbook</a></h2>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>WordPress</span>
+                            </div>
+                            </header>
+                            <p>User Interface for employees as a guide for company brand elements.</p>
+                        </article>
+                        
+                        <article>
+                            <header>
+                            <h2><a href="https://nickdejaeger.github.io/scoreboard" target="_blank">Scoreboard</a></h2>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Vue.js</span>
+                                <span>Tailwind</span>
+                            </div>
+                            </header>
+                            <p>A personal side project tool to easily track scores for a card game.</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2><a href="https://www.tenforce.com/hi/" target="_blank">Chatbot (Hi)</a></h2>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                            </header>
+                            <p>Animated chatbot designed to guide clients to the next company event</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2><a href="https://www.tenforce.com/image-generator/" target="#">Banner Generator</a></h2>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>PHP</span>
+                            </div>
+                            </header>
+                            <p>Tool that generates social media banners based on user input parameters.</p>
+                        </article>
+                        </div>
+
+                    </section>
+
+                    <section class="tab" data-tab="2">
+
+                        <div class="skills">
+                        <article>
+                            <header>
+                            <h2>HTML5</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 99%;"></div>
+                            </div>
+                            </header>
+                            <p>SEO optimized, Semantic HTML, W3C Accessibility</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>CSS3</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 99%;"></div>
+                            </div>
+                            </header>
+                            <p>SASS, SCSS, Tailwind, Bootstrap, Responsive Design</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>JavaScript</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 85%;"></div>
+                            </div>
+                            </header>
+                            <p>Jquery</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>PHP</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 80%;"></div>
+                            </div>
+                            </header>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>Vue.js</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 75%;"></div>
+                            </div>
+                            </header>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>Git</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 75%;"></div>
+                            </div>
+                            </header>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>WordPress</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 90%;"></div>
+                            </div>
+                            </header>
+                            <p>Setup, plugins, custom themes, templates</p>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>Figma</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 85%;"></div>
+                            </div>
+                            </header>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>Responsive Design</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 95%;"></div>
+                            </div>
+                            </header>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>Cross-browser Compatibility</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 90%;"></div>
+                            </div>
+                            </header>
+                        </article>
+                        <article>
+                            <header>
+                            <h2>Photoshop</h2>
+                            <div class="exp">
+                                <div class="exp__bar" style="width: 60%;"></div>
+                            </div>
+                            </header>
+                        </article>
+                        </div>
+
+                    </section>
+
+                    <section class="tab" data-tab="3">
+                        <i>soon...</i>
+                    </section>
+                </div>
+            </main>
+        </div>
 
         <script>
-        $('nav button').on('click', function() {
-            $('nav button').removeClass('btn--active');
-            $(this).addClass('btn--active');
+            $('nav button').on('click', function() {
+                console.log('clicked')
+                $('nav button').removeClass('active');
+                $(this).addClass('active');
+                let tabid = $(this).attr('data-tabid');
+                $('[data-tab]').hide();
+                $('[data-tab="'+tabid+'"]').show();
+            });
+
+            $(document).ready(function(){
+                var words = [
+                    'responsive',
+                    'functional',
+                    'animated',
+                    'accessible'
+                ];
+                var currentIndex = 0;
+                var span = $('.tagline span');
+
+                function switchWord() {
+                    span.fadeOut(500, function(){
+                        span.text(words[currentIndex]).fadeIn(500);
+                        currentIndex = (currentIndex + 1) % words.length;
+                    });
+                }
+
+                setInterval(switchWord, 4500);
+            });
+
+            let vid = document.getElementById('bgMov');
+            vid.playbackRate = 1;
+
 
             
-
-            let tabid = $(this).attr('data-tabid');
-
-            $('[data-tab]').hide();
-            $('[data-tab="'+tabid+'"]').show();
-
-
-            console.log( tabid );
-        });
-
-
-        let vid = document.getElementById('bgMov');
-        vid.playbackRate = 2;
         </script>
-
     </body>
 </html>
