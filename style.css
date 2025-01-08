@@ -290,6 +290,12 @@ article header a {
 article p {
     color: rgb(49 49 49);
 }
+article picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+}
 
 
 
