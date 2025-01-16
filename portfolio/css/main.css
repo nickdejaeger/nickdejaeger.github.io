@@ -107,16 +107,21 @@ h2 {
 
 .img-profile {
     filter: contrast(14) hue-rotate(10deg);
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateX(0);
     position: fixed;
     top: -.7rem;
     left: -2.2rem;
-    width: 5rem;
+    width: 8rem;
     height: auto;
     opacity: .75;
-    z-index: -1;
-    pointer-events: none;
     will-change: filter;
+    z-index: 22;
+    padding: 3rem 3rem 0 0;
+    transition: all 1s ease-in-out;
+    animation: show 1s ease-in-out forwards;
+}
+.img-profile:hover {
+    animation: hide .1s ease-in-out forwards;
 }
 .img-profile-2 {
     filter: contrast(3) hue-rotate(25deg);
@@ -306,5 +311,23 @@ h2 {
     }
     .work-main header, .work > div:nth-child(even) .work-main header {
         padding: 0;
+    }
+}
+
+
+@keyframes hide {
+    0% {
+        transform: rotate(90deg) translateX(0);
+    }
+    100% {
+        transform: rotate(90deg) translateY(2rem);
+    }
+}
+@keyframes show {
+    0% {
+        transform: rotate(90deg) translateY(2rem);
+    }
+    100% {
+        transform: rotate(90deg) translateX(0);
     }
 }
