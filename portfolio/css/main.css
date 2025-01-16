@@ -2,6 +2,13 @@
     --deg: 0deg;
 }
 
+abbr[title] {
+    text-decoration-color: #CCC;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+    cursor: help;
+}
+
 .site-header {
     position: relative;
 }
@@ -40,11 +47,11 @@ h1 {
     letter-spacing: -1px;
 }
 h2 {
-    font-size: 0.75rem;
-    font-weight: 600;
-    line-height: 120%;
+    font-size: 2.25rem;
+    font-weight: 100;
+    line-height: 100%;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 .h1 {
     font-size: .75rem;
@@ -170,7 +177,13 @@ h2 {
     text-align: right;
     min-width: 33%;
 }
-.work-main a {
+.work > div .work-main header p {
+    padding: 0 0 0 25%;
+}
+.work > div:nth-child(even) .work-main header p {
+    padding: 0 25% 0 0;
+}
+.work-main > a {
     position: relative;
     display: block;
     box-shadow: 0 0 50px rgba(0, 0, 0, .2);
@@ -259,6 +272,10 @@ h2 {
     }
     .site-header .intro {
         padding: 12rem 4rem;
+    }
+    .work > div .work-main header p,
+    .work > div:nth-child(even) .work-main header p {
+        padding: 0;
     }
 }
 @media (max-width: 800px) {
