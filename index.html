@@ -47,6 +47,43 @@
     </header>
 
     <section class="work">
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><a href="https://tenforce.com/" target="_blank">Tenforce.com</a></h2>
+                    <p>Website for TenForce company.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind</span>
+                        <span>JS</span>
+                        <span>PHP</span>
+                        <span>WordPress</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/tenforce001.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce001.png" alt="TenForce website">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/tenforce002.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce002.png" alt="TenForce website">
+                </a>
+                <a href="assets/img/portfolio/tenforce003.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce003.png" alt="TenForce website">
+                </a>
+                <a href="assets/img/portfolio/tenforce004.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce004.png" alt="TenForce website">
+                </a>
+                <a href="assets/img/portfolio/tenforce005.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce005.png" alt="TenForce website">
+                </a>
+                <a href="assets/img/portfolio/tenforce006.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce006.png" alt="TenForce website">
+                </a>
+            </div>
+        </div>
         
         <div class="work-item">
             <div class="work-main">
@@ -109,43 +146,6 @@
                 </a>
                 <a href="assets/img/portfolio/tracker005.png" class="image-link">
                     <img src="assets/img/portfolio/tracker005.png" alt="Tracker mockups">
-                </a>
-            </div>
-        </div>
-
-        <div class="work-item">
-            <div class="work-main">
-                <header>
-                    <h2><a href="https://tenforce.com/" target="_blank">Tenforce.com</a></h2>
-                    <p>Website for TenForce company.</p>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Tailwind</span>
-                        <span>JS</span>
-                        <span>PHP</span>
-                        <span>WordPress</span>
-                    </div>
-                </header>
-                <a href="assets/img/portfolio/tenforce001.png" class="image-link">
-                    <img src="assets/img/portfolio/tenforce001.png" alt="TenForce website">
-                </a>
-            </div>
-            <div class="work-gallery">
-                <a href="assets/img/portfolio/tenforce002.png" class="image-link">
-                    <img src="assets/img/portfolio/tenforce002.png" alt="TenForce website">
-                </a>
-                <a href="assets/img/portfolio/tenforce003.png" class="image-link">
-                    <img src="assets/img/portfolio/tenforce003.png" alt="TenForce website">
-                </a>
-                <a href="assets/img/portfolio/tenforce004.png" class="image-link">
-                    <img src="assets/img/portfolio/tenforce004.png" alt="TenForce website">
-                </a>
-                <a href="assets/img/portfolio/tenforce005.png" class="image-link">
-                    <img src="assets/img/portfolio/tenforce005.png" alt="TenForce website">
-                </a>
-                <a href="assets/img/portfolio/tenforce006.png" class="image-link">
-                    <img src="assets/img/portfolio/tenforce006.png" alt="TenForce website">
                 </a>
             </div>
         </div>
@@ -499,18 +499,31 @@
             }
             //setInterval(switchWord, 4500);
 
-            function rotateHeu() {
-                var deg = 0;
-                setInterval(function(){
-                    if (deg >= 359) {
-                        deg = 0;
-                    }
-                    deg += 1;
-                    //$('.img-profile').css('filter', 'contrast(2) hue-rotate('+deg+'deg)');
-                    $('.img-profile-2').css('filter', 'contrast(6) hue-rotate('+deg+'deg)');
-                }, 250);
+            function randomIntFromInterval(min, max) { // min and max included 
+                return Math.floor(Math.random() * (max - min + 1) + min);
             }
-            rotateHeu();
+
+            
+
+
+            var deg = 0;
+            setInterval(function(){
+                if (deg >= 359) {
+                    deg = 0;
+                }
+                deg += 1;
+                $('.img-profile-2').css('filter', 'contrast(6) hue-rotate('+deg+'deg)');
+            }, 250);
+
+            /*
+            $('.work-main .image-link').each(function() {
+                const v1 = randomIntFromInterval(1, 255);
+                const v2 = randomIntFromInterval(1, 255);
+                const v3 = randomIntFromInterval(1, 255);
+                $(this).css('box-shadow', '0 0 30px 10px rgba('+v1+', '+v2+', '+v3+', .25');
+            });
+            */
+
         });
     </script>
 </body>

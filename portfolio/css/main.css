@@ -1,3 +1,7 @@
+:root {
+    --deg: 0deg;
+}
+
 .site-header {
     position: relative;
 }
@@ -125,7 +129,7 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 1rem 10rem 5rem;
-    grid-row-gap: 10rem;
+    row-gap: 20rem;
 }
 .work a {
     transition: box-shadow .25s ease-in-out, transform .25s ease-in-out;
@@ -161,9 +165,11 @@ h2 {
     min-width: 33%;
 }
 .work-main a {
+    position: relative;
     display: block;
     box-shadow: 0 0 50px rgba(0, 0, 0, .2);
 }
+
 .work-gallery {
     position: relative;
     display: flex;
@@ -207,7 +213,7 @@ h2 {
 
 
 .viewbox-container {
-    backdrop-filter: sepia(1) blur(5px);
+    backdrop-filter: blur(5px);
 }
 .viewbox-body {
     box-shadow: none;
@@ -238,6 +244,7 @@ h2 {
 @media (max-width: 800px) {
     .work {
         padding: 1rem 2rem 5rem;
+        row-gap: 10rem;
     }
     .work-main,
     .work > div:nth-child(even) .work-main {
