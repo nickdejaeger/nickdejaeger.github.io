@@ -1,544 +1,517 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        
-        <title>Nick, UI Developer</title>
-        <meta name="description" content="Portfolio van Nick De Jaeger, Web Developer met expertise in HTML, CSS en JavaScript. Ik maak functionele webpagina's die toegankelijk zijn.">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="English">
-        <meta name="author" content="Nick De Jaeger">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Nick, UI Developer</title>
+    <meta name="description" content="Portfolio van Nick De Jaeger, Web Developer met expertise in HTML, CSS en JavaScript. Ik maak functionele webpagina's die toegankelijk zijn.">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Nick De Jaeger">
 
-        <meta property="og:title" content="Porfolio Nick De Jaeger">
-        <meta property="og:description" content="Portfolio van Nick De Jaeger, Web Developer met expertise in HTML, CSS en JavaScript. Ik maak functionele webpagina's die toegankelijk zijn.">
-        <!--<meta property="og:image" content="image.jpg">-->
+    <meta property="og:title" content="Porfolio Nick De Jaeger">
+    <meta property="og:description" content="Portfolio van Nick De Jaeger, Web Developer met expertise in HTML, CSS en JavaScript. Ik maak functionele webpagina's die toegankelijk zijn.">
+    <!--<meta property="og:image" content="image.jpg">-->
 
-        <link rel="stylesheet" href="assets/css/tailwind/2.2.19.min.css">
-        <link rel="stylesheet" href="assets/plugins/viewbox/viewbox.css"></link>
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/tailwind/2.2.19.min.css">
+    <link rel="stylesheet" href="assets/plugins/viewbox/viewbox.css"></link>
+    <link rel="stylesheet" href="portfolio/css/main.css">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
 
-    <body>
+    <img src="profile_t.png" alt="" class="img-profile">
 
-        <div class="bg-mov">
-            <video id="bgMov" loop autoplay muted>
-                <source src="assets/mov/bgmin.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <div class="container">
-            <header class="header">
-                <figure>
-                    <img src="profile.png" alt="" class="animated-border">
-                </figure>
-                <div>
-                <h1>Hi, I'm Nick</h1>
-                <h2>a UI Developer from Belgium</h2>
-                <aside>
-                    <a href="mailto:nickdejaeger@hotmail.com?subject=I%20found%20your%20portfolio%20and%20want%20to%20reach%20out" title="Open your email program"><span></span>Ask me anything</a>
-                </aside>
-                </div>
-            </header>
-        </div>
-
-        <div class="container">
-            <div class="tagline"><i>I craft</i> <span>accessible</span> <i>web interfaces.</i></div>
-        </div>
-
-        <div class="container container--tabs">
+    <header class="site-header">
+        <div class="topbar">
+            <div>
+                <div class="h2">Nick De Jaeger</div>
+                <div class="h3">UI Developer</div>
+            </div>
             <nav>
-                <button data-tabid="1" class="active">Portfolio</button>
-                <button data-tabid="2">Skills & Tools</button>
+                <div class="h1"><a href="mailto:nickdejaeger@hotmail.com" class="l1" target="_blank">nickdejaeger@hotmail.com</a></div>
+                <div class="h1"><a href="https://www.x.com/nickdejaeger" class="l1" target="_blank">@nickdejaeger</a></div>
             </nav>
-            <main>
-                <div class="tabs">
-                    <section class="tab tab--active" data-tab="1">
+        </div>
+        <div class="intro">
+            <div class="relative">
+                <img src="profile_t.png" alt="" class="img-profile-2">
+                <h1>I aim to craft <b>intuitive</b>, <b>accessible</b>, <b>responsive</b> and <b>cross-browser</b> compatible user interfaces that are optimized for <b>search engine visibility</b>.</h1>
+            </div>
+        </div>
+    </header>
 
-                        <div class="portfolios">
-
-                            <article>
-                                <header>
-                                <h2>TenForce Toolbox</h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Tailwind</span>
-                                    <span>JS</span>
-                                    <span>Figma</span>
-                                    <span>Jekyll</span>
-                                </div>
-                                </header>
-                                <p>Toolbox for the TenForce application. Contains components, mockup's, color codes, icon sets, ...</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/toolbox001.png" class="image-link">
-                                        <img src="assets/img/portfolio/toolbox001.png" alt="Toolbox tool">
-                                    </a>
-                                    <a href="assets/img/portfolio/toolbox002.png" class="image-link">
-                                        <img src="assets/img/portfolio/toolbox002.png" alt="Toolbox tool">
-                                    </a>
-                                </picture>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2>TenForce Tracker</h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Tailwind</span>
-                                    <span>JS</span>
-                                    <span>Figma</span>
-                                    <span>Jekyll</span>
-                                </div>
-                                </header>
-                                <p>Functional mockups for the Tracker application</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/tracker001.png" class="image-link">
-                                        <img src="assets/img/portfolio/tracker001.png" alt="Tracker mockups">
-                                    </a>
-                                    <a href="assets/img/portfolio/tracker003.png" class="image-link">
-                                        <img src="assets/img/portfolio/tracker003.png" alt="Tracker mockups">
-                                    </a>
-                                </picture>
-                            </article>
-                            
-                            <article>
-                                <header>
-                                <h2><a href="https://trapeze.ercim.eu/" target="_blank">Trapeze</a></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Tailwind</span>
-                                    <span>JS</span>
-                                    <span>WordPress</span>
-                                </div>
-                                </header>
-                                <p>Website for a EU-funded organization that organizes transparency, privacy and security for European citizens.</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/trapeze001.png" class="image-link">
-                                        <img src="assets/img/portfolio/trapeze001.png" alt="Trapeze website">
-                                    </a>
-                                    <a href="assets/img/portfolio/trapeze002.png" class="image-link">
-                                        <img src="assets/img/portfolio/trapeze002.png" alt="Trapeze website">
-                                    </a>
-                                </picture>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2><abbr title="European Skills, Competences and Occupations">BizPro</abbr></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Telerik</span>
-                                </div>
-                                </header>
-                                <p>Restyle the UI for the BizPro appliaction that supports business process management objectives and functions.</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/bizpro2.png" class="image-link">
-                                        <img src="assets/img/portfolio/bizpro2.png" alt="BizPro application">
-                                    </a>
-                                    <a href="assets/img/portfolio/bizpro3.png" class="image-link">
-                                        <img src="assets/img/portfolio/bizpro3.png" alt="BizPro application">
-                                    </a>
-                                </picture>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2><a href="https://academy.tenforce.net/" target="_blank">Academy</a></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Tailwind</span>
-                                    <span>JS</span>
-                                    <span>Figma</span>
-                                    <span>WordPress</span>
-                                </div>
-                                </header>
-                                <p>Platform used by clients to teach them the usage of the TenForce application.</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/academy_001.png" class="image-link">
-                                        <img src="assets/img/portfolio/academy_001.png" alt="Academy website">
-                                    </a>
-                                    <a href="assets/img/portfolio/academy_004.png" class="image-link">
-                                        <img src="assets/img/portfolio/academy_004.png" alt="Academy website">
-                                    </a>
-                                </picture>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2>AI Proficient</h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JS</span>
-                                    <span>WordPress</span>
-                                </div>
-                                </header>
-                                <p>Website for a EU-funded organization.</p>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2><a href="https://www.tenforce.com/tenforce-christmas-book-gift/" target="_blank">Christmas Book Gift</a></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Tailwind</span>
-                                    <span>JS</span>
-                                    <span>PHP</span>
-                                    <span>WordPress</span>
-                                </div>
-                                </header>
-                                <p>A page where customers can choose books as a gift.</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/christmas001.png" class="image-link">
-                                        <img src="assets/img/portfolio/christmas001.png" alt="Christmas Book Gift page">
-                                    </a>
-                                    <a href="assets/img/portfolio/christmas002.png" class="image-link">
-                                        <img src="assets/img/portfolio/christmas002.png" alt="Christmas Book Gift page">
-                                    </a>
-                                </picture>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2><a href="https://tenforce.com/" target="_blank">Tenforce.com</a></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Tailwind</span>
-                                    <span>JS</span>
-                                    <span>PHP</span>
-                                    <span>WordPress</span>
-                                </div>
-                                </header>
-                                <p>Website for TenForce company.</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/tenforce001.png" class="image-link">
-                                        <img src="assets/img/portfolio/tenforce001.png" alt="TenForce website">
-                                    </a>
-                                    <a href="assets/img/portfolio/tenforce002.png" class="image-link">
-                                        <img src="assets/img/portfolio/tenforce002.png" alt="TenForce website">
-                                    </a>
-                                </picture>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2><a href="https://devcenter.tenforce.com/" target="_blank">DevCenter</a></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Tailwind</span>
-                                    <span>JS</span>
-                                    <span>PHP</span>
-                                    <span>WordPress</span>
-                                </div>
-                                </header>
-                                <p>Platform designed for internal company usage.</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/devcenter_001.png" class="image-link">
-                                        <img src="assets/img/portfolio/devcenter_001.png" alt="DevCenter website">
-                                    </a>
-                                    <a href="assets/img/portfolio/devcenter_003.png" class="image-link">
-                                        <img src="assets/img/portfolio/devcenter_003.png" alt="DevCenter website">
-                                    </a>
-                                </picture>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2><a href="https://www.tenforce.com/brandbook/">Brandbook</a></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Tailwind</span>
-                                    <span>JS</span>
-                                    <span>PHP</span>
-                                    <span>WordPress</span>
-                                </div>
-                                </header>
-                                <p>Multiple pages where employees can find information and graphics about the brand of this comopany.</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/brandbook_004.png" class="image-link">
-                                        <img src="assets/img/portfolio/brandbook_004.png" alt="DevCenter website">
-                                    </a>
-                                    <a href="assets/img/portfolio/brandbook_002.png" class="image-link">
-                                        <img src="assets/img/portfolio/brandbook_002.png" alt="DevCenter website">
-                                    </a>
-                                </picture>
-                            </article>
-                        
-                            <article>
-                                <header>
-                                <h2><a href="https://nickdejaeger.github.io/scoreboard" target="_blank">Scoreboard</a></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Tailwind</span>
-                                    <span>Vue.js</span>
-                                    <span>TypeScript</span>
-                                </div>
-                                </header>
-                                <p>A personal side project to easily track scores for a card game.</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/scoreboard001.png" class="image-link">
-                                        <img src="assets/img/portfolio/scoreboard001.png" alt="Scoreboard tool">
-                                    </a>
-                                </picture>
-                            </article>
-                                
-                            <article>
-                                <header>
-                                <h2><a href="https://www.tenforce.com/hi/" target="_blank">Chatbot (Hi)</a></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JS</span>
-                                </div>
-                                </header>
-                                <p>Animated chat designed to guide clients to the next company event.</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/chatbot_001.png" class="image-link">
-                                        <img src="assets/img/portfolio/chatbot_001.png" alt="Chatbot animated landing page">
-                                    </a>
-                                    <a href="assets/img/portfolio/chatbot_002.png" class="image-link">
-                                        <img src="assets/img/portfolio/chatbot_002.png" alt="Chatbot animated landing page">
-                                    </a>
-                                </picture>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2><a href="https://www.tenforce.com/image-generator/" target="#">Banner Generator</a></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JS</span>
-                                    <span>PHP</span>
-                                </div>
-                                </header>
-                                <p>Tool that generates social media banners based on user input parameters.</p>
-                                <picture>
-                                    <a href="assets/img/portfolio/banner002.png" class="image-link">
-                                        <img src="assets/img/portfolio/banner002.png" alt="Banner Generator tool">
-                                    </a>
-                                    <a href="assets/img/portfolio/banner003.png" class="image-link">
-                                        <img src="assets/img/portfolio/banner003.png" alt="Banner Generator tool">
-                                    </a>
-                                </picture>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2>Listly</h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Ember.js</span>
-                                </div>
-                                </header>
-                                <p>Building a User Interface for the mobile pmX application.</p>
-                            </article>
-
-                            <article>
-                                <header>
-                                <h2><abbr title="European Skills, Competences and Occupations">ESCO</abbr></h2>
-                                <div class="tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JS</span>
-                                    <span>UI</span>
-                                </div>
-                                </header>
-                                <p>UI for a Multilingual classification tool for European Skills, Competences, Qualifications and Occupations.</p>
-                            </article>
-
-                        </div>
-
-                    </section>
-
-                    <section class="tab" data-tab="2">
-
-                        <div class="skills">
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>HTML5</h3>
-                                        <img src="assets/img/skills/html5.png" alt="HTML5 logo">
-                                    </header>
-                                    <p>Semantics, SEO, W3C Accessibility</p>   
-                                </div>
-                            </article>
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>CSS3</h3>
-                                        <img src="assets/img/skills/css3.png" alt="CSS3 logo">
-                                    </header>
-                                    <p>SASS, SCSS, Tailwind, Bootstrap, Responsive Design</p>   
-                                </div>
-                            </article>
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>JavaScript</h3>
-                                        <img src="assets/img/skills/js.png" alt="JavaScript logo">
-                                    </header>
-                                    <p>Plain, jQuery</p>
-                                </div>
-                            </article>
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>Wordpress</h3>
-                                        <img src="assets/img/skills/wordpress.png" alt="WordPress logo">
-                                    </header>
-                                    <p>Setup, plugins, custom themes, templates</p>
-                                </div>
-                            </article>
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>Vue.js</h3>
-                                        <img src="assets/img/skills/vue.png" alt="Vue.js logo">
-                                    </header>
-                                    <p>Routing, Components, Layout, Nuxt.js</p>
-                                </div>
-                            </article>
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>PHP</h3>
-                                        <img src="assets/img/skills/php.png" alt="PHP logo">
-                                    </header>
-                                </div>
-                            </article>
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>Git</h3>
-                                        <img src="assets/img/skills/git.png" alt="Git logo">
-                                    </header>
-                                </div>
-                            </article>
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>Visual Studio Code</h3>
-                                        <img src="assets/img/skills/vsc.png" alt="Figma logo">
-                                    </header>
-                                </div>
-                            </article>
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>Figma</h3>
-                                        <img src="assets/img/skills/figma.png" alt="Figma logo">
-                                    </header>
-                                </div>
-                            </article>
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>Photoshop</h3>
-                                        <img src="assets/img/skills/photoshop.png" alt="Photoshop logo">
-                                    </header>
-                                </div>
-                            </article>
-
-                            <article class="skill">
-                                <div>
-                                    <header>
-                                        <h3>Work ethics</h3>
-                                    </header>
-                                    <p>Mobile friendly; Accessible; Pixel-perfect; Adaptive</p>
-                                </div>
-                            </article>
-
-                        </div>
-
-                    </section>
-
-                    <section class="tab" data-tab="3">
-                        <i>soon...</i>
-                    </section>
-                </div>
-            </main>
+    <section class="work">
+        
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2>Toolbox Framework</h2>
+                    <p>Toolbox for the TenForce application. Contains components, mockup's, color codes, icon sets, ...</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind</span>
+                        <span>JS</span>
+                        <span>Figma</span>
+                        <span>Jekyll</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/toolbox001.png" class="image-link">
+                    <img src="assets/img/portfolio/toolbox001.png" alt="Toolbox tool">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/toolbox002.png" class="image-link">
+                    <img src="assets/img/portfolio/toolbox002.png" alt="Toolbox tool">
+                </a>
+                <a href="assets/img/portfolio/toolbox003.png" class="image-link">
+                    <img src="assets/img/portfolio/toolbox003.png" alt="Toolbox tool">
+                </a>
+                <a href="assets/img/portfolio/toolbox004.png" class="image-link">
+                    <img src="assets/img/portfolio/toolbox004.png" alt="Toolbox tool">
+                </a>
+                <a href="assets/img/portfolio/toolbox005.png" class="image-link">
+                    <img src="assets/img/portfolio/toolbox005.png" alt="Toolbox tool">
+                </a>
+            </div>
+        </div>
+        
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2>TenForce Tracker</h2>
+                    <p>Functional mockups for the Tracker application</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind</span>
+                        <span>JS</span>
+                        <span>Figma</span>
+                        <span>Jekyll</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/tracker001.png" class="image-link">
+                    <img src="assets/img/portfolio/tracker001.png" alt="Tracker mockups">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/tracker003.png" class="image-link">
+                    <img src="assets/img/portfolio/tracker003.png" alt="Tracker mockups">
+                </a>
+                <a href="assets/img/portfolio/tracker004.png" class="image-link">
+                    <img src="assets/img/portfolio/tracker004.png" alt="Tracker mockups">
+                </a>
+                <a href="assets/img/portfolio/tracker005.png" class="image-link">
+                    <img src="assets/img/portfolio/tracker005.png" alt="Tracker mockups">
+                </a>
+            </div>
         </div>
 
-        
-        <script src="assets/plugins/viewbox/jquery.viewbox.min.js"></script>
-        <script>
-            $(function(){
-                $('.image-link').viewbox({
-                    setTitle: true,
-                    margin: 100,
-                    resizeDuration: 150,
-                    openDuration: 100,
-                    closeDuration: 50,
-                    closeButton: true,
-                    navButtons: true,
-                    closeOnSideClick: true,
-                    nextOnContentClick: true
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><a href="https://tenforce.com/" target="_blank">Tenforce.com</a></h2>
+                    <p>Website for TenForce company.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind</span>
+                        <span>JS</span>
+                        <span>PHP</span>
+                        <span>WordPress</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/tenforce001.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce001.png" alt="TenForce website">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/tenforce002.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce002.png" alt="TenForce website">
+                </a>
+                <a href="assets/img/portfolio/tenforce003.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce003.png" alt="TenForce website">
+                </a>
+                <a href="assets/img/portfolio/tenforce004.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce004.png" alt="TenForce website">
+                </a>
+                <a href="assets/img/portfolio/tenforce005.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce005.png" alt="TenForce website">
+                </a>
+                <a href="assets/img/portfolio/tenforce006.png" class="image-link">
+                    <img src="assets/img/portfolio/tenforce006.png" alt="TenForce website">
+                </a>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><a href="https://www.tenforce.com/tenforce-christmas-book-gift/" target="_blank">Christmas Book Gift</a></h2>
+                    <p>A page where customers can choose books as a gift.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind</span>
+                        <span>JS</span>
+                        <span>PHP</span>
+                        <span>WordPress</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/christmas001.png" class="image-link">
+                    <img src="assets/img/portfolio/christmas001.png" alt="Christmas Book Gift page">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/christmas002.png" class="image-link">
+                    <img src="assets/img/portfolio/christmas002.png" alt="Christmas Book Gift page">
+                </a>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><a href="https://www.tenforce.com/brandbook/">Brandbook</a></h2>
+                    <p>Multiple pages where employees can find information and graphics about the brand of this comopany.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind</span>
+                        <span>JS</span>
+                        <span>PHP</span>
+                        <span>WordPress</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/brandbook_004.png" class="image-link">
+                    <img src="assets/img/portfolio/brandbook_004.png" alt="DevCenter website">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/brandbook_002.png" class="image-link">
+                    <img src="assets/img/portfolio/brandbook_002.png" alt="DevCenter website">
+                </a>
+                <a href="assets/img/portfolio/brandbook_003.png" class="image-link">
+                    <img src="assets/img/portfolio/brandbook_003.png" alt="DevCenter website">
+                </a>
+                <a href="assets/img/portfolio/brandbook_004.png" class="image-link">
+                    <img src="assets/img/portfolio/brandbook_004.png" alt="DevCenter website">
+                </a>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><a href="https://academy.tenforce.net/" target="_blank">Academy</a></h2>
+                    <p>Platform used by clients to teach them the usage of the TenForce application.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind</span>
+                        <span>JS</span>
+                        <span>Figma</span>
+                        <span>WordPress</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/academy_001.png" class="image-link">
+                    <img src="assets/img/portfolio/academy_001.png" alt="Academy website">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/academy_002.png" class="image-link">
+                    <img src="assets/img/portfolio/academy_002.png" alt="Academy website">
+                </a>
+                <a href="assets/img/portfolio/academy_003.png" class="image-link">
+                    <img src="assets/img/portfolio/academy_003.png" alt="Academy website">
+                </a>
+                <a href="assets/img/portfolio/academy_004.png" class="image-link">
+                    <img src="assets/img/portfolio/academy_004.png" alt="Academy website">
+                </a>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><a href="https://devcenter.tenforce.com/" target="_blank">DevCenter</a></h2>
+                    <p>Platform designed for internal company usage.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind</span>
+                        <span>JS</span>
+                        <span>PHP</span>
+                        <span>WordPress</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/devcenter_001.png" class="image-link">
+                    <img src="assets/img/portfolio/devcenter_001.png" alt="DevCenter website">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/devcenter_002.png" class="image-link">
+                    <img src="assets/img/portfolio/devcenter_002.png" alt="DevCenter website">
+                </a>
+                <a href="assets/img/portfolio/devcenter_003.png" class="image-link">
+                    <img src="assets/img/portfolio/devcenter_003.png" alt="DevCenter website">
+                </a>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><a href="https://trapeze.ercim.eu/" target="_blank">Trapeze</a></h2>
+                    <p>Website for a EU-funded organization that organizes transparency, privacy and security for European citizens.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind</span>
+                        <span>JS</span>
+                        <span>WordPress</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/trapeze001.png" class="image-link">
+                    <img src="assets/img/portfolio/trapeze001.png" alt="Trapeze website">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/trapeze002.png" class="image-link">
+                    <img src="assets/img/portfolio/trapeze002.png" alt="Trapeze website">
+                </a>
+                <a href="assets/img/portfolio/trapeze003.png" class="image-link">
+                    <img src="assets/img/portfolio/trapeze003.png" alt="Trapeze website">
+                </a>
+                <a href="assets/img/portfolio/trapeze004.png" class="image-link">
+                    <img src="assets/img/portfolio/trapeze004.png" alt="Trapeze website">
+                </a>
+                <a href="assets/img/portfolio/trapeze005.png" class="image-link">
+                    <img src="assets/img/portfolio/trapeze005.png" alt="Trapeze website">
+                </a>
+                <a href="assets/img/portfolio/trapeze006.png" class="image-link">
+                    <img src="assets/img/portfolio/trapeze006.png" alt="Trapeze website">
+                </a>
+                <a href="assets/img/portfolio/trapeze007.png" class="image-link">
+                    <img src="assets/img/portfolio/trapeze007.png" alt="Trapeze website">
+                </a>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><abbr title="European Skills, Competences and Occupations">BizPro</abbr></h2>
+                    <p>Restyle the UI for the BizPro appliaction that supports business process management objectives and functions.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Telerik</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/bizpro2.png" class="image-link">
+                    <img src="assets/img/portfolio/bizpro2.png" alt="BizPro application">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/bizpro1.png" class="image-link">
+                    <img src="assets/img/portfolio/bizpro1.png" alt="BizPro application">
+                </a>
+                <a href="assets/img/portfolio/bizpro3.png" class="image-link">
+                    <img src="assets/img/portfolio/bizpro3.png" alt="BizPro application">
+                </a>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><a href="https://nickdejaeger.github.io/scoreboard" target="_blank">Scoreboard</a></h2>
+                    <p>A personal side project to easily track scores for a card game.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind</span>
+                        <span>Vue.js</span>
+                        <span>TypeScript</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/scoreboard001.png" class="image-link">
+                    <img src="assets/img/portfolio/scoreboard001.png" alt="Scoreboard tool">
+                </a>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><a href="https://www.tenforce.com/hi/" target="_blank">Chatbot (Hi)</a></h2>
+                    <p>Animated chat designed to guide clients to the next company event.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/chatbot_001.png" class="image-link">
+                    <img src="assets/img/portfolio/chatbot_001.png" alt="Chatbot animated landing page">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/chatbot_003.png" class="image-link">
+                    <img src="assets/img/portfolio/chatbot_003.png" alt="Chatbot animated landing page">
+                </a>
+                <a href="assets/img/portfolio/chatbot_004.png" class="image-link">
+                    <img src="assets/img/portfolio/chatbot_004.png" alt="Chatbot animated landing page">
+                </a>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><a href="https://www.tenforce.com/image-generator/" target="#">Banner Generator</a></h2>
+                    <p>Tool that generates social media banners based on user input parameters.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                        <span>PHP</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/banner002.png" class="image-link">
+                    <img src="assets/img/portfolio/banner002.png" alt="Banner Generator tool">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/banner001.png" class="image-link">
+                    <img src="assets/img/portfolio/banner001.png" alt="Banner Generator tool">
+                </a>
+                <a href="assets/img/portfolio/banner003.png" class="image-link">
+                    <img src="assets/img/portfolio/banner003.png" alt="Banner Generator tool">
+                </a>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2>AI Proficient</h2>
+                    <p>Website for a EU-funded organization.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                        <span>WordPress</span>
+                    </div>
+                </header>
+                <a href="assets/img/portfolio/aiprof007.png" class="image-link">
+                    <img src="assets/img/portfolio/aiprof007.png" alt="AI Proficient website">
+                </a>
+            </div>
+            <div class="work-gallery">
+                <a href="assets/img/portfolio/aiprof005.png" class="image-link">
+                    <img src="assets/img/portfolio/aiprof005.png" alt="AI Proficient website">
+                </a>
+                <a href="assets/img/portfolio/aiprof006.png" class="image-link">
+                    <img src="assets/img/portfolio/aiprof006.png" alt="AI Proficient website">
+                </a>
+                <a href="assets/img/portfolio/aiprof003.png" class="image-link">
+                    <img src="assets/img/portfolio/aiprof003.png" alt="AI Proficient website">
+                </a>
+                <a href="assets/img/portfolio/aiprof004.png" class="image-link">
+                    <img src="assets/img/portfolio/aiprof004.png" alt="AI Proficient website">
+                </a>
+            </div>
+        </div>
+<!--
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2>Listly</h2>
+                    <p>Building a User Interface for the mobile pmX application.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Ember.js</span>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-main">
+                <header>
+                    <h2><abbr title="European Skills, Competences and Occupations">ESCO</abbr></h2>
+                    <p>UI for a Multilingual classification tool for European Skills, Competences, Qualifications and Occupations.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                        <span>UI</span>
+                        <span>Ember.js</span>
+                    </div>
+                </header>
+            </div>
+        </div>
+-->   
+    </section>
+    
+    <script src="assets/plugins/viewbox/jquery.viewbox.min.js"></script>
+    <script>
+        $(function(){
+            $('.image-link').viewbox({
+                setTitle: true,
+                margin: 100,
+                resizeDuration: 150,
+                openDuration: 100,
+                closeDuration: 50,
+                closeButton: true,
+                navButtons: true,
+                closeOnSideClick: true,
+                nextOnContentClick: true
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            var words = [
+                'responsive',
+                'functional',
+                'animated',
+                'accessible'
+            ];
+            var currentIndex = 0;
+            var span = $('.tagline span');
+            function switchWord() {
+                span.fadeOut(500, function(){
+                    span.text(words[currentIndex]).fadeIn(500);
+                    currentIndex = (currentIndex + 1) % words.length;
                 });
-            });
-        </script>
+            }
+            //setInterval(switchWord, 4500);
 
-        <script>
-            $('nav button').on('click', function() {
-                console.log('clicked')
-                $('nav button').removeClass('active');
-                $(this).addClass('active');
-                let tabid = $(this).attr('data-tabid');
-                $('[data-tab]').hide();
-                $('[data-tab="'+tabid+'"]').show();
-            });
-
-            $(document).ready(function(){
-                var words = [
-                    'responsive',
-                    'functional',
-                    'animated',
-                    'accessible'
-                ];
-                var currentIndex = 0;
-                var span = $('.tagline span');
-
-                function switchWord() {
-                    span.fadeOut(500, function(){
-                        span.text(words[currentIndex]).fadeIn(500);
-                        currentIndex = (currentIndex + 1) % words.length;
-                    });
-                }
-
-                setInterval(switchWord, 4500);
-            });
-
-            let vid = document.getElementById('bgMov');
-            vid.playbackRate = 1;
-
-
-            
-        </script>
-    </body>
+            function rotateHeu() {
+                var deg = 0;
+                setInterval(function(){
+                    if (deg >= 359) {
+                        deg = 0;
+                    }
+                    deg += 1;
+                    //$('.img-profile').css('filter', 'contrast(2) hue-rotate('+deg+'deg)');
+                    $('.img-profile-2').css('filter', 'contrast(6) hue-rotate('+deg+'deg)');
+                }, 250);
+            }
+            rotateHeu();
+        });
+    </script>
+</body>
 </html>

@@ -1,34 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../assets/fonts/TF-Regular.woff") format("woff");
-}
-@font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 600;
-    src: url("../assets/fonts/TF-Semibold.woff") format("woff");
-}
-@font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../assets/fonts/TF-Bold.woff") format("woff");
-}
-@font-face {
-    font-family: "TF-Regular";
-    font-style: normal;
-    font-weight: normal;
-    src: url("../assets/fonts/TF-Font.woff") format("woff");
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 
 body {
-    font-family: 'Source Sans Pro', 'TF-Regular', Arial, sans-serif;
+    
     font-kerning: normal;
-    font-size: 1rem;
+    
     -webkit-font-variant-ligatures: no-common-ligatures;
     font-variant-ligatures: no-common-ligatures;
     -webkit-font-feature-settings: "kern" 1,"liga" 0;
@@ -36,7 +12,8 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow: auto;
+    font-family: 'Roboto', 'TF-Regular', Arial, sans-serif;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -44,7 +21,10 @@ abbr[title] {
     text-decoration: none;
 }
 
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', sans-serif;
+    font-family: 'Ubranist', sans-serif;
+}
 
 h1 {
     font-size: 2rem;
@@ -64,7 +44,7 @@ h2 {
 
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     padding: 0 2rem;
 }
@@ -80,6 +60,21 @@ h2 {
     box-shadow: 0 0 150px 10px #E3E3E3;
     margin-bottom: 2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
