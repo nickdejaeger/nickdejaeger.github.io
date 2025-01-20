@@ -179,8 +179,7 @@ h2 {
     align-items: flex-end;
     justify-content: center;
     gap: 8rem;
-    padding: 10rem 5rem;
-    border-right: 1px dashed #CCC;
+    padding: 1rem 2rem 1rem 5rem;
     text-align: right;
 }
 .showcase > header h2 {
@@ -346,9 +345,9 @@ h2 {
     font-weight: bold;
     line-height: 120%;
     background-image:
-    linear-gradient(90deg, transparent calc(100% - 8ch), hsl(0 0% 75%) calc(100% - 8ch)), 
+    linear-gradient(90deg, transparent calc(100% - 8ch), hsl(0 0% 100%) calc(100% - 8ch)), 
     linear-gradient(90deg, hsl(0 0% 50%), hsl(0 0% 50%)),
-    linear-gradient(90deg, hsl(0 0% 50% / 0.15), hsl(0 0% 50% / 0.15));
+    linear-gradient(90deg, hsl(0 0% 50% / 0.5), hsl(0 0% 50% / 0.15));
     background-size:
     200vmax 1lh,
     200vmax 1lh,
@@ -403,7 +402,6 @@ h2 {
 
 @media (max-width: 1200px) {
     .img-profile-bg {
-        bottom: 0;
         left: 0;
         width: 100%;
         translate: none;
@@ -430,7 +428,6 @@ h2 {
         text-align: left;
         padding: 2rem 0;
         border-right: 0;
-        border-bottom: 2px dashed #CCC;
         gap: 1rem;
     }
     .showcase > header .tags {
@@ -443,7 +440,6 @@ h2 {
         width: 75%;
         bottom: auto;
         top: calc(100% - 5rem);
-        z-index: 1;
     }
 }
 
