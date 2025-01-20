@@ -754,7 +754,9 @@
                 }
                 deg += 1;
 
-                $('.img-profile-bg').css('filter', 'blur(30px) contrast(8) hue-rotate('+deg+'deg)');
+                document.documentElement.style.setProperty('--deg', deg + 'deg');
+
+                //$('.img-profile-bg').css('filter', 'blur(30px) contrast(8) hue-rotate('+deg+'deg)');
             }, 50);
 
             /*
