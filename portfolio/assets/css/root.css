@@ -673,3 +673,46 @@ a:active, a:focus, a:hover {
     margin: 0;
     color: #FFF;
 }
+
+
+
+
+
+@media (max-width: 768px) {
+    .site-header .inner {
+        gap: 10px;
+    }
+
+    .site-logo {
+        max-height: 60%;
+    }
+    .profile figure {
+        display: none;
+    }
+    .profile aside {
+        gap: .5rem;
+        text-align: right;
+    }
+    .profile aside b {
+        display: block;
+        font-size: .65rem;
+    }
+
+    .section-label {
+        padding: 6rem 0 2rem;
+    }
+
+    .tertiary-theme {
+        padding: 1rem 0;
+    }
+
+    .gallery__col figure {
+        padding: 0;
+    }
+    .gallery__col figure figcaption {
+        position: relative;
+        opacity: 1;
+        padding: 3rem 1rem;
+        background-color: rgb(20 42 164 / 100%);
+    }
+}
