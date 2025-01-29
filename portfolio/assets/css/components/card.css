@@ -1,0 +1,241 @@
+.c-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eae9ec;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    color: #989898;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    font-family: "Urbanist", serif;
+    font-size: .9rem;
+    font-weight: 600;
+    background-color: #FFF;
+    transition: background-color .35s ease-in;
+    will-change: background-color;
+}
+.c-card:hover {
+    background-color: #f2f2f2;
+}
+.c-card:hover header a {
+    text-decoration-color: inherit;
+}
+.c-card b {
+    color: #000;
+    font-weight: 600;
+}
+.c-card h4,
+.c-card h4 a {
+    color: #000;
+}
+
+
+.c-card[style^="background-image"] {
+    gap: 8rem;
+}
+.c-card[style^="background-image"] .top {
+    z-index: auto;
+}
+.c-card[style^="background-image"] .top .label {
+    border: 0;
+    mix-blend-mode: luminosity;
+}
+.c-card[style^="background-image"],
+.c-card[style^="background-image"] header h4,
+.c-card[style^="background-image"] header a {
+    color: #FFF;
+}
+.c-card[style^="background-image"] header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transition: top .1s linear;
+    will-change: top;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0 0 0 / 50%) 76%, rgb(0 0 0 / 75%) 100%);
+}
+.c-card[style^="background-image"] header h4 {
+    text-shadow: 0 0 21px black;
+}
+.c-card[style^="background-image"]:hover header::before {
+    top: 0;
+}
+
+
+.c-card .top {
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+.c-card .top .label {
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #FFF;
+    color: #989898;
+    border-radius: 9999999px;
+    border: 1px solid #dedede;
+    padding: .25rem .5rem;
+}
+
+
+.c-card figure {
+    position: relative;
+    background-color: #CCC;
+    margin: -5rem -1rem 0;
+    height: 8rem;
+}
+.c-card figure .avatar {
+    position: absolute;
+    left: 0.75rem;
+    bottom: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999999px;
+    background-color: blue;
+    border: .25rem solid white;
+}
+.c-card figure .avatar img {
+    border-radius: 999999px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    max-width: none;
+}
+
+
+.c-card header {
+    margin: 2rem 0 0 0;
+}
+.c-card header .leading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 0 1rem;
+}
+.c-card header .leading .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: pink;
+    border-radius: .5rem;
+}
+.c-card header a,
+.c-card header h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: normal;
+    margin: 0;
+}
+.c-card header h4 span {
+    position: relative;
+}
+.c-card header a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: transparent;
+    text-underline-offset: 2px;
+    transition: text-decoration-color .35s ease-in;
+    will-change: text-decoration-color;
+}
+.c-card header a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 1.25rem;
+}
+.c-card header p {
+    font-weight: 500;
+    margin: .25rem 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+.c-card .share {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: .25rem;
+    margin: .75rem -0.1rem 1.25rem;
+}
+.c-card .share a {
+    padding: .25rem;
+}
+
+
+.c-card .details {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1rem 0 0 0;
+}
+.c-card .details .detail {
+    font-size: .85rem;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+.c-card .details .detail.detail--approved {
+    color: #328561;
+    font-weight: 600;
+}
+.c-card .details .detail.detail--regular {
+    color: #4038f6;
+    font-weight: 600;
+}
+.c-card .details .detail span {
+    padding: 1px 0 0 0;
+    line-height: 100%;
+}
+
+
+.c-card .stats {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: .25rem 0 0 0;
+}
+.c-card .stats .stat {
+    font-size: .85rem;
+}
+
+
+.c-card .tags {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 1rem 0 0;
+}
+.c-card .tags span {
+    font-size: .7rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    background-color: #f3f3f3;
+    border-radius: 9999999px;
+    padding: .35rem .65rem;
+}
+
+
+.c-card > *:last-of-type {
+    margin-bottom: 0;
+}

@@ -1,0 +1,70 @@
+.c-switch {
+    position: relative;
+    background-color: rgb(243 243 243);
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(15, 23, 42, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 9999px;
+    width: 3.5rem;
+    height: 2rem;
+    padding: 0.25rem;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.c-switch input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    opacity: 0;
+}
+.c-switch__filler {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: rgb(243 243 243);
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(15, 23, 42, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    transition: all .35s ease-in-out;
+}
+.c-switch__focus {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(255, 50, 231, 1) 0%, rgba(0, 130, 229, 1) 100%);
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+.c-switch__dot {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(51, 65, 85, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 9999px;
+    width: 1.5rem;
+    height: 1.5rem;
+    pointer-events: auto;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+.c-switch input:checked ~ .c-switch__filler {
+    background-color: rgb(79, 70, 229);
+}
+.c-switch input:checked ~ .c-switch__dot  {
+    transform: matrix(1, 0, 0, 1, 24, 0);
+}
+
+.c-switch:hover input ~ .c-switch__dot {
+    transform: matrix(1, 0, 0, 1, 2, 0);
+}
+.c-switch:hover input:checked ~ .c-switch__dot {
+    transform: matrix(1, 0, 0, 1, 22, 0);
+}
+
+.c-switch input:focus ~ .c-switch__focus {
+    opacity: 1;
+}

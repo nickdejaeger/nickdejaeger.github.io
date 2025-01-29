@@ -1,0 +1,85 @@
+.c-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    background-color: #f3f3f3;
+    border: 1px solid #e8e8e8;
+    border-radius: .5rem;
+}
+.c-input input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    padding: 9px 16px 8px 16px;
+    width: 100%;
+    font-family: var(--typeface-secondary);
+    font-size: 1.2rem;
+    line-height: 100%;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    background-color: #f3f3f3;
+    border-radius: .5rem;
+    transition: background-color .25s ease-in-out;
+}
+
+.c-input input::placeholder {
+    color: #A9A9A9;
+}
+.c-input > svg {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    stroke: #989898;
+}
+.c-input .c-input__focus {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(255, 50, 231, 1) 0%, rgba(0, 130, 229, 1) 100%);
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+.c-input > aside {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+}
+.c-input > aside > button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    opacity: .65;
+    transition: opacity, transform .25s ease-in-out;
+}
+.c-input > aside > button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.c-input > aside > button svg {
+    stroke: rgb(79, 70, 229);
+}
+
+
+
+.c-input:hover input:not(:disabled),
+.c-input input:not(:disabled):focus {
+    background-color: #ECECEC;
+}
+.c-input input:focus + .c-input__focus {
+    opacity: 1;
+}
+.c-input input:disabled {
+    cursor: not-allowed;
+    opacity: .75;
+}
+
+
+
+.c-input > svg + input {
+    padding-left: 38px;
+}

@@ -1,0 +1,37 @@
+*, ::after, ::before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, picture, section, svg {
+    display: block;
+}
+
+article, div, footer, header, section {
+    position: relative;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    border: 0;
+    -webkit-appearance: button;
+    cursor: pointer;
+}

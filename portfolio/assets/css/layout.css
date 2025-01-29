@@ -1,0 +1,51 @@
+
+
+
+.heading-3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.heading-4 {
+    color: #999;
+    font-size: 1rem;
+    line-height: 120%;
+}
+.heading-5 {
+    font-size: 1.2rem;
+}
+
+
+
+.text-1 {
+    font-style: italic;
+    font-size: 1rem;
+    color: #989898;
+}
+.text-2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #989898;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .text-col-2 {
+        columns: 2;
+    }
+    .text-columnized {
+        columns: 2;
+        gap: 3rem;
+    }
+}
+@media (min-width: 1200px) {
+    .text-columnized {
+        columns: 3;
+        gap: 6rem;
+    }
+}

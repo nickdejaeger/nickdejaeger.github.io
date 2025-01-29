@@ -1,0 +1,75 @@
+.btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+    background-color: #f3f3f3;
+    border: 1px solid transparent;
+    color: #000;
+    font-family: var(--typeface-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+
+    transition: all .25s ease-in-out;
+}
+.btn * {
+    position: relative;
+}
+.btn svg {
+    stroke: #000;
+    transition: all .25s ease-in-out;
+}
+.btn span {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: transparent;
+    text-underline-offset: 2px;
+    transition: all .25s ease-in-out;
+}
+.btn:hover svg {
+    fill: #000;
+    transform: scale(1.2);
+}
+.btn:hover span + svg {
+    transform: scale(1) translate(2px);
+}
+.btn:hover span {
+    text-decoration-color: inherit;
+}
+
+
+.btn--primary {
+    background-color: rgb(79, 70, 229);
+    color: #FFF;
+}
+
+
+.btn--secondary {
+    background-color: #DC0707;
+    color: #FFF;
+}
+
+
+.btn--tertiary {
+    background-color: #000;
+    color: #FFF;
+}
+.btn--tertiary svg {
+    stroke: #FFF;
+}
+
+
+.btn--magic {
+    background-color: #FFF;
+}
+.btn--magic::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(255, 50, 231, 1) 0%, rgba(0, 130, 229, 1) 100%);
+    filter: blur(10px);
+    border-radius: 99999999px;
+    z-index: -1;
+}
