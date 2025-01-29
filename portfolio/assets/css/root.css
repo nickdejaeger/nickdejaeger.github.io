@@ -311,7 +311,7 @@ a:active, a:focus, a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 12;
     transition: all var(--anim-duration) var(--anim-cubic-bezier);
     display: flex;
     align-items: center;
