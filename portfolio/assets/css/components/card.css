@@ -1,28 +1,48 @@
 .c-card {
     position: relative;
+    color: #989898;
+    font-family: "Urbanist", serif;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.c-card .inner {
+    position: relative;
     display: flex;
     flex-direction: column;
-    border: 1px solid #eae9ec;
-    padding: 1rem;
-    border-radius: 1.25rem;
-    color: #989898;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
-    font-family: "Urbanist", serif;
-    font-size: .9rem;
-    font-weight: 600;
+    padding: 1rem;
+    border-radius: 1.25rem;
     background-color: #FFF;
+    border: 1px solid #eae9ec;
     transition: background-color .35s ease-in;
     will-change: background-color;
 }
-.c-card:hover {
+.c-card:hover .inner {
     background-color: #f2f2f2;
 }
 .c-card:hover header a {
     text-decoration-color: inherit;
 }
+.c-card:focus-within .c-card__focus {
+    opacity: .15;
+}
+
+.c-card__focus {
+    position: absolute;
+    inset: -8px;
+    pointer-events: none;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(255, 50, 231, 1) 0%, rgba(0, 130, 229, 1) 100%);
+    border-radius: 1.25rem;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+
+
 .c-card b {
     color: #000;
     font-weight: 600;
@@ -33,22 +53,22 @@
 }
 
 
-.c-card[style^="background-image"] {
+.c-card .inner[style^="background-image"] {
     gap: 8rem;
 }
-.c-card[style^="background-image"] .top {
+.c-card .inner[style^="background-image"] .top {
     z-index: auto;
 }
-.c-card[style^="background-image"] .top .label {
+.c-card .inner[style^="background-image"] .top .label {
     border: 0;
     mix-blend-mode: luminosity;
 }
-.c-card[style^="background-image"],
-.c-card[style^="background-image"] header h4,
-.c-card[style^="background-image"] header a {
+.c-card .inner[style^="background-image"],
+.c-card .inner[style^="background-image"] header h4,
+.c-card .inner[style^="background-image"] header a {
     color: #FFF;
 }
-.c-card[style^="background-image"] header::before {
+.c-card .inner[style^="background-image"] header::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -59,10 +79,10 @@
     will-change: top;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0 0 0 / 50%) 76%, rgb(0 0 0 / 75%) 100%);
 }
-.c-card[style^="background-image"] header h4 {
+.c-card .inner[style^="background-image"] header h4 {
     text-shadow: 0 0 21px black;
 }
-.c-card[style^="background-image"]:hover header::before {
+.c-card:hover .inner[style^="background-image"] header::before {
     top: 0;
 }
 

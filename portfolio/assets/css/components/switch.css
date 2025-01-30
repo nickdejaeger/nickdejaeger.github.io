@@ -31,11 +31,11 @@
 }
 .c-switch__focus {
     position: absolute;
-    inset: 0;
+    inset: -6px;
     pointer-events: none;
     z-index: -1;
     background: linear-gradient(to right, rgba(255, 50, 231, 1) 0%, rgba(0, 130, 229, 1) 100%);
-    filter: blur(10px);
+    border-radius: 999999px;
     opacity: 0;
     transition: opacity .25s ease-in-out;
 }
@@ -66,5 +66,5 @@
 }
 
 .c-switch input:focus ~ .c-switch__focus {
-    opacity: 1;
+    opacity: .15;
 }
