@@ -634,7 +634,6 @@ a:active, a:focus, a:hover {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
 }
 .gallery__col {
     display: flex;
@@ -643,9 +642,6 @@ a:active, a:focus, a:hover {
 }
 .gallery__col figure {
     position: relative;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #CCC;
 }
 .gallery__col figure figcaption {
     position: absolute;

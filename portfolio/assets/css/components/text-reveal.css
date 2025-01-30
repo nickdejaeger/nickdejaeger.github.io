@@ -24,10 +24,14 @@
     linear-gradient(90deg, transparent calc(100% - 8ch), hsl(0 0% 100%) calc(100% - 8ch)), 
     linear-gradient(90deg, hsl(0 0% 50%), hsl(0 0% 50%)),
     linear-gradient(90deg, hsl(0 0% 50% / 0.5), hsl(0 0% 50% / 0.15));
+    background-image: 
+        linear-gradient(90deg, transparent calc(100% - 3ch), hsl(234.85deg 100% 50%) calc(100% - 8ch)),
+        linear-gradient(90deg, hsl(0deg 95.61% 47.49%), hsl(244.71deg 88.91% 43.91%)),
+        linear-gradient(90deg, hsl(0 0% 50% / 0.25), hsl(0 0% 50% / 0.25));
     background-size:
-    200vmax 1lh,
-    200vmax 1lh,
-    100% 1lh;
+        160vmax 1lh,
+        160vmax 1lh,
+        100% 1lh;
     background-repeat: no-repeat;
     background-position-x: 0;
     background-position-y: 100%;
@@ -53,6 +57,7 @@
                 0;
             color: transparent;
             animation-name: fill-up, color-in;
+            animation-name: fill-up;
             animation-fill-mode: both;
             animation-timing-function: linear;
             animation-timeline: --section;
@@ -71,7 +76,7 @@
 
 @media (min-width: 1200px) {
     .scroll-box {
-        padding: 0 26rem;
+        padding: 0 12rem;
     }
 }
 @media (max-width: 400px) {
