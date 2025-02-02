@@ -10,7 +10,7 @@
 
     --titles: #fff;
 
-    --primary: #142aa4;
+    --primary: #0037FC;
     --primary-text: #ffffff;
     --primary-titles: #ffffff;
 
@@ -22,7 +22,7 @@
     --button-text: #ffffff;
     --button-state: #30312c;
     --button-state-text: #ffffff;
-    --button-underline: #a5a5ff;
+    --button-underline: #bfbfff;
     --button-underline-state: #142aa4;
     --button-sec: #000;
     --button-sec-text: #000;
@@ -294,15 +294,23 @@ a:active, a:focus, a:hover {
 
 
 .container {
+    position: relative;
     width: 100%;
     padding-right: var(--spacing-8);
     padding-left: var(--spacing-8);
     margin-right: auto;
     margin-left: auto;
-    position: relative;
     max-width: 1320px;
 }
-
+.container-fluid {
+    position: relative;
+    width: 100%;
+    padding-right: var(--spacing-8);
+    padding-left: var(--spacing-8);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: none;
+}
 
 
 
@@ -356,12 +364,31 @@ a:active, a:focus, a:hover {
 
 
 
-
-.site-footer {
-
+.intro .inner {
+    padding: 22rem 0 8rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
-
-
+.intro h1 {
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin: 0;
+    color: #0037FC;
+    font-size: 48px;
+}
+.intro h1 span {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 36px;
+    color: #646464;
+    letter-spacing: 0;
+}
+@media (max-width: 768px) {
+    .intro .inner {
+        padding: 4rem 0 0;
+        max-width: none;
+    }
+}
 
 
 
@@ -469,6 +496,18 @@ a:active, a:focus, a:hover {
 
 
 
+
+
+.big-tag {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 99999px;
+    background-color: #0037FC;
+    border-color: #0037FC;
+    color: white;
+    font-size: 18px;
+    line-height: 100%;
+}
 
 
 
@@ -607,13 +646,14 @@ a:active, a:focus, a:hover {
 
 
 
+
 .profile {
     display: flex;
     align-items: center;
     gap: .5em;
     font-family: var(--typeface-secondary);
     font-weight: 500;
-    font-size: .8rem;
+    font-size: .85rem;
 }
 .profile figure img {
     width: 2.5rem;
@@ -689,7 +729,6 @@ a:active, a:focus, a:hover {
         text-align: right;
     }
     .profile aside b {
-        display: block;
         font-size: .65rem;
     }
 
@@ -707,7 +746,10 @@ a:active, a:focus, a:hover {
     .gallery__col figure figcaption {
         position: relative;
         opacity: 1;
-        padding: 3rem 1rem;
+        padding: 1.5rem 1rem;
         background-color: rgb(20 42 164 / 100%);
+    }
+    .gallery__col figure figcaption h4 {
+        margin: 0 0 .5rem;
     }
 }
