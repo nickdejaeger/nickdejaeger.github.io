@@ -365,7 +365,7 @@ a:active, a:focus, a:hover {
 
 
 .intro .inner {
-    padding: 22rem 0 8rem;
+    padding: 10rem 0 2rem;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -374,12 +374,12 @@ a:active, a:focus, a:hover {
     letter-spacing: -2px;
     margin: 0;
     color: #0037FC;
-    font-size: 48px;
+    font-size: 66px;
 }
 .intro h1 span {
-    font-weight: 300;
+    font-weight: 100;
     font-style: italic;
-    font-size: 36px;
+    font-size: 58px;
     color: #646464;
     letter-spacing: 0;
 }
