@@ -365,34 +365,44 @@ a:active, a:focus, a:hover {
 
 
 .intro .inner {
-    padding: 10rem 0 2rem;
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 10rem 0 4rem;
 }
 .intro h1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.intro h1 > div {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 42px;
+    color: #6a6a6a;
+    letter-spacing: -1px;
+    position: relative;
+}
+.intro h1 > div > .title {
     font-weight: 900;
     letter-spacing: -2px;
     margin: 0;
     color: #0037FC;
-    font-size: 66px;
+    font-size: 62px;
 }
-.intro h1 span {
-    font-weight: 100;
-    font-style: italic;
-    font-size: 58px;
-    color: #646464;
-    letter-spacing: 0;
+.intro h1 > div > .type {
+    background: linear-gradient(to right, rgb(220 47 47) 0%, rgb(195 25 195) 50%, rgb(0 17 229) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
 }
 @media (max-width: 768px) {
     .intro .inner {
-        padding: 4rem 0 0;
-        max-width: none;
+        padding: 4rem 0 2rem;
     }
-    .intro h1 {
-        font-size: 42px;
+    .intro h1 > div {
+        font-size: 32px;
     }
-    .intro h1 span {
-        font-size: 38px;
+    .intro h1 > div > .title {
+        font-size: 34px;
     }
 }
 
@@ -513,6 +523,23 @@ a:active, a:focus, a:hover {
     color: white;
     font-size: 18px;
     line-height: 100%;
+}
+
+
+
+
+
+.fade-out::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background: linear-gradient(0deg, #ffffff, #ffffff80 50%, transparent);
+    z-index: 1;
+    pointer-events: none;
 }
 
 
