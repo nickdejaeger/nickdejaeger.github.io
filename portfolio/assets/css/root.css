@@ -537,7 +537,7 @@ a:active, a:focus, a:hover {
     left: 0;
     right: 0;
     height: 25%;
-    background: linear-gradient(0deg, #ffffff, #ffffff80 50%, transparent);
+    background: linear-gradient(0deg, #f3f4f6 10%, transparent);
     z-index: 1;
     pointer-events: none;
 }
