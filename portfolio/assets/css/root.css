@@ -515,14 +515,27 @@ a:active, a:focus, a:hover {
 
 
 .big-tag {
+    position: relative;
     display: inline-block;
-    padding: .75rem 1.25rem;
+    padding: .75rem 0 .75rem 0;
+    margin: 0rem 1rem 0.5rem 1.25rem;
     border-radius: 99999px;
-    background-color: #0037FC;
-    border-color: #0037FC;
-    color: white;
     font-size: 18px;
+    font-weight: 900;
     line-height: 100%;
+    color: #0037FC;
+    background: linear-gradient(to right, rgb(231 52 255) 0%, #fc0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.big-tag::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 75%;
+    height: 1px;
+    background: linear-gradient(to right, rgb(231 52 255) 0%, #fc000000 100%);
 }
 
 
