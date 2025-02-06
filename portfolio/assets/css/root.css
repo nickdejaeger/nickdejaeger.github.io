@@ -354,7 +354,7 @@ a:active, a:focus, a:hover {
 
 .site-logo {
     padding: 1rem 0;
-    max-height: 90%;
+    max-height: 50px;
 }
 
 
@@ -762,10 +762,6 @@ a:active, a:focus, a:hover {
 @media (max-width: 768px) {
     .site-header .inner {
         gap: 10px;
-    }
-
-    .site-logo {
-        max-height: 60%;
     }
     .profile figure {
         display: none;
