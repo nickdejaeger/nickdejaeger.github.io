@@ -380,25 +380,23 @@ abbr[title] {
     padding: 10rem 0 4rem;
 }
 .intro h1 {
-    font-family: "Indie Flower", serif;
     line-height: 1.15;
     margin: 0;
     display: flex;
     flex-direction: column;
-    transform: rotate(-3deg);
     padding: .5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #333;
+    letter-spacing: -2px;
 }
 .intro h1 > div {
-    font-weight: 200;
-    font-size: 42px;
     position: relative;
 }
 .intro h1 > div > .title {
     font-weight: 900;
-    letter-spacing: -2px;
     margin: 0;
     color: #0037FC;
-    font-size: 62px;
 }
 .intro h1 > div > .type {
     background: linear-gradient(to right, rgb(220 47 47) 0%, rgb(195 25 195) 50%, rgb(0 17 229) 100%);
@@ -408,17 +406,13 @@ abbr[title] {
 }
 @media (max-width: 768px) {
     .intro .inner {
-        padding: 4rem 0 2rem;
+        padding: 10rem 1rem 4rem;
     }
     .intro h1 {
-        display: inline;
+        font-size: 32px;
     }
     .intro h1 > div {
         display: inline;
-        font-size: 32px;
-    }
-    .intro h1 > div > .title {
-        font-size: 34px;
     }
 }
 
