@@ -389,6 +389,13 @@ abbr[title] {
     color: #696969;
     letter-spacing: -2px;
     word-spacing: -10px;
+    transition: color 1.5s ease-in-out .25s;
+
+    animation: b52 5s ease-in-out 0s infinite;
+}
+.intro h1:hover {
+    animation: none;
+    color: #000;
 }
 .intro h1 > div > .title {
     background: linear-gradient(to right, rgb(73 13 207) 0%, rgb(201 17 164) 50%, rgb(255 7 7) 100%);
@@ -806,5 +813,47 @@ abbr[title] {
     }
     .gallery__col figure figcaption h4 {
         margin: 0 0 .5rem;
+    }
+}
+
+
+.shape {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+
+    position: absolute;
+}
+
+.triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+    left: 17%;
+    top: 10%;
+}
+
+.hexogram {
+    background-color: blue;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+
+    left: 45%;
+    top: 24%;
+}
+
+.star {
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+    left: 71%;
+    top: 1%;
+}
+
+
+@keyframes b52 {
+    0% {
+        color: #696969;
+    }
+    50% {
+        color: #000000;
     }
 }
