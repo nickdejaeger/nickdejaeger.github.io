@@ -374,28 +374,49 @@ abbr[title] {
     padding-top: var(--app-header-height);
 }
 
+.intro {
+    position: relative;
+}
 
+.intro .foo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(20px);
+    opacity: .5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    animation-name: blurFlash;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.intro .foo img {
+    width: 75%;
+}
 
 .intro .inner {
-    padding: 10rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 0;
 }
 
 
 .intro h1 {
+    position: relative;
     font-family: "Ciguatera";
     font-weight: 100;
     line-height: 100%;
     margin: 0;
-    color: #696969;
     letter-spacing: -2px;
     word-spacing: -10px;
-    transition: color 1.5s ease-in-out .25s;
-
-    animation: b52 5s ease-in-out 0s infinite;
-}
-.intro h1:hover {
-    animation: none;
-    color: #000;
+    mix-blend-mode: color-burn;
 }
 .intro h1 > div > .title {
     background: linear-gradient(to right, rgb(73 13 207) 0%, rgb(201 17 164) 50%, rgb(255 7 7) 100%);
@@ -416,6 +437,10 @@ abbr[title] {
         letter-spacing: 0px;
         word-spacing: -5px;
         padding: 2rem;
+        mix-blend-mode: unset;
+    }
+    .intro .foo img {
+        width: 100%;
     }
     .intro h1 > div {
         display: inline;
@@ -425,7 +450,17 @@ abbr[title] {
         font-weight: 600;
     }
 }
-
+@keyframes blurFlash {
+    0% {
+        filter: blur(10px);
+    }
+    50% {
+        filter: blur(20px);
+    }
+    100% {
+        filter: blur(10px);
+    }
+}
 
 
 .primary-theme {
@@ -510,14 +545,12 @@ abbr[title] {
 }
 .section-label h3 {
     padding: .5rem 0;
-    background-color: #FFF;
     margin: 0;
 }
 .section-label p {
     max-width: 18rem;
     padding: .5rem 0;
-    margin: .75rem 0 0 0;
-    background: white;
+    margin: 0;
     text-align: center;
 }
 .section-label::before {
@@ -526,8 +559,9 @@ abbr[title] {
     top: -4rem;
     left: 50%;
     bottom: -3rem;
-    border-left: 1px solid #CCC;
+    width: 1px;
     z-index: -1;
+    background: linear-gradient(to bottom, rgb(0 0 0 / 20%) 0%, rgb(0 0 0 / 20%) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgb(0 0 0 / 20%) 80%, rgb(0 0 0 / 20%) 100%);
 }
 
 
